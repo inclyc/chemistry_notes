@@ -1,0 +1,157 @@
+\documentclass[a4paper]{ctexrep}
+\usepackage{mathtools}
+\usepackage{graphicx}
+
+\title{结构化学}
+\author{inclyc}
+
+\begin{document}
+    \maketitle
+    
+    \chapter{绪论}
+    国内，结构化学课程和物理化学分开进行讲授，有关晶体的课程可以在无机化学中讲到。结构化学是化学系的本科生专业课中最年轻的一个，所有的理论、实践、仪器才刚刚开始。上个世纪50年代才开始完善。
+
+    结构化学中重要的理论，仪器，基本上都获得了诺贝尔奖。可以用诺贝尔奖的颁奖来说明
+    
+    \section{结构化学研究的主要内容}
+    在原子、分子水平上讨论物质的性质与结构的关系，结构又包括电子结构和空间结构。结构化学研究的对象是原子、分子和晶体的微观结构，运动规律，以及结构和性能的关系。结构化学的理论基础是量子力学，主要来研究原子和分子核外电子的规律，在研究围观结构的时候还需要讲解现代分析测试仪器。
+
+    \subsection{核心内容}
+    \begin{itemize}
+        \item 电子结构 描述电子运动状态的波函数
+        \item 空间结构 分子和晶体在空间的排布
+    \end{itemize}
+
+    \subsection{概括部分情况}
+
+    \subsubsection{量子力学基础}
+    \begin{itemize}
+        \item 微观粒子的运动特征
+        \item 量子力学的基本假设
+        \item 量子力学的简单运用
+    \end{itemize}
+    \subsubsection{原子结构}
+
+    \begin{itemize}
+        \item 单电子原子的结构 
+        \item 多电子原子的结构（近似求解）
+        \item 原子光谱
+    \end{itemize}
+
+    \subsubsection{分子结构}
+
+    \begin{itemize}
+        \item 共价键的本质---分子体系量子化学方法
+        \item 双原子分子结构---分子轨道理论
+        \item HMO---量子化学入门
+        \item 分子对称性---群论及其应用
+    \end{itemize}
+
+    \subsubsection{晶体结构}
+
+    \begin{itemize}
+        \item 晶体的点阵理论
+        \item 晶体的对称性
+        \item 结晶化学
+        \item X射线衍射法
+    \end{itemize}
+
+    \subsubsection{}
+
+    \chapter{量子力学基础}
+
+    量子力学是结构化学理论的基础，要用量子力学的思维来看待微观粒子的运动规律，微观粒子的运动规律和宏观物体有很大不同。
+
+    \section{旧量子论}
+
+    \subsection{经典物理学所遇到的问题}
+        紫外灾难，光速
+    \subsubsection{经典物理学的一些基本观点}
+
+    \begin{itemize}
+        \item 质量恒定，不随着速度改变
+        \item 物体的能量是连续变化的
+        \item 物体都有确定的运动轨道
+        \item 光现象只是一种波动
+    \end{itemize}
+
+    高速领域：$v \rightarrow c$
+
+    \[
+        m = \frac{m_0}{\sqrt{1 - (v/c)^2}}  
+    \]
+
+    \subsection{黑体辐射和能量的量子化}
+
+    黑体：在任何温度下能够完全吸收外来的辐射而不进行反射和投射的理想物体。
+
+    Wien位移定律，假设由Maxwell分子发射出来
+
+    \[ 
+        \rho = \frac{8 \pi h c}{\lambda^5}e^{-\frac{hc}{\lambda kT}}
+    \]  
+
+    Rayleigh-Jeans 公式（Ultraviolet catastrophe）：
+
+    \[
+        \rho = \frac{8 \pi k T}{\lambda^4}  
+    \]
+
+    Plank 新的黑体辐射公式：
+
+    \[ 
+        \rho = \frac{8 \pi h c}{\lambda ^5} \frac{1}{e^{\frac{hc}{\lambda k T}} - 1}
+    \]
+
+    \subsubsection{能量的量子化假设}
+
+    \begin{itemize}
+        \item 黑体是由不同频率的协振子组成
+        \item 每个特定频率的协振子的能量总是某个最小的能量单位
+        \item $\epsilon _0 = h\nu$
+    \end{itemize}
+
+
+    \subsection{光电效应和爱因斯坦的光子学说}
+
+    \[
+        \epsilon = h\nu
+    \]
+        
+    \[         
+        \frac{1}{2} mv^2 = h\nu - W_0    
+    \]
+
+    \subsection{旧量子论总结}
+
+    \begin{itemize}
+        \item 依然假定微观粒子的位置和速度可以同时确定，可以得到微观粒子的运动轨迹
+        \item 量子化的提出带有明显的人为性质，没有在本质上解释
+        \item 没有注意到大量的微粒所具有的波动性的特征
+    \end{itemize}
+
+
+    \section{实物微粒的波粒二象性}
+
+    \subsection{光的波粒二象性 Wave-Particle Duality of Matter}
+
+    光在传播的过程中表现出波的性质，而在和粒子作用的时候表现出粒子的性质
+
+    \subsubsection{实验证明}
+
+    1923年，Compton通过实验证明，高频率的X射线被轻原子中的电子散射后，波长随着散射角的增大而增大。
+
+    \subsection{实物微粒的波粒二象性}
+
+    \subsubsection{De Broglie's Hypothesis}
+
+    假设内容：所有的物质粒子都具有波粒二象性
+
+    \[ 
+        E = h\nu 
+    \] 
+
+    \[ 
+        p = \frac{h}{\lambda}
+    \]
+\end{document}
