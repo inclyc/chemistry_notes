@@ -3,6 +3,7 @@
 \usepackage{tikz}
 \usepackage{chemfig}
 \usepackage{mhchem}
+\usepackage{float}
 
 
 \author{Y.C. Long}
@@ -82,4 +83,61 @@
         \item 亲电取代，$\ce{-OH}$是邻对位定位基，可以使苯环活化
         \item 氧化（复杂，机理不甚明确）
     \end{enumerate}
+
+    \subsection{酚的酸性}
+
+    \subsubsection{不同类}
+    $\ce{H2CO3} > \ce{Ph-OH} > \ce{H2O} > \ce{ROH}$
+
+    若芳香基团上有吸电子基团，则酚酸性增强
+
+    \subsubsection{同类}
+
+    \begin{enumerate}
+        \item 吸电子基 酸性增加 \par
+        \begin{figure}[H]
+            \scriptsize
+            \centering
+            \chemfig{*6(=-=-(-OH)=-)} < \chemfig{*6(=-(-NO_2)=-(-OH)=-)} < \chemfig{*6(=(-NO_2)-=-(-OH)=-)}
+        \end{figure}
+        \item 供电子基 酸性降低 \par
+        \begin{figure}[H]   
+            \scriptsize
+            \centering
+            \chemfig{*6(=-=-(-OH)=-)} < \chemfig{*6(=-(-CH_3)=-(-OH)=-)} < \chemfig{*6(=(-CH_3)-=-(-OH)=-)}
+        \end{figure}
+        \item 卤素 吸电子，酸性增加
+    \end{enumerate}
+
+    \subsection{显色反应}
+    可以与铁形成紫色复合物
+
+    $\ce{6C6H6OH + FeCl3 -> H_3[Fe(OC6H5)] + 3HCl}$
+
+    \subsection{亲核性}
+
+    亲核性 只和易发生亲核反应的物质反应
+
+    如 
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{R-C(=[:90]O)-Cl} \+ \chemfig{*6(-=-=(-OH)-=)} \arrow
+        \schemestop
+    \end{figure}
+
+    \subsection{亲电取代}
+
+    \subsubsection{卤代反应}
+
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{*6(-=-=(-OH)-=)}  \+ $\ce{Br2}$ \arrow \chemfig{*6(-(-Br)=-(-Br)=(-OH)-(-Br)=)}
+        \schemestop
+    \end{figure}
+    原因：水中存在\scriptsize \chemfig{*6(-=-=(-{O^{-}})-=)} \normalsize
+
 \end{document}
