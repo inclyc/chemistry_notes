@@ -31,6 +31,6 @@ jobs:
         with:
           name: PDF
           path: |
-            organic-chemistry.pdf
-            physical-chemistry.pdf
-            pre-course.pdf
+            organic-chemistry/organic-chemistry.pdf
+            physical-chemistry/physical-chemistry.pdf
+            structural-chemistry/pre-course.pdf
