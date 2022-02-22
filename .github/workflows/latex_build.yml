@@ -1,0 +1,33 @@
+name: LaTeX Build
+on: [push]
+
+jobs:
+  build_organic_chemistry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out my files
+        uses: actions/checkout@v2
+      - run: ls -la
+      - name: Build organic chemistry notes
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: organic-chemistry/organic-chemistry.tex
+          latexmk_use_xelatex: true
+      - name: Build physical chemistry notes
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: physical-chemistry/physical-chemistry.tex
+          latexmk_use_xelatex: true
+      - name: Build structural chemistry pre-course notes
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: structural-chemistry/pre-course/pre-course.tex
+          latexmk_use_xelatex: true
+      - name: Upload notes
+        uses: actions/upload-artifact@v2
+        with:
+          name: PDF
+          path: |
+            organic-chemistry.pdf
+            physical-chemistry.pdf
+            pre-course.pdf
