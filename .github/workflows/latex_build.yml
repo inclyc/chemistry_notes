@@ -33,4 +33,4 @@ jobs:
           path: |
             organic-chemistry/organic-chemistry.pdf
             physical-chemistry/physical-chemistry.pdf
-            structural-chemistry/pre-course.pdf
+            structural-chemistry/pre-course/pre-course.pdf
