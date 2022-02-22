@@ -1,0 +1,141 @@
+\documentclass[a4paper]{ctexrep}
+
+\usepackage{tikz}
+\usepackage[version=4]{mhchem}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{mathtools}
+
+\newcommand{\mol}{\mathrm{mol}}
+\renewcommand{\d}{\mathrm{d}}
+
+\author{Y.C. Long}
+\title{物理化学 -- 刘婧媛}
+
+\begin{document}
+    % 作业 20%
+    % 课程报告 10%
+    % 期末考试 70%
+    \maketitle
+    \tableofcontents
+
+    \chapter{电解质溶液}
+        \section{前言}
+        \subsection{电化学综述}
+        内容：$\mbox{化学反应} \leftrightarrow \mbox{电现象}$。既包括热力学问题，也包括动力学问题。电化学的用途主要包括研究化学能和电能的互相转换：
+        \[
+            \mbox{化学能} \ce{<=>T[\mbox{电池}][\mbox{电解池}]} \mbox{电能}  
+        \]
+
+        电化学系统就是电池或电解池，由导体或半导体组成，多相存在，为科学研究以及生产过程提供精确快速地研究测定方法。
+        \subsection{电解质溶液}的
+        电解质溶液是电池和电解池的重要组成部分。
+        \subsubsection{与非电解质溶液的区别}
+        \paragraph{导电} 物理动力学 
+
+        \paragraph{热力学} 高度不理想性
+        \subsubsection{电解质溶液的特点}
+        电解质溶液的概念较多，要以理解为主。
+
+        \section{电化学中的基本概念}
+
+        \subsection{电解质溶液的导电机理（The mechanism of conduction for electrolyte solution）}
+        金属（第一类导体）和电解质溶液（第二类导体）的导电机理不同。例如，电解$\ce{CuCl2}$溶液，首先有离子电迁移的物理变化，后有电极反应的化学变化。
+
+        $\ce{Pt}$电极：$\ce{2Cl- -> Cl2 + 2e-}$ （氧化）
+
+        $\ce{Cu}$电极：$\ce{Cu2+ + 2e- -> Cu}$（还原）
+
+        总结果： $\ce{\mbox{电池(-)} ->T[e-] Cu ->T[e-][re] sln ->T[e-][ox] Pt ->T[e-] \mbox{电池(+)}}$
+
+        \subsubsection{电极命名法}
+        \paragraph{按电位高低} 电位高 -- 征集， 电位低 -- 负极
+
+        \paragraph{按反应性质} 氧化 -- 阳极，还原 -- 阴极
+
+        \section{Faraday电解定律}
+        Faraday 归纳了多次实验结果，于1833年总结出了电解定律：
+        \begin{enumerate}
+            \item 电解界面上发生的化学变化物质的量与通入的电荷量成正比
+            \item 若将几个电解池相连，通入等量的电荷，他们发生化学反应的物质的量相等
+        \end{enumerate}
+
+        \subsection{Faraday 常数}
+        人们把在数值上等于1 mol元电荷的电量称为Faraday常数。Faraday常数需要记忆：$F \approx 96500 \mathrm{C} \cdot \mbox{mol}^{-1}$
+
+        如果在电解池发生如下反应：
+        \[ 
+            \ce{M^{z+} + z_{+}e- -> M(s)}
+        \]
+        电子得失的化学计量数为$z_{+}e-$，则需要的电荷量为：$\ce{z_{+}e-} \cdot \mathrm{F}$
+
+        \subsection{荷电粒子基本单位的选取}
+
+        $n = \frac{N}{L}$，其中$N$为基本单元的个数，所以$n$值与基本单元有关，例如18g水，可以表示为：
+        $n \ce{H2O} = 1 \mol$，$n(\ce{2H2O}) = 0.5 \mol$。
+        在研究电解质溶液导电性质时，习惯用一个元电荷（$\ce{e-}$）为基础指定物质量的基本单元。
+
+        \paragraph{基本阴阳离子的基本单位}
+
+        离子$\ce{M^{z+}}$ 用$n \left( \frac{1}{z_{+}} M^{z+}\right)$描述离子的物质的量。
+        
+        例 $n(\ce{H+})$，$n(\frac{1}{2}\ce{Cu^{2+}})$，$n(\frac{1}{3}Fe^{3+})$。
+
+        这样做的好处是，$1 \mol$任何离子所带的电量均为$6.023 \times 10^{23} e$。
+
+        \paragraph{电解质的基本单位}
+        % TODO 这个地方老师的PPT好像有点问题
+        电解质$M_{v+}A_{v-}$，用$n \left( \frac{1}{v_+ v_-} M_{v+}A_{v-} \right)$
+
+        \paragraph{参与氧化还原反应的物质M}
+
+        $\ce{M + ze- ->T[re] M^{z-}}$，以$n \left( \frac{1}{z}M\right)$ 来描述物质M的物质的量
+
+        \section{离子的电迁移率和迁移数}
+
+        \subsection{离子的电迁移率}
+        
+        \[
+            \mbox{电解质} \ce{ ->T[电离] } \mbox{离子B} + \mbox{离子D}  
+        \]
+
+        \subsubsection{定义}
+
+        通常讨论在一定$T$，$p$下的某一指定溶液，则离子迁移速率\[r_B = u_B\frac{\d E}{\d l}\]
+
+        \subsubsection{淌度的测量}
+
+        根据定义，设法测定$r_{B}$和$E$
+
+        \subsubsection{离子的极限电迁移率}
+
+
+        \subsection{离子迁移数}
+
+        电解质溶液导电时离子的具体迁移情况（Hittorf模型），把电解池分为阳极区，中间区，阴极区。离子B的迁移数是离子B运载的电荷量和总电流之比。
+
+        \[
+            t_B \overset{\mathrm{def}}{=} \frac{I_B}{I}
+        \]
+
+        \subsubsection{结论}
+
+        \paragraph{浓度变化} 中间区的浓度不变，两极区的浓度改变。
+        \paragraph{物质的量关系} $n_B(\mbox{迁移}) \neq n_B(\mbox{电极反应})$
+        \paragraph{溶液的导电任务由正负离子共同分担}
+        \[
+            \frac{t_{+}}{t_{-}} = \frac{u_{+}}{u_{-}}  
+        \]
+
+
+    \chapter{可逆电池的电动势及其应用}
+
+    \chapter{电解和极化作用}
+
+    \chapter{化学反应动力学}
+
+    \chapter{表面物理化学}
+
+    \chapter{胶体化学}
+\end{document}
