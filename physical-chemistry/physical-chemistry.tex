@@ -10,6 +10,8 @@
 \newcommand{\mol}{\mathrm{mol}}
 \renewcommand{\d}{\mathrm{d}}
 
+\graphicspath{ {./img} }
+
 \author{Y.C. Long}
 \title{物理化学 -- 刘婧媛}
 
@@ -41,7 +43,14 @@
         \section{电化学中的基本概念}
 
         \subsection{电解质溶液的导电机理（The mechanism of conduction for electrolyte solution）}
-        金属（第一类导体）和电解质溶液（第二类导体）的导电机理不同。例如，电解$\ce{CuCl2}$溶液，首先有离子电迁移的物理变化，后有电极反应的化学变化。
+        金属（第一类导体）和电解质溶液（第二类导体）的导电机理不同。例如，电解$\ce{CuCl2}$溶液（如图\ref{fig:transfer}），首先有离子电迁移的物理变化，后有电极反应的化学变化。
+
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.3\textwidth]{transfer.png}
+            \caption{$\ce{CuCl2}$溶液通电后的情况}
+            \label{fig:transfer}
+        \end{figure}
 
         $\ce{Pt}$电极：$\ce{2Cl- -> Cl2 + 2e-}$ （氧化）
 
@@ -85,12 +94,31 @@
         这样做的好处是，$1 \mol$任何离子所带的电量均为$6.023 \times 10^{23} e$。
 
         \paragraph{电解质的基本单位}
-        % TODO 这个地方老师的PPT好像有点问题
-        电解质$M_{v+}A_{v-}$，用$n \left( \frac{1}{v_+ v_-} M_{v+}A_{v-} \right)$
+        电解质$M_{v_+}A_{v_-}$，电离方程式为
+        \[
+            M_{v_+}A_{v_-} \ce{->T[电离]} v_+M^{z+} + v_-M^{z-}
+        \]
+        用$n \left( \frac{1}{z_+ v_+} M_{v_+}A_{v_-} \right)$。这样做的好处是
+
+        \begin{enumerate}
+            \item $1 \mol$任何物质全电离均产生$6.023 \times 10^{23} e$的正电荷和负电荷。
+            \item 同一溶液中，电解质全电离时，有
+            \[
+                n \left( \frac{1}{z_+ v_+} M_{v_+}A_{v_-} \right) = n \left( \frac{1}{z_+} M^{2+} \right) = n  \left( \frac{1}{|z_-|} M^{2+} \right)
+            \]
+        \end{enumerate}
 
         \paragraph{参与氧化还原反应的物质M}
 
         $\ce{M + ze- ->T[re] M^{z-}}$，以$n \left( \frac{1}{z}M\right)$ 来描述物质M的物质的量
+
+        \subsection{电流效率}
+
+        电流效率为按照Faraday电解定律计算出来的理论电荷量于实际电荷量之比。
+
+        \[
+            \mbox{电流效率} = \frac{\mbox{Faraday定律计算的理论电荷量}}{\mbox{实际流过的电荷量}}  
+        \]
 
         \section{离子的电迁移率和迁移数}
 
@@ -102,24 +130,32 @@
 
         \subsubsection{定义}
 
-        通常讨论在一定$T$，$p$下的某一指定溶液，则离子迁移速率\[r_B = u_B\frac{\d E}{\d l}\]
+        通常讨论在一定$T$，$p$下的某一指定溶液，则离子迁移速率\[r_B = u_B\frac{\d E}{\d l}\]，这里的$u_B$就是离子的电迁移率。也就是单位电位梯度下时，离子的迁移速度。
 
         \subsubsection{淌度的测量}
 
         根据定义，设法测定$r_{B}$和$E$
 
         \subsubsection{离子的极限电迁移率}
-
+        
+        在无限稀薄溶液中，离子的电迁移率称为极限电迁移率$u_B^{\infty}$，反应离子的基本特征，是离子的固有属性。
 
         \subsection{离子迁移数}
 
-        电解质溶液导电时离子的具体迁移情况（Hittorf模型），把电解池分为阳极区，中间区，阴极区。离子B的迁移数是离子B运载的电荷量和总电流之比。
+        电解质溶液导电时离子的具体迁移情况（Hittorf模型，见图\ref{fig:u_B}），把电解池分为阳极区，中间区，阴极区。离子B的迁移数是离子B运载的电荷量和总电流之比。
 
         \[
             t_B \overset{\mathrm{def}}{=} \frac{I_B}{I}
         \]
+        
+        \subsubsection{电迁移的相关结论}
 
-        \subsubsection{结论}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=1.0\textwidth]{u_B.png}
+            \caption{运动情况}
+            \label{fig:u_B}
+        \end{figure}
 
         \paragraph{浓度变化} 中间区的浓度不变，两极区的浓度改变。
         \paragraph{物质的量关系} $n_B(\mbox{迁移}) \neq n_B(\mbox{电极反应})$
