@@ -2,7 +2,7 @@
 \usepackage{mathtools}
 \usepackage{tikz}
 \usepackage{chemfig}
-\usepackage{mhchem}
+\usepackage[version=4]{mhchem}
 \usepackage{float}
 
 
@@ -44,7 +44,7 @@
         \item 含有未成键电子对化合物 $\ce{NH3}$
         \item 格氏试剂 $\ce{RMgX}$
     \end{enumerate}
-    \chapter{酚、醌}
+    \chapter{酚}
     \section{概述}
     酚（phenols, $\ce{Ar-OH}$）
     羟基直接与苯环\textit{$sp^2$}碳原子相连接的化合物称为酚，苯酚（\scalebox{0.6}[0.6]{\chemfig{OH-[:180,,1]=_[:240]-[:180]=_[:120]-[:60]=_(-[:300])}}）最为常见，另外还有萘酚等。
@@ -138,6 +138,99 @@
         \chemfig{*6(-=-=(-OH)-=)}  \+ $\ce{Br2}$ \arrow \chemfig{*6(-(-Br)=-(-Br)=(-OH)-(-Br)=)}
         \schemestop
     \end{figure}
-    原因：水中存在\scriptsize \chemfig{*6(-=-=(-{O^{-}})-=)} \normalsize
+    原因：水中存在 \scriptsize\chemfig{*6(-=-=(-{O^{-}})-=)}\normalsize，要想控制反应进度，可以在有机溶剂中进行：
+
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{*6(-=-=(-OH)-=)} \arrow{->[$\ce{Br}$][$\ce{CS2}, 0^\circ \mathrm{C}$]} \chemfig{*6(-(-Br)=-=(-OH)-=)} + \chemfig{*6(-=-(-Br)=(-OH)-=)}
+        \schemestop
+    \end{figure}
+
+    \subsubsection{磺化反应}
+
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{*6(-=-=(-OH)-=)} \+ $\ce{H2SO4}$ \arrow \chemfig{*6(-=-(-SO_3)=(-OH)-=)} \+ \chemfig{*6(-(-SO_3)=-=(-OH)-=)}
+        \schemestop
+    \end{figure}
+    \subsubsection{硝化反应}
+
+    一般来讲不要直接硝化，不然产率会很低
+
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{*6(-=-=(-OH)-=)} \arrow{->[$\ce{NaNO2}$][$\ce{H+}$]} \chemfig{*6(-(-NO)=-=(-OH)-=)} \arrow{->[$\ce{HNO3}$]} \chemfig{*6(-(-NO_2)=-=(-OH)-=)}
+        \schemestop
+    \end{figure}
+
+    \subsubsection{傅氏反应}
+
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{*6(-=-=(-OH)-=)} \+ $\ce{RCl}$ \arrow{->[HF]} \chemfig{*6(-(-R)=-=(-OH)-=)}
+        \schemestop
+    \end{figure}
+
+    \subsubsection{氧化反应}
+
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{*6(-=-=-=)} \arrow{->[$\mbox{[O]}$]} \chemfig{*6(-(=O)-=-(=O)-=)}
+        \schemestop
+    \end{figure}
+
+    \subsection{酚的制法（了解）}
+
+
+    \chapter{醛、酮}
+
+    \section{概述}
+
+    \subsection{分类}
+
+    \begin{enumerate}
+        \item 脂肪型
+        \item 芳香型
+    \end{enumerate}
+
+    \subsection{羰基的结构特点 -- 极性不饱和基团}
+
+    碳和氧都采用$sp^2$杂化，碳氧双键中，成键电子云分布不均匀，而是偏向氧原子。
+
+    \section{物理性质}
+
+    极性分子之间的偶极-偶极相互作用，醛酮的沸点比相对分子量相近的烷烃和醚高，低级醛通常易溶于水，高级醛通常微溶或不溶于水
+
+    \section{化学性质}
+    
+    \subsection{$\alpha-\ce{H}$键}
+    \scriptsize \chemfig{-C(-[:90])(-[:-90]H)-C=O} \normalsize 由于双键的氧加强了$\alpha-\ce{H}$上的碳氢键的极性。醛酮可以在$\alpha-\ce{H}$ 异裂后产生阴离子，可以发生缩合反应和异裂取代反应。
+
+    \subsection{醛基的氧化反应}
+
+    \subsection{亲核加成}
+
+    \subsubsection{与弱酸的加成}
+
+    与HCN，得到重要的合成材料$\alpha-$羟基腈
+
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{C(-[:-135])(-[:135])=O} \+ HCN \arrow \chemfig{-C(-[:90]OH)(-[:-90])-CN} 
+        \schemestop
+    \end{figure}
+
 
 \end{document}
