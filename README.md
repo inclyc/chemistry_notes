@@ -11,11 +11,12 @@
 | 有机化学（B) | organic-chemistry  | 正在编写 |
 | 结构化学预习 | pre-course         | 停止更新 |
 | 物理化学（B) | physical-chemistry | 正在编写 |
+| 结构化学（B) | structural-chemistry | 正在编写 |
 
 ## 找到可浏览的版本
 
 
-初次阅读这个仓库可能有些无聊，因为tex文件本身并不是为阅读服务的。你可以在[这里](https://github.com/inclyc/chemistry_notes/actions)找到所有的已经编译好的tex文件。下载PDF的压缩包，其中包含所有课程的笔记。
+初次阅读这个仓库可能有些无聊，因为tex文件本身并不是为阅读服务的。你可以在[这里](https://github.com/inclyc/chemistry_notes/actions)找到所有的已经编译好的pdf文件。下载PDF的压缩包，其中包含所有课程的笔记。
 
 ## 知识共享 & 法律信息
 
