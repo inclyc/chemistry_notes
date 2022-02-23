@@ -24,6 +24,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: structural-chemistry/pre-course/pre-course.tex
+          root_file: structural-chemistry/structural-chemistry.tex
           latexmk_use_xelatex: true
           work_in_root_file_dir: true
       - name: Upload notes
@@ -34,3 +35,4 @@ jobs:
             organic-chemistry/organic-chemistry.pdf
             physical-chemistry/physical-chemistry.pdf
             structural-chemistry/pre-course/pre-course.pdf
+            structural-chemistry/structural-chemistry.pdf
