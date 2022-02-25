@@ -6,6 +6,7 @@
 \usepackage{float}
 \usepackage{xcolor}
 \usepackage{mathtools}
+\usepackage{booktabs}
 
 \newcommand{\mol}{\mathrm{mol}}
 \renewcommand{\d}{\mathrm{d}}
@@ -308,7 +309,25 @@
             \varLambda_m^\infty{HAc} &= \varLambda_{m, +}^\infty(\ce{H+}) + \varLambda_m^\infty(\ce{Ac-}) \\
             &= \varLambda_m^\infty{\ce{HCl}} + \varLambda_m^\infty{\ce{NaAc}} - \varLambda_m^\infty{\ce{NaCl}}
         \end{align*}
-            
+    
+    \section{电导法的应用}
+
+
+    \subsection{检测水的纯度}
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{ll}
+            \toprule
+            \textbf{水} & \textbf{电导率} \\
+            \midrule
+            普通蒸馏水 & $ 1 \times 10^{-3} \mathrm{S \cdot m^{-1}} $ \\
+            去离子水 & $ 1 \times 10^{-4} \mathrm{S \cdot m^{-1}} $ \\
+            理论纯水 & $ 5.5 \times 10^{-6} \mathrm{S \cdot m^{-1}} $ \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    
 
     \chapter{可逆电池的电动势及其应用}
 
