@@ -10,6 +10,11 @@
 \newcommand{\mol}{\mathrm{mol}}
 \renewcommand{\d}{\mathrm{d}}
 
+\newtheorem{definition}{定义}[chapter]
+\newtheorem{example}{例}[chapter]
+\newenvironment{solution}{\par \noindent \textbf{解}  \par \vspace{0.3em}}{\par}
+\newtheorem{question}{习题}[chapter]
+
 \graphicspath{ {./img} }
 
 \author{Y.C. Long}
@@ -164,6 +169,146 @@
             \frac{t_{+}}{t_{-}} = \frac{u_{+}}{u_{-}}  
         \]
 
+        \subsection{迁移数的测定}
+
+        原理：
+
+        \[
+            t_B = \frac{Q_B}{Q}  
+        \]
+        \section{电解质溶液的电导}
+
+        \subsection{电导和电导率}
+
+        对金属导体，习惯用$R$表示导电能力$R = \rho \frac{l}{A}$，对电解质溶液，习惯用$\frac{1}{R}$，即：
+        
+        \[
+            G = \frac{1}{R} = \frac{1}{\rho}\frac{A}{l} G = \kappa \frac{A}{l}  
+        \]
+
+        $G$，电导，$\kappa$，电导率
+
+        $\kappa$ 一般与浓度$c$有关，强电解质中$\kappa$通常是浓度的单峰函数。在弱电解质中，$\kappa$与$c$的关系很小。
+
+        \subsection{摩尔电导率}
+
+        \begin{definition}
+            \[
+                \varLambda_m = \frac{\kappa}{c} 
+            \]
+        \end{definition}
+
+        \subsubsection{$\varLambda_m$的物理意义}
+
+        \[
+            \varLambda_m = \frac{\kappa}{c} = \frac{G}{n}l^2  
+        \]
+
+        1 $\mol$ 的电解质置于两个相距 1 $\mathrm{m}$ 的平行电解板之间，此时溶液所具有的电导。
+
+        强电解质的在$c$通常与$\varLambda_m$负相关，浓度越低，摩尔电导率越高。在弱电解质中，$\varLambda_m \sim \sqrt{c}$近似双曲线。在稀溶液范围内，$\varLambda_m$对$c$十分敏感。弱电解质必须考虑离子数的影响，在稀溶液低浓度的情况下，弱电解质的电离度越来越大，离子数不断增加，导电性增强。总的而言，在强电解质中，主要考虑的是淌度$u_B$的影响，弱电解质中，还需要考虑电离度$\alpha$的影响。
+
+        $varLambda_m$不是电解质的本性。
+
+        \subsubsection{极限摩尔电导率}
+
+        Kohlrausch经验规则
+
+        \[
+            \varLambda_m = \varLambda_m^\infty (1 - \beta \sqrt{c})
+        \]
+
+        其中
+
+        \[
+            \varLambda_m^\infty = \lim_{c \rightarrow 0} \varLambda_m   
+        \]
+
+        $\varLambda_m^\infty$代表离子间无静电作用时$1 \mol$电解质的（最大）导电能力，所以$\Lambda_m ^\infty$是电解质导电能力的标志。$\varLambda_m (298\mathrm{K})$ 可查手册。强电解质$\varLambda_m^\infty$ 可由实验外推。
+
+        \subsubsection{摩尔电导率的测量}
+
+        $\varLambda_m$与其他电学量一样，可以通过基本电学量$I$，$U$，$R$，$Q$等的测量求得。不通电的是应该在电导池中测量。
+
+        原理：$\varLambda_m = \frac{\kappa}{c} $
+
+        求$\kappa$，
+        
+        \[
+            \kappa = G \frac{k}{A} = \frac{1}{R} \frac{l}{A} = \frac{K_{cell}}{R}  
+        \]
+
+        $K_{cell}$可以由某个$\kappa$已知的溶液$\ce{KCl}$ 测其电阻求得。现在多用电导率仪直接测量$\kappa$
+
+        \subsubsection{基本质点的选取}
+
+        摩尔电导率必须对应溶液中含有$1 \mol$电解质，但对电解质基本质点的选取取决于研究需要。在做题的时候必须说明选的基本质点是什么，比如$\varLambda_m (\ce{CuSO4})$ 或者 $\varLambda_m (\ce{2CuSO4})$
+
+        \section{单个离子对电解质溶液的导电能力的贡献}
+
+        \subsection{导电能力的加和性}
+
+        \subsubsection{$G$的加和性}
+
+        $Q = Q_+ + Q_-$ 正负离子相当于并联
+
+        \subsubsection{$\kappa$的加和性}
+
+        \[
+            G = \kappa \frac{A}{l}  
+        \]
+
+        \[
+            \kappa = c\alpha(u_+ + u_-)F  
+        \]
+
+        \[
+            \kappa_+ = c_+ u_+ F  
+        \]
+
+        \[
+            \kappa_- = c_- u_- F  
+        \]
+
+        \subsubsection{$\varLambda_m$的加和性}
+
+        \begin{definition}
+            \[
+                \varLambda_{m, +} = \frac{\kappa_+}{c_+}  
+            \]
+        \end{definition}
+
+        \[
+            \varLambda_m = \frac{\kappa}{c} = \frac{\kappa_+ + \kappa_-}{c}  
+        \]
+
+        \[
+            \varLambda_m = \alpha \varLambda_{m, +} + \alpha \varLambda_{m, -}
+        \]
+
+        \[
+            \varLambda_{m, +} = t_+ \varLambda_{m}  
+        \]
+
+        \[
+            \varLambda_{m, -} = t_- \varLambda_{m}  
+        \]
+
+        \subsubsection{离子的极限摩尔电导率}
+
+        \[
+            \varLambda_m^\infty = \varLambda_{m, +}^\infty + \varLambda_{m, -}^\infty
+        \]
+
+        \paragraph{独立迁移定律} 在无限稀释的溶液中，每种离子独立移动，不受其他离子影响，电解质的无线稀释摩尔电导率可以认为是独立的性质。
+
+        弱电解质的$\varLambda_m^\infty$ 可以直接查表，可以通过测强电解质的$\varLambda_m^\infty$求得：
+
+        \begin{align*}
+            \varLambda_m^\infty{HAc} &= \varLambda_{m, +}^\infty(\ce{H+}) + \varLambda_m^\infty(\ce{Ac-}) \\
+            &= \varLambda_m^\infty{\ce{HCl}} + \varLambda_m^\infty{\ce{NaAc}} - \varLambda_m^\infty{\ce{NaCl}}
+        \end{align*}
+            
 
     \chapter{可逆电池的电动势及其应用}
 
