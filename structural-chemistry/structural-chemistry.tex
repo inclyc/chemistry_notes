@@ -73,5 +73,147 @@
         \Delta y \cdot \Delta p_y \geq h  
     \]
 
+    \section{量子力学的基本假设}
+
+    \subsection{波函数与几率}
+
+    \textit{假设一：微观粒子的运动状态可以用波函数来表示。}
     
+    含时波函数$\psi(x, y, z, t)$，定态波函数$\psi(x, y, z)$。用复值平面波来代表电子的运动状态。
+
+    \[
+        p = |\psi|^2 \times V   
+    \]
+
+    波函数没有物理意义，$|\psi|^2$有物理意义，代表几率密度。在空间内电子的运动规律是其几率密度。
+
+    \subsubsection{波函数的重要性质}
+
+    $c\psi$与$\psi$描述同一状态。波函数前乘以一个系数，描述的状态不发生改变。
+
+    \subsection{力学量与算符}
+
+    算符就是表示运算过程中的符号。$\sqrt{}$ ， $\frac{\mathrm{d}}{\mathrm{d}x}$，$\frac{\partial}{\partial x}$， $\frac{\partial^2}{\partial x^2}$
+
+    \[\hat{F}\psi = F \times \psi \]
+
+    \subsubsection{动量算符}
+    
+    \[\hat{p} = \frac{h}{2 \pi i} \frac{\partial}{\partial x}\]
+
+    \textbf{举例：}
+    
+    设
+    
+    \[\psi = e^{ax}, \hat{F}\psi = \frac{\d \psi}{\d x} \]
+
+    \[
+        \psi(x) = Ae^{\left(\frac{-2\pi i}{\hbar}\right)Et} e^{\frac{i}{\hbar}5x}
+    \]
+
+    \[
+        \hat{p} \psi = 5 \times \psi   
+    \]
+
+    \[
+        p_x = 5  
+    \]
+
+    \subsubsection{动能算符}
+
+    量子力学中，动能和动量的关系依然不变：
+    
+    \[
+        T = \frac{p^2}{2m}  
+    \]
+
+    \begin{align*}
+        \Rightarrow \hat{T}_x \psi &= \frac{p^2}{2m} \psi  \\
+        &= \frac{1}{2m}(p \cdot p \cdot psi) \\ 
+        &= \frac{1}{2m} \left[\hat{p} \left( p \psi \right) \right] \left(
+            \psi ' = p \cdot \psi
+         \right) \\ 
+        &= \frac{1}{2m} \left[ \hat{p} \cdot \left(
+            \hat{p} \psi
+         \right) \right] \\
+        &= \frac{1}{2m} \frac{\d}{\d x} \left( \frac{\d \psi}{\d x} \right) \left( -i \hbar \cdot i \hbar \right) \\
+        &= - \frac{\hbar^2}{2m} \frac{\d ^2}{\d x^2}
+    \end{align*}
+
+    \subsubsection{坐标算符和势能算符}
+
+    \[
+        \hat{x} = x \cdot  
+    \]
+
+    \[
+        \hat{x} \psi = x \cdot \psi  
+    \]
+
+    \[
+        \hat{V} = V \cdot   
+    \]
+
+    \[
+        \hat{V} \psi = V \cdot \psi  
+    \]
+
+
+    \subsubsection{哈密顿算符和总能量}
+
+    \[
+        E_{\mbox{总}} = T + V  
+    \]
+
+    \subsection{本征值和本征方程}
+
+    如果按照算符作用到波函数，所求的动量在常数方向上具有本征值。如果算出来的东西是一个不确定量，那么这个算符就没有本征值。
+
+    \subsection{薛定谔方程（假设三）}
+    
+    \[
+        \hat{H} \psi = E \psi  
+    \]
+
+    \subsubsection{波函数的合格条件}
+
+    \begin{enumerate}
+        \item 单值，保证空间几率密度的唯一化
+        \item 二阶可导，否则方程无解
+        \item 平方可积（归一化）
+    \end{enumerate}
+
+    \[
+        \int \psi^{*} \cdot \psi d\tau = 1  
+    \]
+
+    或
+
+    \[
+        \int \psi^{*} \cdot \psi d\tau = \mathrm{C} 
+    \]
+
+    归一化条件
+
+    \[
+        \psi' = \frac{1}{\sqrt{k}} \cdot \psi  
+    \]
+
+    \subsubsection{平均值（假设四）}
+
+    \[
+        \hat{x} \cdot \psi = x \cdot \psi  
+    \]
+
+    这种函数求不出本征值，可以考虑求平均值
+
+    \[
+        \bar{F} = \frac{\int \psi^* \hat{F} \psi \d \tau}{\int \psi^* \psi \d \tau}
+    \]
+
+    \subsubsection{态叠加原理}
+
+    \[
+        \psi = c_1   
+    \]
 \end{document}
