@@ -7,26 +7,16 @@ jobs:
     steps:
       - name: Check out my files
         uses: actions/checkout@v2
-      - run: ls -la
-      - name: Build organic chemistry notes
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: organic-chemistry/organic-chemistry.tex
-          latexmk_use_xelatex: true
-          work_in_root_file_dir: true
-      - name: Build physical chemistry notes
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: physical-chemistry/physical-chemistry.tex
-          latexmk_use_xelatex: true
-          work_in_root_file_dir: true
-      - name: Build structural chemistry pre-course notes
+      - name: Build chemistry notes
         uses: xu-cheng/latex-action@v2
         with:
           root_file: |
             structural-chemistry/pre-course/pre-course.tex
             structural-chemistry/structural-chemistry.tex
+            physical-chemistry/physical-chemistry.tex
+            organic-chemistry/organic-chemistry.tex
           latexmk_use_xelatex: true
+          latexmk_shell_escape: true
           work_in_root_file_dir: true
       - name: Upload notes
         uses: actions/upload-artifact@v2
