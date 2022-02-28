@@ -252,8 +252,12 @@
         \scriptsize
         \centering
         \schemestart
-        \chemfig{C(=[:90]O)(-[:-150]H_3C)(-[:-30]CH_3)} \arrow{<=>} \chemfig{C(=[:90]\charge{90:1pt=+}{O}H)(-[:-150]H_3C)(-[:-30]CH_3)}m \+ \chemfig{CH_3OH} \arrow{<=>} \chemfig{CH_3-C(-[:90]OH)(-[:-90]OCH_3(-[:-90]H))-CH_3}
+        \chemfig{C(=[:90]@{c1o}\charge{150=\:,30=\:}{O})(-[:-150]H_3C)(-[:-30]CH_3)} \arrow(c1--){0}[45,0.5] \chemfig{@{c1h}H-[@{c1hb}]@{c1b}B} \arrow(@c1--){<=>} \chemfig{C(=[:90]\charge{90:1pt=+}{O}H)(-[:-150]H_3C)(-[:-30]CH_3)} \+ \chemfig{CH_3OH} \arrow{<=>} \chemfig{CH_3-C(-[:90]OH)(-[:-90]OCH_3(-[:-90]H))-CH_3}
         \schemestop
+        \chemmove[]{
+            \draw (c1o) -- (c1b);
+            % \draw (c1hb) .. controls +(-90:5mm) and +(-150:5mm) .. (c1b);
+        }
     \end{figure}
 
     \paragraph{活性}
@@ -287,8 +291,11 @@
         \scriptsize
         \centering
         \schemestart
-        \chemfig{C(-[:120]R)(-[:-120]H_3C)=O} \+ \chemfig{\charge{90=\:}{S}(=[:-90]O)(-[:150]OH)-[:30]ONa} \arrow{<=>} \chemfig{C(-[:135]R)(-[:-135]H_3C)(-[:45]ONa)(-[:-45]SO_3H)} \arrow{<=>} \chemfig{C(-[:135]R)(-[:-135]H_3C)(-[:45]OH)(-[:-45]SO_3Na)}
+        \chemfig{@{c}C(-[:120]R)(-[:-120]H_3C)=O} \+ \chemfig{@{ss}\charge{90=\:}{S}(=[:-90]O)(-[:150]OH)-[:30]ONa} \arrow{<=>} \chemfig{C(-[:135]R)(-[:-135]H_3C)(-[:45]ONa)(-[:-45]SO_3H)} \arrow{<=>} \chemfig{C(-[:135]R)(-[:-135]H_3C)(-[:45]OH)(-[:-45]SO_3Na)}
         \schemestop
+        \chemmove[shorten <= 5pt, shorten >= 5pt]{
+            \draw (ss) .. controls +(90:20mm) and +(60:3mm) .. (c);
+        }
     \end{figure}
 
 
