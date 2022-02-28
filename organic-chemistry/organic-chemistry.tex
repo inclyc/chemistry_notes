@@ -218,6 +218,8 @@
 
     \subsection{醛基的氧化反应}
 
+    解释醛基的氧化还原性质可以通过与$\alpha-\ce{H}$的比较来进行。
+
     \subsection{亲核加成}
 
     \subsubsection{与弱酸的加成}
@@ -232,5 +234,134 @@
         \schemestop
     \end{figure}
 
+    有机玻璃的制备：
 
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{C(-[:135]H_3C)(-[:-135]H_3C)=O} \+ HCN \arrow{->[NaOH]} \chemfig{C(-[:135]H_3C)(-[:-135]H_3C)(-[:45]CN)(-[:135]H_3C)(-[:-45]OH)}
+        \schemestop
+    \end{figure}
+
+    
+    \subsubsection{与$\ce{ROH}$的加成}
+
+
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{C(=[:90]O)(-[:-150]H_3C)(-[:-30]CH_3)} \arrow{<=>} \chemfig{C(=[:90]\charge{90:1pt=+}{O}H)(-[:-150]H_3C)(-[:-30]CH_3)}m \+ \chemfig{CH_3OH} \arrow{<=>} \chemfig{CH_3-C(-[:90]OH)(-[:-90]OCH_3(-[:-90]H))-CH_3}
+        \schemestop
+    \end{figure}
+
+    \paragraph{活性}
+
+    $\ce{H+}$催化，体积效应比较大，醛、环酮的活性高
+
+    \paragraph{二元醇}
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{[:-30]*6(---(=O)---)} \+ \chemfig{CH_2(-[:-90]CH_2-[:0]OH)-OH} \arrow{<=>[$\ce{H+}$]} \chemfig{[:-30]*6(---(-[:45]O-[:0]C?H_2)(-[:-45]O-[:0]C?H_2)---)}
+        \schemestop
+    \end{center}
+
+    
+    \paragraph{应用}
+
+    \begin{enumerate}
+        \item 缩醛或缩酮在碱性条件、氧化条件下是稳定的。
+        \item 在酸性条件下可逆，可以变回原来的醛或者酮。
+    \end{enumerate}
+
+    可以用于保护羰基$\ce{C=O}$官能团
+
+    \subsubsection{与$\ce{NaHSO3}$的反应}
+
+    醛、甲基酮可以与亚硫酸氢钠饱和溶液发生加成反应，生成结晶的$\alpha-$羟基磺酸钠
+
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{C(-[:120]R)(-[:-120]H_3C)=O} \+ \chemfig{\charge{90=\:}{S}(=[:-90]O)(-[:150]OH)-[:30]ONa} \arrow{<=>} \chemfig{C(-[:135]R)(-[:-135]H_3C)(-[:45]ONa)(-[:-45]SO_3H)} \arrow{<=>} \chemfig{C(-[:135]R)(-[:-135]H_3C)(-[:45]OH)(-[:-45]SO_3Na)}
+        \schemestop
+    \end{figure}
+
+
+    \paragraph{活性} 体积反应，醛、环酮、甲基酮反应
+
+    \paragraph{应用} 现象：鉴别，可逆：制备提纯
+
+
+    \subsubsection{与含氮化合物及其衍生物}
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{C(-[:135])(-[:-135])=O} \+ \chemfig{NH_2Y} \arrow{<=>} \chemfig{-[,0.5]C(-[:90]OH)(-[:-90,0.5])-NHY} \arrow{->[-$\ce{H2O}$]} \chemfig{C(-[:135])(-[:-135])=NY} 
+        \schemestop
+    \end{center}
+
+    \paragraph{历程} 先加成，后消除，pH=4~5 催化。不用强酸催化的原因是：如果酸性过强，会导致生成铵盐，失去电子，不反应。
+
+    \paragraph{应用} 用于鉴定醛和酮。
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{*6((-O_2N)-=(-NO_2)-(-NHNH_2)=-=)} \arrow{->[醛、酮]} \chemfig{*6((-O_2N)-=(-NO_2)-(-NHN=[:0]C(-[:-90]R)-H)=-=)}
+        \schemestop
+    \end{center}
+
+    醛、酮的分离、纯化。结晶多为晶形沉淀。加成产物可以在稀酸条件下可以水解成原来的醛或者酮。
+
+
+    \subsubsection{与金属有机化合物$\ce{RMgX}$}
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{C(-[:135])(-[:-135])=O} + RMgX \arrow{<=>} \chemfig{-[,0.5]C(-[:90]OMgX)(-[:-90,0.5])-R} \arrow{->[$\ce{H+}$][$\ce{H2O}$]}  \chemfig{-[,0.5]C(-[:90]OH)(-[:-90,0.5])-R}
+        \schemestop
+    \end{center}
+
+    \paragraph{应用} 制醇
+
+    \subsubsection{与金属邮寄化合物$\ce{RLi}$}
+
+    烷基锂的亲核性极强，而且几乎不受到体积效应的影响。要求反应必须绝对完全无水。
+
+    \subsection{还原反应}
+
+    \subsubsection{催化加氢}
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{C(-[:135])(-[:-135])=O} \arrow{->[$\ce{Ni}$][$\ce{H2}$]} \chemfig{-[,0.5]C(-[:90]H)(-[:0])-OH}
+        \schemestop
+    \end{center}
+
+    \subsubsection{$\ce{NaBH4}$}
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{C(-[:135])(-[:-135])=O} \+ $\ce{H-}$ \arrow{->} \chemfig{-C(-[:-90]H)-\charge{80:2pt=-}{O}} \arrow{->[$\ce{H+}$]} \chemfig{-C(-[:-90]H)-OH}
+        \schemestop
+    \end{center}
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{[:-30]*6(-=-(=O)---)} \arrow{->} \chemfig{[:-30]*6(-=-(-OH)---)}
+        \schemestop
+    \end{center}
+
+    对\chemfig{C=[,0.5]C}，\chemfig{C~[,0.5]C}不反应，可以有选择性地加成。
+
+    
 \end{document}
