@@ -100,17 +100,17 @@
         这样做的好处是，$1 \mol$任何离子所带的电量均为$6.023 \times 10^{23} e$。
 
         \paragraph{电解质的基本单位}
-        电解质$M_{v_+}A_{v_-}$，电离方程式为
+        电解质$M_{\nu_+}A_{\nu_-}$，电离方程式为
         \[
-            M_{v_+}A_{v_-} \ce{->T[电离]} v_+M^{z+} + v_-M^{z-}
+            M_{\nu_+}A_{\nu_-} \ce{->T[电离]} \nu_+M^{z+} + \nu_-M^{z-}
         \]
-        用$n \left( \frac{1}{z_+ v_+} M_{v_+}A_{v_-} \right)$。这样做的好处是
+        用$n \left( \frac{1}{z_+ \nu_+} M_{\nu_+}A_{\nu_-} \right)$。这样做的好处是
 
         \begin{enumerate}
             \item $1 \mol$任何物质全电离均产生$6.023 \times 10^{23} e$的正电荷和负电荷。
             \item 同一溶液中，电解质全电离时，有
             \[
-                n \left( \frac{1}{z_+ v_+} M_{v_+}A_{v_-} \right) = n \left( \frac{1}{z_+} M^{2+} \right) = n  \left( \frac{1}{|z_-|} M^{2+} \right)
+                n \left( \frac{1}{z_+ \nu_+} M_{\nu_+}A_{\nu_-} \right) = n \left( \frac{1}{z_+} M^{2+} \right) = n  \left( \frac{1}{|z_-|} M^{2+} \right)
             \]
         \end{enumerate}
 
@@ -209,7 +209,7 @@
 
         强电解质的在$c$通常与$\varLambda_m$负相关，浓度越低，摩尔电导率越高。在弱电解质中，$\varLambda_m \sim \sqrt{c}$近似双曲线。在稀溶液范围内，$\varLambda_m$对$c$十分敏感。弱电解质必须考虑离子数的影响，在稀溶液低浓度的情况下，弱电解质的电离度越来越大，离子数不断增加，导电性增强。总的而言，在强电解质中，主要考虑的是淌度$u_B$的影响，弱电解质中，还需要考虑电离度$\alpha$的影响。
 
-        $varLambda_m$不是电解质的本性。
+        $\varLambda_m$不是电解质的本性。
 
         \subsubsection{极限摩尔电导率}
 
@@ -271,6 +271,10 @@
             \kappa_- = c_- u_- F  
         \]
 
+        \begin{equation*}
+            A_{m,+} = u_+ F
+        \end{equation*}
+
         \subsubsection{$\varLambda_m$的加和性}
 
         \begin{definition}
@@ -327,7 +331,110 @@
             \bottomrule
         \end{tabular}
     \end{table}
+
+    \subsection{弱电解质电离常数的测定}
+    对于一般的弱电解质，离子间静电引力晓得可以忽略$u_B \approx u_B^{\infty}$，所以
+
+    \[
+        \varLambda_m^{\infty} = (u_+^{\infty} + u_-^\infty)F 
+    \]
+
+    \[
+        \alpha = \frac{\varLambda_m}{\varLambda_m^\infty}        
+    \]
+
+
+    \subsection{难溶盐的溶解度}
+
+    难溶盐的强电解质：
     
+    \[
+        \varLambda_m = \varLambda_m^\infty  
+    \]
+
+    难溶盐本身的电导率很低，这个时候水的电导率就不可忽略。
+
+    \[
+        \kappa_{\mbox{难溶盐}} = \kappa_{\mbox{溶液}} - \kappa_{\ce{H2O}}  
+    \]
+
+    用摩尔电导率的公式即可求得难溶盐饱和溶液的浓度
+
+    \[
+        \varLambda_{m\mbox{难溶盐}} = \frac{\kappa_{\mbox{难溶盐}}}{c} = \frac{\kappa_{\mbox{溶液}} - \kappa_{\ce{H2O}}  }{c}
+    \]
+
+    \subsection{电导滴定}
+
+    \section{电解质的平均活度和平均因子}
+
+    \subsection{电解质的化学势}
+
+    理想溶液某一组分$B$的化学势：
+
+    \[
+        \mu_B = \mu_B^\ominus(T) + RT\ln \frac{m_B}{m^\ominus} 
+    \]
+
+    非理想溶液某一组分的化学势：
+
+    \[
+        \mu_B = \mu_B^\ominus(T) + RT\ln a_{B,m} 
+    \]
+
+    其中
+    
+    \[
+        a_{B,m} = \gamma_{B,m} \frac{m_b}{m^\ominus}    
+    \]
+
+    我们抽象地把阴离子和阳离子分开来看，也就是写出``阳离子化学势''和``阴离子化学势''。
+
+    \[
+        \mu_+ = \mu_+^\ominus(T) + RT\ln a_+ 
+    \]
+
+    \[
+        \mu_- = \mu_-^\ominus(T) + RT\ln a_-  
+    \]
+
+    整体活度与实际存在的离子活度之间的关系：
+
+    \[
+        a_B = a_+^{\nu_+}a_-^{\nu_-}  
+    \]
+
+    \subsection{离子的平均活度和平均活度系数}
+
+    \[
+        a_B = a_+^{\nu_+}a_-^{\nu_-}  
+    \]
+
+    \[
+        a_+ = \gamma_+ \frac{m_+}{m^\ominus}  \qquad a_- = \gamma_-  \frac{m_-}{m^\ominus}  
+    \]
+
+    $\gamma_+$和$\gamma_-$的数量无法测定，但是可以测定两者的平均值。这里的平均值是几何平均值。
+
+    \[
+        a_\pm \overset{\mathrm{def}}{=} (a_+^{\nu_+}a_-^{\nu_-})^\frac{1}{\nu} 
+    \]
+
+    \[
+        \gamma_\pm \overset{\mathrm{def}}{=} (\gamma_+^{\nu_+}\gamma_-^{\nu_-})^\frac{1}{\nu}   
+    \]
+
+    \[
+        m_\pm \overset{\mathrm{def}}{=} (m_+^{\nu_+}m_-^{\nu_-})^\frac{1}{\nu}   
+    \]
+
+    满足关系：
+
+    \[
+        a_\pm = \gamma_\pm \frac{m_\pm}{m^\ominus}
+    \]
+
+    $\gamma_\pm$可以直接由公式计算，也可以由实验测得。
 
     \chapter{可逆电池的电动势及其应用}
 
