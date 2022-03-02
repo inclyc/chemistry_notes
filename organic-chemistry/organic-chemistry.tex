@@ -368,7 +368,92 @@
         \schemestop
     \end{center}
 
-    对\chemfig{C=[,0.5]C}，\chemfig{C~[,0.5]C}不反应，可以有选择性地加成。
+    对\chemfig{C=[,0.5]C}，\chemfig{C~[,0.5]C}不反应，可以有选择性地加成。这一选择性主要是相对Raney Ni而言，这些金属催化加氢的方法会同时将双键还原，而用金属氧化物不会
+
+
+    \subsubsection{Clemmensen 还原 以及 Wolff-Kishner 反应}
+
+    Clemmensen 还原 和 Wolff-Kishner还原的反应条件不一样，反应结果均为将羰基还原为亚甲基。
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{C(-[:135])(-[:-135])=O} \arrow{->[$\ce{Zn, Hg, HCl}$][$\ce{\Delta}$, 回流]}[,1.5] \chemfig{-[,0.4]CH_2-[,0.4]}
+        \schemestop
+    \end{center}
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{C(-[:135])(-[:-135])=O} \arrow{->[$\ce{NH2NH2}$][$\ce{OH-}, \Delta$]}[,1.5] \chemfig{-[,0.4]CH_2-[,0.4]}
+        \schemestop
+    \end{center}
+
+    黄鸣龙对Wolff-Kishner还原反应作出了改进，这个反应也叫黄鸣龙还原法。
+
+
+    \subsubsection{Cannizzaro歧化反应}
+
+    不含有$\alpha - \ce{H}$的醛在浓碱性条件下可以发生分子间的氧化还原反应，一分子的醛被氧化成羧酸，另一分子的醛被还原为醇，该反应称为Cannizzaro反应。
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{H@{a}CHO} \+ \chemfig{@{b}O\charge{60=-}{H}} \arrow{->[][][]} \chemfig{H-C(-[:90]O^{-})(-[:-90]OH)-H} 
+        \schemestop
+
+        \chemmove[]{
+            \draw (b) .. controls +(90:10mm) and +(60:5mm) .. (a); 
+        }
+    \end{center}
+
+    \subsubsection{$\alpha - \ce{H}$反应}
+
+    卤代反应
 
     
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{R-C(=[:90]O)-CH_3} \+ \chemfig{Br_2} \arrow{<=>[$\ce{H+}$ / $\ce{OH-}$]}[,1.5] \chemfig{R-C(=[:90]O)-CH_2Br} \+ \chemfig{HBr}
+        \schemestop
+    \end{center}
+
+    碱催化的条件下难以停留在第一取代阶段，会继续催化。
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{R-C(=[:90]O)-CH_3} \arrow{<=>[$\ce{OH-}$]} \chemfig{R-C(=[:90]O)-C\charge{90=-}{H}_2}  \+ \chemfig{Br_2} \arrow{<=>[]}[,1.5] \chemfig{R-C(=[:90]O)-CH_2Br} + \chemfig{HBr}
+        \schemestop
+    \end{center}
+
+
+    酸催化：
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{R-C(=[:90]O)-CH_3} \arrow{<=>[$\ce{H+}$]} \chemfig{R-C(=[:90]O\charge{60=+}{H})-CH_3}  \+ \chemfig{Br_2} \arrow{<=>[]}[,1.5] \chemfig{R-C(=[:90]O)-CH_2Br} + \chemfig{HBr}
+        \schemestop
+    \end{center}
+    
+
+    可以停留在第一阶段。
+
+    \subsubsection{碘仿反应}
+
+    这个反应生成特殊气味的黄色结晶。
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{R-C(=[:90]\charge{90=\:,180=\:}{O})-CH_3} \arrow{->[$\ce{I2}$]} \chemfig{R-C(=[:90]\charge{90=\:,180=\:}{O})-CI_3} \arrow{<=>[$\ce{OH-}$]} \chemfig{R-C(=[:90]\charge{90=\:,180=\:}{O})-\charge{60=-}{O}} + \chemfig{CHI_3}
+        \schemestop
+    \end{center}
+
+    \subsubsection{羟醛缩合反应}
+
+    羟醛缩合的活性：醛 > 酮，这个反应主要以醛为主，酮比较难反应（体积效应）。羟醛缩合为我们提供了一个比较重要的大量增加碳链的方式
+
 \end{document}
