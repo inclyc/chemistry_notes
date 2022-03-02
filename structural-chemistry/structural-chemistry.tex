@@ -199,7 +199,7 @@
         \psi' = \frac{1}{\sqrt{k}} \cdot \psi  
     \]
 
-    \subsubsection{平均值（假设四）}
+    \subsection{平均值（假设四）}
 
     \[
         \hat{x} \cdot \psi = x \cdot \psi  
@@ -214,6 +214,78 @@
     \subsubsection{态叠加原理}
 
     \[
-        \psi = c_1   
+        \psi = \sum_{i=1}^n c_i \psi_i
     \]
+
+    系数对概率的贡献是平方关系。
+
+
+    \subsubsection{正交性}
+
+    两个状态间不影响，其积分为0。
+
+    \[
+       \int c_ic_j \psi_i \psi_j d\tau = 0
+    \]
+
+    \[
+       A = \frac{\int (c_1 \psi_x + c_2 \psi_y + c_3 \psi_z) \hat{F} (c_1 \psi_x^* + c_2 \psi_y^* + c_3 \psi_z^*)}{k} 
+    \]
+
+    如果$\hat{F}$有本征值，其本征值为$F$，则
+
+    \[
+        A = \frac{\sum\limits_{i=1}^n |c_i|^2 F }{ \sum\limits_{i=1}^n |c_i|^2 } 
+    \] 
+    
+
+    \subsubsection{泡利不相容原理}
+
+    描述多电子体系的完全波函数，交换其中任意两个电子的完全坐标，波函数是反对称的。
+
+    电子必须旋转720度，才能恢复到原来的状态。电子的自旋量子数为$\frac{1}{2}$
+
+
+    \section{一维势箱}
+
+    \subsection{模型特点}
+
+    \[
+        V = \begin{cases}
+            0, & 0 < x < l \\
+            \infty, & x \le 0, x \ge l \\
+        \end{cases} 
+    \]
+
+    考虑$0 < x < l$时，$V=0$，薛定谔方程：
+
+    \[
+        -\frac{\hbar^2}{2m} \frac{\d^2 \psi}{\d x^2} = E \psi
+    \]
+
+    \[
+        \psi(x) = D \sin \frac{\sqrt{2mE}}{\hbar} x   
+    \]
+
+    \[
+        \psi(l) = D \sin \frac{\sqrt{2mE}}{\hbar} l = 0
+    \]
+
+    \[
+        \sin \sqrt{2mE} \frac{l}{h} = 0
+    \]
+
+    \[
+        \sqrt{2mE} \frac{l}{\hbar} = n \pi 
+    \]
+
+    \begin{align*}
+        E &= \frac{n^2\pi^2\hbar^2}{2ml^2} \\
+        &= \frac{n^2h^2}{8ml^2} \qquad (n = 1, 2, 3, \dots)
+    \end{align*}
+
+    \begin{align*}
+        \psi (x) &= D \cdot \sin \sqrt{\frac{2mn^2h^2}{8ml^2} } \cdot \frac{2\pi}{h} x \\
+        &= D \cdot \sin \frac{n\pi}{l} x
+    \end{align*}
 \end{document}
