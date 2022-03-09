@@ -1,0 +1,256 @@
+    
+    \section{化学性质}
+    
+    \subsection{$\alpha-\ce{H}$键}
+    \scriptsize \chemfig{-C(-[:90])(-[:-90]H)-C=O} \normalsize 由于双键的氧加强了$\alpha-\ce{H}$上的碳氢键的极性。醛酮可以在$\alpha-\ce{H}$ 异裂后产生阴离子，可以发生缩合反应和异裂取代反应。
+
+    \subsection{醛基的氧化反应}
+
+    解释醛基的氧化还原性质可以通过与$\alpha-\ce{H}$的比较来进行。
+
+    \subsection{亲核加成}
+
+    \subsubsection{与弱酸的加成}
+
+    与HCN，得到重要的合成材料$\alpha-$羟基腈
+
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{C(-[:-135])(-[:135])=O} \+ HCN \arrow \chemfig{-C(-[:90]OH)(-[:-90])-CN} 
+        \schemestop
+    \end{figure}
+
+    有机玻璃的制备：
+
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{C(-[:135]H_3C)(-[:-135]H_3C)=O} \+ HCN \arrow{->[NaOH]} \chemfig{C(-[:135]H_3C)(-[:-135]H_3C)(-[:45]CN)(-[:135]H_3C)(-[:-45]OH)}
+        \schemestop
+    \end{figure}
+
+    
+    \subsubsection{与$\ce{ROH}$的加成}
+
+
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{C(=[:90]@{c1o}\charge{150=\:,30=\:}{O})(-[:-150]H_3C)(-[:-30]CH_3)} \arrow(c1--){0}[45,0.5] \chemfig{@{c1h}H-[@{c1hb}]@{c1b}B} \arrow(@c1--){<=>} \chemfig{C(=[:90]\charge{90:1pt=+}{O}H)(-[:-150]H_3C)(-[:-30]CH_3)} \+ \chemfig{CH_3OH} \arrow{<=>} \chemfig{CH_3-C(-[:90]OH)(-[:-90]OCH_3(-[:-90]H))-CH_3}
+        \schemestop
+        \chemmove[]{
+            \draw (c1o) -- (c1b);
+            % \draw (c1hb) .. controls +(-90:5mm) and +(-150:5mm) .. (c1b);
+        }
+    \end{figure}
+
+    \paragraph{活性}
+
+    $\ce{H+}$催化，体积效应比较大，醛、环酮的活性高
+
+    \paragraph{二元醇}
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{[:-30]*6(---(=O)---)} \+ \chemfig{CH_2(-[:-90]CH_2-[:0]OH)-OH} \arrow{<=>[$\ce{H+}$]} \chemfig{[:-30]*6(---(-[:45]O-[:0]C?H_2)(-[:-45]O-[:0]C?H_2)---)}
+        \schemestop
+    \end{center}
+
+    
+    \paragraph{应用}
+
+    \begin{enumerate}
+        \item 缩醛或缩酮在碱性条件、氧化条件下是稳定的。
+        \item 在酸性条件下可逆，可以变回原来的醛或者酮。
+    \end{enumerate}
+
+    可以用于保护羰基$\ce{C=O}$官能团
+
+    \subsubsection{与$\ce{NaHSO3}$的反应}
+
+    醛、甲基酮可以与亚硫酸氢钠饱和溶液发生加成反应，生成结晶的$\alpha-$羟基磺酸钠
+
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \schemestart
+        \chemfig{@{c}C(-[:120]R)(-[:-120]H_3C)=O} \+ \chemfig{@{ss}\charge{90=\:}{S}(=[:-90]O)(-[:150]OH)-[:30]ONa} \arrow{<=>} \chemfig{C(-[:135]R)(-[:-135]H_3C)(-[:45]ONa)(-[:-45]SO_3H)} \arrow{<=>} \chemfig{C(-[:135]R)(-[:-135]H_3C)(-[:45]OH)(-[:-45]SO_3Na)}
+        \schemestop
+        \chemmove[shorten <= 5pt, shorten >= 5pt]{
+            \draw (ss) .. controls +(90:20mm) and +(60:3mm) .. (c);
+        }
+    \end{figure}
+
+
+    \paragraph{活性} 体积反应，醛、环酮、甲基酮反应
+
+    \paragraph{应用} 现象：鉴别，可逆：制备提纯
+
+
+    \subsubsection{与含氮化合物及其衍生物}
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{C(-[:135])(-[:-135])=O} \+ \chemfig{NH_2Y} \arrow{<=>} \chemfig{-[,0.5]C(-[:90]OH)(-[:-90,0.5])-NHY} \arrow{->[-$\ce{H2O}$]} \chemfig{C(-[:135])(-[:-135])=NY} 
+        \schemestop
+    \end{center}
+
+    \paragraph{历程} 先加成，后消除，pH=4~5 催化。不用强酸催化的原因是：如果酸性过强，会导致生成铵盐，失去电子，不反应。
+
+    \paragraph{应用} 用于鉴定醛和酮。
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{*6((-O_2N)-=(-NO_2)-(-NHNH_2)=-=)} \arrow{->[醛、酮]} \chemfig{*6((-O_2N)-=(-NO_2)-(-NHN=[:0]C(-[:-90]R)-H)=-=)}
+        \schemestop
+    \end{center}
+
+    醛、酮的分离、纯化。结晶多为晶形沉淀。加成产物可以在稀酸条件下可以水解成原来的醛或者酮。
+
+
+    \subsubsection{与金属有机化合物$\ce{RMgX}$}
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{C(-[:135])(-[:-135])=O} + RMgX \arrow{<=>} \chemfig{-[,0.5]C(-[:90]OMgX)(-[:-90,0.5])-R} \arrow{->[$\ce{H+}$][$\ce{H2O}$]}  \chemfig{-[,0.5]C(-[:90]OH)(-[:-90,0.5])-R}
+        \schemestop
+    \end{center}
+
+    \paragraph{应用} 制醇
+
+    \subsubsection{与金属邮寄化合物$\ce{RLi}$}
+
+    烷基锂的亲核性极强，而且几乎不受到体积效应的影响。要求反应必须绝对完全无水。
+
+    \subsection{还原反应}
+
+    \subsubsection{催化加氢}
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{C(-[:135])(-[:-135])=O} \arrow{->[$\ce{Ni}$][$\ce{H2}$]} \chemfig{-[,0.5]C(-[:90]H)(-[:0])-OH}
+        \schemestop
+    \end{center}
+
+    \subsubsection{$\ce{NaBH4}$}
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{C(-[:135])(-[:-135])=O} \+ $\ce{H-}$ \arrow{->} \chemfig{-C(-[:-90]H)-\charge{80:2pt=-}{O}} \arrow{->[$\ce{H+}$]} \chemfig{-C(-[:-90]H)-OH}
+        \schemestop
+    \end{center}
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{[:-30]*6(-=-(=O)---)} \arrow{->} \chemfig{[:-30]*6(-=-(-OH)---)}
+        \schemestop
+    \end{center}
+
+    对\chemfig{C=[,0.5]C}，\chemfig{C~[,0.5]C}不反应，可以有选择性地加成。这一选择性主要是相对Raney Ni而言，这些金属催化加氢的方法会同时将双键还原，而用金属氧化物不会
+
+
+    \subsubsection{Clemmensen 还原 以及 Wolff-Kishner 反应}
+
+    Clemmensen 还原 和 Wolff-Kishner还原的反应条件不一样，反应结果均为将羰基还原为亚甲基。
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{C(-[:135])(-[:-135])=O} \arrow{->[$\ce{Zn, Hg, HCl}$][$\ce{\Delta}$, 回流]}[,1.5] \chemfig{-[,0.4]CH_2-[,0.4]}
+        \schemestop
+    \end{center}
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{C(-[:135])(-[:-135])=O} \arrow{->[$\ce{NH2NH2}$][$\ce{OH-}, \Delta$]}[,1.5] \chemfig{-[,0.4]CH_2-[,0.4]}
+        \schemestop
+    \end{center}
+
+    黄鸣龙对Wolff-Kishner还原反应作出了改进，这个反应也叫黄鸣龙还原法。
+
+
+    \subsubsection{Cannizzaro歧化反应}
+
+    不含有$\alpha - \ce{H}$的醛在浓碱性条件下可以发生分子间的氧化还原反应，一分子的醛被氧化成羧酸，另一分子的醛被还原为醇，该反应称为Cannizzaro反应。
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{H@{a}CHO} \+ \chemfig{@{b}O\charge{60=-}{H}} \arrow{->[][][]} \chemfig{H-C(-[:90]O^{-})(-[:-90]OH)-H} 
+        \schemestop
+
+        \chemmove[]{
+            \draw (b) .. controls +(90:10mm) and +(60:5mm) .. (a); 
+        }
+    \end{center}
+
+    \subsubsection{$\alpha - \ce{H}$反应}
+
+    卤代反应
+
+    
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{R-C(=[:90]O)-CH_3} \+ \chemfig{Br_2} \arrow{<=>[$\ce{H+}$ / $\ce{OH-}$]}[,1.5] \chemfig{R-C(=[:90]O)-CH_2Br} \+ \chemfig{HBr}
+        \schemestop
+    \end{center}
+
+    碱催化的条件下难以停留在第一取代阶段，会继续催化。
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{R-C(=[:90]O)-CH_3} \arrow{<=>[$\ce{OH-}$]} \chemfig{R-C(=[:90]O)-C\charge{90=-}{H}_2}  \+ \chemfig{Br_2} \arrow{<=>[]}[,1.5] \chemfig{R-C(=[:90]O)-CH_2Br} + \chemfig{HBr}
+        \schemestop
+    \end{center}
+
+
+    酸催化：
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{R-C(=[:90]O)-CH_3} \arrow{<=>[$\ce{H+}$]} \chemfig{R-C(=[:90]O\charge{60=+}{H})-CH_3}  \+ \chemfig{Br_2} \arrow{<=>[]}[,1.5] \chemfig{R-C(=[:90]O)-CH_2Br} + \chemfig{HBr}
+        \schemestop
+    \end{center}
+    
+
+    可以停留在第一阶段。
+
+    \subsubsection{碘仿反应}
+
+    这个反应生成特殊气味的黄色结晶。
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{R-C(=[:90]\charge{90=\:,180=\:}{O})-CH_3} \arrow{->[$\ce{I2}$]} \chemfig{R-C(=[:90]\charge{90=\:,180=\:}{O})-CI_3} \arrow{<=>[$\ce{OH-}$]} \chemfig{R-C(=[:90]\charge{90=\:,180=\:}{O})-\charge{60=-}{O}} + \chemfig{CHI_3}
+        \schemestop
+    \end{center}
+
+    \subsubsection{羟醛缩合反应}
+
+    羟醛缩合的活性：醛 > 酮，这个反应主要以醛为主，酮比较难反应（体积效应）。羟醛缩合为我们提供了一个比较重要的大量增加碳链的方式
+
+    \subsection{氧化反应}
+
+    \begin{itemize}
+        \item  Tollen试剂，硝酸银的氨溶液。这个反应条件比较苛刻，不易成功。
+        \item  Fehling试剂 硫酸铜与酒石酸钾钠的氢氧化钠溶液。这种试剂只能氧化脂肪醛、不能氧化芳香醛
+    \end{itemize}
+
+    酮一般很难被氧化，但酮可以与过氧酸发生Bayer-Villiger反应，生成插氧产物（酯）。
+
+    原理上需要先生成互变异构，再氧化烯醇式双键。

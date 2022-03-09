@@ -1,0 +1,147 @@
+\chapter{酚}
+\section{概述}
+酚（phenols, $\ce{Ar-OH}$）
+羟基直接与苯环\textit{$sp^2$}碳原子相连接的化合物称为酚，苯酚（\scalebox{0.6}[0.6]{\chemfig{OH-[:180,,1]=_[:240]-[:180]=_[:120]-[:60]=_(-[:300])}}）最为常见，另外还有萘酚等。
+
+\subsection{分类}
+\begin{enumerate}
+    \item 芳环类型
+    \item $\ce{-OH}$的个数
+\end{enumerate}
+\subsection{命名}
+不考，没啥用，知道大概啥顺序就行
+
+\section{物理性质}
+\begin{enumerate}
+    \item 形成分子间氢键，沸点较高
+    \item 对称性较好，熔点较高，常温下是固体
+    \item 水溶性 苯酚在冷水中微溶，加热时可以无限溶解 \par
+    与醇相比，苯酚和水形成氢键的能力比较差。（$sp^3$和$sp^2$）\footnote{$sp^3$杂化距离更远，跟适合形成氢键。酚只有一对$sp^2$电子，比醇还少一对}
+    \item 酚本身无色，容易被空气中的氧气氧化而略呈红色或褐色
+    \item 有毒
+\end{enumerate}
+
+\section{化学性质}
+\subsection{$\ce{C-O}$ 键}
+不容易断。酚具有一定的离域，具有一定的双键性质。
+
+\subsection{$\ce{O-H}$ 键}
+\begin{enumerate}
+    \item 酸性
+    \item 含有未成对的电子---碱性、亲核性
+    \item 配位性，可以和铁发生显色反应
+\end{enumerate}
+
+\subsection{苯环}
+\begin{enumerate}
+    \item 亲电取代，$\ce{-OH}$是邻对位定位基，可以使苯环活化
+    \item 氧化（复杂，机理不甚明确）
+\end{enumerate}
+
+\subsection{酚的酸性}
+
+\subsubsection{不同类}
+$\ce{H2CO3} > \ce{Ph-OH} > \ce{H2O} > \ce{ROH}$
+
+若芳香基团上有吸电子基团，则酚酸性增强
+
+\subsubsection{同类}
+
+\begin{enumerate}
+    \item 吸电子基 酸性增加 \par
+    \begin{figure}[H]
+        \scriptsize
+        \centering
+        \chemfig{*6(=-=-(-OH)=-)} < \chemfig{*6(=-(-NO_2)=-(-OH)=-)} < \chemfig{*6(=(-NO_2)-=-(-OH)=-)}
+    \end{figure}
+    \item 供电子基 酸性降低 \par
+    \begin{figure}[H]   
+        \scriptsize
+        \centering
+        \chemfig{*6(=-=-(-OH)=-)} < \chemfig{*6(=-(-CH_3)=-(-OH)=-)} < \chemfig{*6(=(-CH_3)-=-(-OH)=-)}
+    \end{figure}
+    \item 卤素 吸电子，酸性增加
+\end{enumerate}
+
+\subsection{显色反应}
+可以与铁形成紫色复合物
+
+$\ce{6C6H6OH + FeCl3 -> H_3[Fe(OC6H5)] + 3HCl}$
+
+\subsection{亲核性}
+
+亲核性 只和易发生亲核反应的物质反应
+
+如 
+\begin{figure}[H]
+    \scriptsize
+    \centering
+    \schemestart
+    \chemfig{R-C(=[:90]O)-Cl} \+ \chemfig{*6(-=-=(-OH)-=)} \arrow
+    \schemestop
+\end{figure}
+
+\subsection{亲电取代}
+
+\subsubsection{卤代反应}
+
+\begin{figure}[H]
+    \scriptsize
+    \centering
+    \schemestart
+    \chemfig{*6(-=-=(-OH)-=)}  \+ $\ce{Br2}$ \arrow \chemfig{*6(-(-Br)=-(-Br)=(-OH)-(-Br)=)}
+    \schemestop
+\end{figure}
+原因：水中存在 \scriptsize\chemfig{*6(-=-=(-{O^{-}})-=)}\normalsize，要想控制反应进度，可以在有机溶剂中进行：
+
+\begin{figure}[H]
+    \scriptsize
+    \centering
+    \schemestart
+    \chemfig{*6(-=-=(-OH)-=)} \arrow{->[$\ce{Br}$][$\ce{CS2}, 0^\circ \mathrm{C}$]} \chemfig{*6(-(-Br)=-=(-OH)-=)} + \chemfig{*6(-=-(-Br)=(-OH)-=)}
+    \schemestop
+\end{figure}
+
+\subsubsection{磺化反应}
+
+\begin{figure}[H]
+    \scriptsize
+    \centering
+    \schemestart
+    \chemfig{*6(-=-=(-OH)-=)} \+ $\ce{H2SO4}$ \arrow \chemfig{*6(-=-(-SO_3)=(-OH)-=)} \+ \chemfig{*6(-(-SO_3)=-=(-OH)-=)}
+    \schemestop
+\end{figure}
+\subsubsection{硝化反应}
+
+一般来讲不要直接硝化，不然产率会很低
+
+\begin{figure}[H]
+    \scriptsize
+    \centering
+    \schemestart
+    \chemfig{*6(-=-=(-OH)-=)} \arrow{->[$\ce{NaNO2}$][$\ce{H+}$]} \chemfig{*6(-(-NO)=-=(-OH)-=)} \arrow{->[$\ce{HNO3}$]} \chemfig{*6(-(-NO_2)=-=(-OH)-=)}
+    \schemestop
+\end{figure}
+
+\subsubsection{傅氏反应}
+
+\begin{figure}[H]
+    \scriptsize
+    \centering
+    \schemestart
+    \chemfig{*6(-=-=(-OH)-=)} \+ $\ce{RCl}$ \arrow{->[HF]} \chemfig{*6(-(-R)=-=(-OH)-=)}
+    \schemestop
+\end{figure}
+
+\subsubsection{氧化反应}
+
+\begin{figure}[H]
+    \scriptsize
+    \centering
+    \schemestart
+    \chemfig{*6(-=-=-=)} \arrow{->[$\mbox{[O]}$]} \chemfig{*6(-(=O)-=-(=O)-=)}
+    \schemestop
+\end{figure}
+
+\subsection{酚的制法（了解）}
+
