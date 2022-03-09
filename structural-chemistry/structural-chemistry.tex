@@ -294,4 +294,118 @@
     \[
         \Delta E = E_{n + 1} - E_n = \frac{(2n + 1)h^2}{8ml^2}  
     \]
+
+    \section{单电子体系（类氢原子）波函数求解}
+
+
+
+    \[
+        \left[ \frac{1}{r^2} \frac{\partial}{\partial r} \left( r ^2 \frac{\partial}{\partial r} \right) + \frac{1}{r^2 \sin \theta} \frac{\partial}{\partial \theta} \sin \theta \frac{\partial}{\partial \theta} + \frac{1}{r^2 \sin ^2 \theta} \frac{\partial^2}{\partial \phi^2} \right]   \psi (r, \theta, \phi) + \frac{2m}{\hbar}\left[ E + \frac{Ze^2}{4\pi \epsilon_0 r }  \right] \psi(r, \theta, \phi) = 0
+    \]
+
+    分离变量
+
+    \[
+       \psi = R(r) \cdot Y(\theta, \phi)  
+    \]
+
+    \[
+        \frac{Y}{r^2} \frac{\partial}{\partial r} \left( r^2 \frac{\partial R}{\partial r } \right) + \frac{R}{r^2 \sin \theta} \frac{\partial }{\partial \theta} \left(\sin \theta \frac{\partial Y}{\partial \theta} \right) + \frac{R}{r^2 \sin ^2 \theta} \frac{\partial^2 Y}{\partial \phi^2} + \frac{2m}{\hbar}\left[ E + \frac{Ze^2}{4\pi \epsilon_0 r }  \right] RY = 0
+    \]
+
+    两边同时乘以 $\frac{r^2}{R \cdot Y}$
+
+    \[
+        \frac{1}{R} \frac{\partial}{\partial r} \left( r^2 \frac{\partial R}{\partial r} \right) + \frac{1}{Y \sin \theta} \frac{\partial }{\partial \theta} \left( \sin \theta \frac{\partial Y}{\partial \theta} \right) + \frac{1}{Y \sin ^2 \theta} \frac{\partial ^2 Y}{\partial \phi ^2} + \frac{2m}{\hbar}\left[ E + \frac{Ze^2}{4\pi \epsilon_0 r }  \right] r^2 = 0 
+    \]
+
+    现在整个方程就可以分为一个和角度有关，一个和长度有关。我们可以把与角度、长度有关的量分别提出来。
+
+    \[
+        \frac{1}{R} \frac{\partial}{\partial r} \left( r^2 \frac{\partial R}{\partial r} \right) + \frac{2m}{\hbar}\left[ E + \frac{Ze^2}{4\pi \epsilon_0 r }  \right] r^2 = k
+    \]
+
+    \[
+        \frac{1}{Y \sin \theta} \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial Y}{\partial \theta} \right) + \frac{1}{Y \sin ^2 \theta} \frac{\partial ^2 Y}{\partial \phi ^2} = -k 
+    \]
+
+    先看下面这个方程，我们需要继续分离两个角度，也就是$\theta$和$\phi$
+
+    \[
+        Y = \Theta(\theta) \cdot \Phi(\phi)  
+    \]
+
+    \[
+        - \frac{1}{\Theta \Phi} \left[ \frac{\Phi}{ \sin \theta} \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial \Theta}{\partial \theta} \right) + \frac{\Theta}{ \sin ^2 \theta} \frac{\partial ^2 \Phi}{\partial \phi ^2} \right] = k
+    \]
+
+    \[
+        - \frac{1}{\Theta} \frac{1}{ \sin \theta} \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial \Theta}{\partial \theta} \right) - \frac{1}{ \sin ^2 \theta \Phi} \frac{\partial ^2 \Phi}{\partial \phi ^2} = k
+    \]
+
+    为了让两边一个只有$\theta$，一个只有$\phi$，同时乘以$\sin ^2   \theta$
+
+    \[
+        - \frac{1}{\Theta}  \sin \theta \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial \Theta}{\partial \theta} \right) - \frac{1}{\Phi} \frac{\partial ^2 \Phi}{\partial \phi ^2} = k \sin ^2 \theta
+    \]
+
+    移项
+
+    \[
+        -\frac{1}{\Phi} \frac{\partial ^2 \Phi}{\partial \phi ^2} = k \sin ^2 \theta  + \frac{\sin \theta}{\Theta}   \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial \Theta}{\partial \theta} \right)
+    \]
+
+    两边必须同时等于一个常数 
+
+    \[
+         - \frac{1}{\Phi} \frac{\partial ^2 \Phi}{\partial \phi ^2} = m^2
+    \]
+
+    这个方程也就是 $\Phi$ 方程
+
+    \[
+        \frac{\partial ^2 \Phi}{\partial \phi ^2} + m^2 \Phi  = 0
+    \]
+
+    显然，设$\Phi = A e^{a \phi}$ 
+
+    \[
+        a^2 e^{a \phi} + m^2 e^{a \phi} = 0
+    \]
+
+    \[
+        a = \pm im  
+    \]
+
+    \[
+        \Phi = \begin{cases}
+            Ae^{im\phi} & = A( \cos im\phi + i \sin im \phi)  \\
+            Ae^{-im\phi} & =  A( \cos im\phi - i \sin im \phi) \\
+        \end{cases}  
+    \]
+
+    归一化条件:
+
+
+    \[
+        \int_0^{2\pi} A^2 d\phi = 1 
+    \] 
+
+    \[
+        A = \frac{1}{\sqrt{2\pi}}  
+    \]
+    
+    \[
+        \Phi = \frac{1}{\sqrt{2\pi}} e ^{im\phi}  
+    \]
+
+    \[
+        e^{im\phi} = e^{im\phi} \cdot e^{im2\pi}  
+    \]
+    
+    \[
+        e^{im 2\pi} = 1  \qquad \mbox{m只能取整数} m \in Z
+    \]
+
+    
 \end{document}
