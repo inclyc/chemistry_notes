@@ -2,7 +2,6 @@
 \section{单电子体系（类氢原子）波函数求解}
 
 
-
 \[
     \left[ \frac{1}{r^2} \frac{\partial}{\partial r} \left( r ^2 \frac{\partial}{\partial r} \right) + \frac{1}{r^2 \sin \theta} \frac{\partial}{\partial \theta} \sin \theta \frac{\partial}{\partial \theta} + \frac{1}{r^2 \sin ^2 \theta} \frac{\partial^2}{\partial \phi^2} \right]   \psi (r, \theta, \phi) + \frac{2m}{\hbar}\left[ E + \frac{Ze^2}{4\pi \epsilon_0 r }  \right] \psi(r, \theta, \phi) = 0
 \]
@@ -65,7 +64,7 @@
      - \frac{1}{\Phi} \frac{\partial ^2 \Phi}{\partial \phi ^2} = m^2
 \]
 
-这个方程也就是 $\Phi$ 方程
+\subsection{$\Phi$ 方程}
 
 \[
     \frac{\partial ^2 \Phi}{\partial \phi ^2} + m^2 \Phi  = 0
@@ -110,3 +109,50 @@
 \[
     e^{im 2\pi} = 1  \qquad \mbox{m只能取整数} m \in Z
 \]
+
+
+\subsubsection{实数化$\Phi$方程}
+
+\begin{equation*}
+    \Phi = \begin{cases}
+        \frac{1}{\sqrt{\pi}} \cos(im\phi) \\
+        \frac{1}{\sqrt{\pi}} \sin(im\phi) \\
+    \end{cases}
+\end{equation*}
+
+
+\subsection{$\Theta$方程}
+
+\begin{equation*}
+    k \sin ^2 \theta  + \frac{\sin \theta}{\Theta}   \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial \Theta}{\partial \theta} \right)
+\end{equation*}
+
+求解过程略过。需要掌握取值范围
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ll}
+        \toprule
+        l & m \\
+        \midrule
+        0 & 0 \\
+        1 & 0, $\pm$1 \\ 
+        2 & 0, $\pm 1$ , $\pm 2$ \\ 
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\subsection{$R(r)$方程的解}
+
+数学上$R$方程为联属拉盖尔方程，解的过程略。
+
+\begin{equation*}
+    E_n = - \frac{me^4}{8 \pi \epsilon_0^2 h^2}  \cdot \frac{Z^2}{n^2} \quad Z \in \mathbf{N} ^{*}
+\end{equation*}
+
+\subsection{$n,l,m$的合理取值}
+
+\begin{equation*}
+    l < n \qquad \left\lvert m \right\rvert \le l
+\end{equation*}
