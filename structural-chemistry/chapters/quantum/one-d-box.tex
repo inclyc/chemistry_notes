@@ -1,0 +1,50 @@
+
+
+\section{一维势箱}
+
+\subsection{模型特点}
+
+\[
+    V = \begin{cases}
+        0, & 0 < x < l \\
+        \infty, & x \le 0, x \ge l \\
+    \end{cases} 
+\]
+
+考虑$0 < x < l$时，$V=0$，薛定谔方程：
+
+\[
+    -\frac{\hbar^2}{2m} \frac{\d^2 \psi}{\d x^2} = E \psi
+\]
+
+\[
+    \psi(x) = D \sin \frac{\sqrt{2mE}}{\hbar} x   
+\]
+
+\[
+    \psi(l) = D \sin \frac{\sqrt{2mE}}{\hbar} l = 0
+\]
+
+\[
+    \sin \sqrt{2mE} \frac{l}{h} = 0
+\]
+
+\[
+    \sqrt{2mE} \frac{l}{\hbar} = n \pi 
+\]
+
+\begin{align*}
+    E &= \frac{n^2\pi^2\hbar^2}{2ml^2} \\
+    &= \frac{n^2h^2}{8ml^2} \qquad (n = 1, 2, 3, \dots)
+\end{align*}
+
+\begin{align*}
+    \psi (x) &= D \cdot \sin \sqrt{\frac{2mn^2h^2}{8ml^2} } \cdot \frac{2\pi}{h} x \\
+    &= D \cdot \sin \frac{n\pi}{l} x
+\end{align*}
+
+\subsection{能量的量子化}
+
+\[
+    \Delta E = E_{n + 1} - E_n = \frac{(2n + 1)h^2}{8ml^2}  
+\]
