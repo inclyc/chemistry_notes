@@ -1,7 +1,13 @@
 
     \section{不饱和的醛或者酮}
 
-    不饱和羰基化合物，就是分子中除了羰基外，还含有不饱和键的化合物。
+    不饱和羰基化合物，就是分子中除了羰基外，还含有不饱和键的化合物。一般来说是指$\alpha, \beta$不饱和醛酮，这些化合物具有共轭的性质。最简单的$\alpha, \beta$ 不饱和醛酮是丁烯酮。
+
+    \begin{center}
+        \schemestart
+        \chemname{\chemfig{=[:-30]-[:30](=[:90]O)-[:-30]}}{丁烯酮}
+        \schemestop
+    \end{center}
 
     \subsection{$\alpha, \beta$ 不饱和醛酮}
 
@@ -22,6 +28,20 @@
     \subsubsection{亲电加成 $\ce{HBr}$}
 
     这种加成有两种进攻方法，分别导致1, 2加成和1, 4加成。但是这两种加成的结果是一样的，都相当于碳碳双键的加成。$\ce{H+}$ 会进攻$\alpha$-C，$\ce{Br}$最终和$\beta-$C相连。
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{=[:-30]-[:30](=[:90]O)-[:-30]} \arrow{->[HBr][1, 2加成]}[,1.2] \chemfig{Br-[:30]-[:-30]-[:30](=[:90]O)-[:-30]}
+        \schemestop
+    \end{center}
+
+    \begin{center}
+        \scriptsize
+        \schemestart
+        \chemfig{=[:-30]-[:30](=[:90]O)-[:-30]} \arrow{->[HBr][1, 4加成]}[,1.2] \chemfig{Br-[:30]-[:-30]=[:30](-[:90]OH)-[:-30]} \arrow{<=>[互变异构]}[,1.5] \chemfig{Br-[:30]-[:-30]-[:30](=[:90]O)-[:-30]}
+        \schemestop
+    \end{center}
 
     \subsubsection{亲核加成 $\ce{HCN}$}
 
