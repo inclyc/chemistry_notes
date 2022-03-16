@@ -1,0 +1,106 @@
+\section{利用电动势计算难求的其他物理量}
+
+\begin{equation*}
+    \Delta G = -z EF
+\end{equation*}
+
+\begin{equation*}
+    K^\ominus = \exp \left( \frac{zEF}{RT}  \right)
+\end{equation*}
+
+可利用电化学的方法求 $K^\ominus_{sp}$，$K^\ominus_w$
+
+\subsection{求$K^\ominus_{sp}$}
+
+设计电池，使电池反应为
+
+\begin{reaction*}
+    AgCl(s) -> Ag\pch (a_{Ag\pch}) + Cl\mch (a_{Cl\mch})
+\end{reaction*}
+
+
+\begin{equation*}
+    E^\ominus = \phi^\ominus_{\ce{Cl-} | \ce{AgCl} | \ce{Ag}} - \phi^\ominus_{\ce{Ag+} | \ce{Ag}}
+\end{equation*}
+
+\begin{equation*}
+    K^\ominus_{sp} = \exp \left( \frac{zE^\ominus F}{RT} \right)    
+\end{equation*}
+
+
+\subsection{求$\Delta_r S_m$}
+
+\begin{equation*}
+    \Delta_r S_m = zF \left( \frac{\partial E}{\partial p}  \right)_p 
+\end{equation*}
+
+$\left( \frac{\partial E}{\partial p}  \right)_p $ 称为温度系数，可以通过测量一系列$E$，$T$的关系来求得。
+
+\subsection{求$\Delta_r H_m$}
+
+\begin{equation*}
+    \Delta_r H_m = -zFE + zFT \left(  \frac{\partial E}{\partial T} \right)_p 
+\end{equation*}
+
+\subsubsection{测量方法}
+
+需要测量$E$和$\left(  \frac{\partial E}{\partial T} \right)_p $
+
+\subsubsection{优势}
+
+电动势法测量与量热法比较，精度高。
+
+\subsubsection{热效应}
+
+
+等温情况下，可逆反应的热效应为
+
+\begin{equation*}
+    Q_R = T \Delta_r S_m = zFT \left(  \frac{\partial E}{\partial T} \right)_p
+\end{equation*}
+
+\subsection{求电解质溶液的平均活度因子}
+
+\subsubsection{已知标准电极电势}
+
+例子：
+
+\begin{reaction*}
+    Pt | H2 "($p^\ominus$)" | HCl (m) | AgCl(s) | Ag(s)
+\end{reaction*}
+
+\begin{reaction*}
+    1/2 H2 + AgCl -> Ag + {Cl\mch} ( $a_{\ce{Cl-}}$ ) + H\pch ( $a_{\ce{H+}}$ )
+\end{reaction*}
+
+
+电动势计算公式
+
+\begin{equation*}
+    E = \left( \phi^\ominus_{\ce{Cl-} | \ce{AgCl} | \ce{Ag+}}   - \phi^\ominus_{\ce{H+} | \ce{H2}} \right)  - \frac{RT}{F} \ln a_{\ce{H+}} a_{\ce{Cl-}}
+\end{equation*}
+
+\begin{equation*}
+    a_{\ce{H+}} a_{\ce{Cl-}}= \left(\gamma_\pm  \frac{m_{\ce{HCl} }}{m^\ominus} \right)^2
+\end{equation*}
+
+\begin{equation*}
+    E = \phi^\ominus_{\ce{Cl-} | \ce{AgCl} | \ce{Ag+}} - \frac{2RT}{F} \ln \frac{m_{\ce{HCl}}}{m^\ominus} - \frac{2RT}{F} \ln \gamma_\pm
+\end{equation*}
+
+从电极电势表查到$\phi^\ominus_{\ce{Cl-} | \ce{AgCl} | \ce{Ag+}}$的值和测得不同浓度$\ce{HCl}$溶液的电动势$E$，就可以求出不同浓度的$\gamma_\pm$值。如果平均活度因子可以根据Debye-Hückel公式计算，则可以求得$\phi^\ominus_{\ce{Cl-} | \ce{AgCl} | \ce{Ag+}}$的值。
+
+\subsubsection{未知电动势}
+
+对于$1 - 1$型电解质，有$I = m_B, z_+ = \| z_- \| = 1$，则 Debye-Hückel 公式为
+
+\begin{equation*}
+    \ln \gamma_\pm = - A' \left\lvert z_+ z_- \right\rvert \sqrt{I} = -A' \sqrt{m_B}
+\end{equation*}
+
+
+\begin{equation*}
+    \phi^\ominus_{\ce{Cl-} | \ce{AgCl} | \ce{Ag+}} = E + \frac{2RT}{F} \ln \frac{m_{\ce{HCl}}}{m^\ominus} - \frac{2RTA'}{F} \sqrt{m_{\ce{HCl}}}
+\end{equation*}
+
+可以设上面这个式子右边各项的和为$E'$，$E'$对$m_{\ce{HCl}}$作图或$\sqrt{m_{\ce{HCl}}}$作图，在稀溶液范围内可以得到一条直线。这样通过求截距就能求出$\phi^\ominus_{\ce{Cl-} | \ce{AgCl} | \ce{Ag+}}$。

@@ -1,0 +1,90 @@
+
+    \section{电动势的计算}
+
+    \subsection{直接加和}
+
+    将电池中各种界面的电势差加起来，为电动势。
+
+    \subsection{通过Nernst方程计算}
+
+    \begin{reaction*}
+        Pt | H2(p1) | HCl(a) | Cl2(p2) | Pt
+    \end{reaction*}
+
+    \begin{equation*}
+        \Delta_r G_m = \Delta_r G_m ^\ominus + RT\ln \prod _{B} a_B^{\nu_B}
+    \end{equation*}
+
+    根据$\Delta_r G_m = -zFE$
+
+    \begin{equation*}
+        E = E^\ominus - \frac{RT}{zF} \ln \prod _{B} a_B^{\nu_B}
+    \end{equation*}
+
+    这里的$z$取多少并不会影响最后电动势的大小，整体变化$z$的话，系数会在对数部分得到还原。
+
+    \begin{reaction*}
+        Pt | H2( $p$ ) | H2SO4 | O2(p) | Pt
+    \end{reaction*}
+
+
+    \begin{reactions*}
+        H2 - 2 e- &-> 2 H+ \\
+        1/2 O2 + 2 e- + 2 H+ &-> H2O
+    \end{reactions*}
+
+    \subsection{电极电势}
+
+    认为氢标准电极的电势为0，其他电极的电势是相对的电势。电极电势为负数时表示容易进行氧化反应，电极电势为正数时，容易发生还原反应。
+
+    $\phi^{\ominus}$ 标准电极电势，在标准状态下的材料制备时的$\phi$。$\phi$是与氢标准电极形成原电池下的$E$。$\phi$的计算与$E$相同。
+
+    \begin{equation*}
+        \Delta_r G_m = -zF\phi
+    \end{equation*}
+
+    \begin{equation*}
+        \Delta_r G_m ^\ominus = -zF\phi ^\ominus
+    \end{equation*}
+
+    \begin{reaction*}
+        Zn^{2+} (a1) + 2 e- -> Zn
+    \end{reaction*}
+
+    \begin{equation*}
+        \phi_{ \left( \ch{Zn^{2+} | Zn} \right) } = \phi^\ominus - \frac{RT}{zF} \ln \frac{1}{a1}
+    \end{equation*}
+
+
+    计算电动势的例子
+    \begin{equation*}
+        \ch{H2}\left( p = 90 \mathrm{kPa} \right) | \ch{H\pch} \left( a_{\ch{H\pch}} = 0.01 \right)  \| \ch{Cu\pch[2]} \left( a_{\ch{Cu\pch[2]}} = 0.10 \right)| \ch{Cu}
+    \end{equation*}
+
+    \begin{equation*}
+        p^\ominus = 100 \mathrm{kPa} \qquad \phi(\ch{Cu\pch[2]}, \ch{Cu}) = 0.337 \mathrm{V}
+    \end{equation*}
+
+    $a_{\ch{H2}}$ 为 
+
+    \begin{equation*}
+        \frac{p}{p^\ominus} = 0.9
+    \end{equation*}
+
+    \begin{equation*}
+        E = \phi(\ch{Cu\pch[2]}, \ch{Cu}) - \frac{RT}{zF} \cdot \ln \frac{a_{\ch{H\pch}}^2}{a_{\ch{Cu\pch[2]} }a_{\ch{H2}}}
+    \end{equation*}
+
+    \begin{align*}
+        R &= 8.314 \\
+        T &= 298 \\ 
+        F &= 96500 \\ 
+    \end{align*}
+
+    代入上式
+
+    \begin{align*}
+        E &= \phi(\ch{Cu\pch[2]}, \ch{Cu}) - \frac{RT}{zF} \cdot \ln \frac{a_{\ch{H\pch}}^2}{a_{\ch{Cu\pch[2]} }a_{\ch{H2}}} \\ 
+        &= 0.337 - 0.0256 \cdot \ln \frac{0.01^2}{0.9 * 0.1} \\ 
+        &= 0.424 \quad (\mathrm{V} )
+    \end{align*}
