@@ -7,7 +7,6 @@
 
 \begin{center}
     \small
-    \centering
     \schemestart
     \chemfig{R-[:30]C(=[:90]O)-[:-30]L} \arrow{->[\ch{Nu\mch}]} \chemfig{R-C(-[:90]\ch{O\mch})(-[:-90]\ch{Nu})-L} \arrow{->[-L]} \chemfig{R-[:30]C(=[:90]O)-[:-30]Nu}
     \schemestop
@@ -25,7 +24,6 @@
 
 \begin{center}
     \scriptsize
-    \centering
     \schemestart
     \chemfig{R-[:30]C(=[:90]O)-[:-30]L} \arrow{->[\ch{H\pch}]} \chemfig{R-[:30]C(=[:90]OH\ch{\pch})-[:-30]L} \arrow{->[\ch{OH\mch}]} \chemfig{R-C(-[:90]OH\ch{\pch})(-[:-90]OH\ch{\mch})-L} 
     \arrow{->[\ch{-HL}][-\ch{H\pch}]} \chemfig{R-[:30]C(=[:90]O)-[:-30]OH}
@@ -38,7 +36,6 @@
 酚酯一般难以用酸和酚直接制备，需要使用酰卤。
 
 \begin{center}
-    \centering
     \scriptsize
     \schemestart
     \chemfig{R-[:30]C(=[:90]O)-[:-30]Cl} \+ \chemfig{*6(-=-(-OH)=-=)} \arrow{->}
@@ -49,7 +46,6 @@
 \subsubsection{氨解反应和氨基的保护}
 
 \begin{center}
-    \centering
     \scriptsize
     \schemestart
     \chemfig{*6(-=-=(-NH_2)-=)} \arrow{->[\chemfig{CH_3-C(=[:90]O)-Cl}][或酸酐]}[,2.3] \chemfig{*6(-=-=(-NH-[:0]C(=O)-[:0]CH_3)-=)}
@@ -59,7 +55,6 @@
 \subsubsection{与\ch{RMgX}的反应}
 
 \begin{center}
-    \centering
     \scriptsize
     \schemestart
     \chemfig{R-[:30]C(=[:90]O)-[:-30]Cl} \arrow{->[\ch{RMgCl}]}[,1.2] \chemfig{R-C(-[:90]OMgCl)(-[:-90]R)-Cl} \arrow{->[-\ch{MgCl2}]}[,1.4] \chemfig{R-[:30]C(=[:90]O)-[:-30]R}
@@ -72,4 +67,67 @@
 
 \subsection{还原反应}
 
-另外，这些衍生物还可以发生还原反应
+另外，这些衍生物还可以发生还原反应。还原反应的活性依然是
+\begin{center}
+    酰卤>酸酐>酯>酰胺    
+\end{center}
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{R-[:30]C(=[:90]O)-[:-30]Cl}  \arrow{->[\ch{LiAlO4}]} RCHO \arrow{->} \ch{RCH2Cl}
+    \schemestop
+\end{center}
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{R-[:30]C(=[:90]O)-[:-30]NH_2}  \arrow{->[\ch{LiAlO4}]} \ch{RCH2NH2}
+    \schemestop
+\end{center}
+
+$\ce{NaNH4}$只还原酰卤。
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{R-[:30]C(=[:90]O)-[:-30]NH_2} + $\ce{HCl}$ \arrow \chemfig{R-[:30]C(=[:90]O)-[:-30]\charge{90:3pt=+}{N}H_3}
+    \schemestop
+\end{center}
+
+\subsection{Gahmel合成法}
+
+
+\begin{center}
+    \scriptsize
+    \schemestart
+    \chemfig{*6(-=*5(-C(=O)-NH-C(=O)-)-=-=)} \arrow{->[$\ce{KOH}$ ]}  \chemfig{*6(-=*5(-C(=O)-{N^-}-C(=O)-)-=-=)}  \arrow{->[$\ce{RCl}$ ]} \chemfig{*6(-=*5(-C(=O)-NR-C(=O)-)-=-=)} \arrow{->[$\ce{H2O}$ ]} \chemfig{*6(-=(-COOH)-(-COOH)=-=)} \+ $\ce{RNH2}$ 
+    \schemestop
+\end{center}
+
+\subsection{脱水反应}
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{R-[:30]C(=[:90]O)-[:-30]NH_2} \arrow{->[$\ce{B2O4}$ ]} \chemfig{R-C~N}
+    \schemestop
+\end{center}
+
+
+\subsection{Hoffmam降级反应}
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{R-[:30]C(=[:90]O)-[:-30]NH_2} \arrow{->[$\ce{Br2}$ ][$\ce{NaOH}$ ]} \chemfig{R-[:-30]N=[:30]C=[:30]O} \arrow{->[$\ce{H2O}$ ][-$\ce{CO2}$ ]} \chemfig{R-NH_2}
+    \schemestop
+\end{center}
+
+
+邻氨基苯甲酸在工业上就是通过这个反应制备的。 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{img/1400px-Anthranilic_acid_synthesis_01.svg.png}
+\end{figure}
