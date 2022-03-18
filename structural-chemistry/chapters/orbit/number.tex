@@ -1,0 +1,117 @@
+
+\section{量子数的物理意义}
+
+\subsection{主量子数$n$}
+
+\begin{align*}
+    E_n &= - \frac{me^4}{8 \pi \epsilon_0^2 h^2} \frac{Z^2}{n^2} \\ 
+    &= - 13.6 \frac{Z^2}{n^2} (\mathrm{eV})\\
+\end{align*}
+
+$n$的取值决定能量的高低。能量最低时，依然不为0，具有零点能效应。这里的``零点能''指的是$n = 1$的取值，由于一些历史原因，被称为零点能。
+
+\subsection{角量子数$l$}
+
+\begin{equation*}
+    \frac{2m r^2}{\hbar ^2} = l \cdot (l + 1)
+\end{equation*}
+
+\begin{equation*}
+    \frac{8 \pi^2 m r ^2}{h^2} T_{\mbox{转}} = l \cdot (l + 1)
+\end{equation*}
+
+\begin{equation*}
+    T_{\mbox{转}} = \frac{l \cdot (l + 1)}{8 \pi^2 I}
+\end{equation*}
+
+\begin{equation*}
+    \mathbf{l} = \sqrt{l(l + 1)}\hbar
+\end{equation*}
+
+
+$l$决定原子轨道的形状、电子云的形状。
+
+\subsection{磁量子数$m$}
+
+\begin{align*}
+    \hat{M}_z &= -i\hbar \frac{\partial}{\partial \phi} \psi(r, \theta, \phi) \\ 
+    &= - R(r) \Theta(\theta) i \hbar \frac{\partial}{\partial \phi} \left( \frac{1}{\sqrt{2\pi}} e^{im\phi} \right) \\
+    &= R(r) \Theta(\theta) \hbar m \left( \frac{1}{\sqrt{2\pi}} e^{im\phi} \right)
+\end{align*}
+
+\begin{equation*}
+    \mathbf{l}_z = m\hbar = m\frac{h}{2\pi}
+\end{equation*}
+
+在磁场中，要考察电子运动产生的磁矩，需要应用磁量子数。
+
+$m$可以决定$M_z$、$\mu_{z}$，原子轨道和电子云的取向。
+
+
+
+\begin{align*}
+    \hat{M}_z \cdot \psi (r, \theta, \phi) &= -i \hbar R(r) \Theta(\theta) \frac{\partial}{\partial \phi} \sqrt{\frac{1}{\pi}} \cos \phi  \\ 
+    &= \cdots \times \sin \phi \\ 
+    &\neq \cdots \times \phi(r, \theta, \phi)
+\end{align*}
+
+
+注意 
+\begin{enumerate}
+    \item $s$轨道没有角动量量子化的问题
+\end{enumerate}
+
+\subsubsection{磁矩}
+
+\begin{equation*}
+    \hat{\mu} = -\frac{e}{2m_e} \hat{M}
+\end{equation*}
+
+电子绕核运动的磁矩
+
+\begin{equation*}
+    |\mu| = \left\lvert -\frac{e}{2m_e} \hat{M} \right\rvert
+\end{equation*}
+
+玻尔磁子 $\mu_B = \frac{e\hbar}{2m_e}$
+
+\begin{equation*}
+    |\mu| = \sqrt{l(l + 1)} \mu_B
+\end{equation*}
+
+
+\subsection{自旋量子数$m_s$}
+
+电子自旋 $s = \frac{1}{2}$ 
+
+
+\begin{align*}
+    M_s &= \sqrt{\frac{1}{2} \cdot \left( 1 + \frac{1}{2} \right)} \cdot \hbar \\ 
+    &= \frac{\sqrt{3}}{2} \hbar
+\end{align*}
+
+
+\begin{align*}
+    M_{s_z} = m_s \hbar (\pm \frac{1}{2})
+\end{align*}
+
+
+\begin{align*}
+    \mu_{s_z} &= \pm \mu_B \\
+    &= \pm \frac{e\hbar}{2m_e} \\ 
+    &= -\frac{e}{m_e} \hbar (\mp \frac{1}{2}) \\ 
+    &= -\frac{e}{m_e} M_{s_z} 
+\end{align*}
+
+\begin{align*}
+    |u_s| &= -\frac{e}{m_e} \cdot M_s \\ 
+    &= \sqrt{3} \mu_B
+\end{align*}
+
+$\psi_{n,l,m,m_s}$ 轨道波函数
+
+
+
+\subsubsection{赛曼效应}
+
+$\psi(1, 0, 0)$轨道，$\psi(2, 1, \pm 1, 0)$轨道算能量差，由于m有三种取值，导致角动量的方向是量子化的，方向的量子化导致绕核运动产生的磁矩是量子化的。三种量子化产生的磁矩使得能量有升高有降低。本来固定能量差的谱线分为了三条。
