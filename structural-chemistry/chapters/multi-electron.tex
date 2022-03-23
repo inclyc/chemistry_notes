@@ -1,0 +1,154 @@
+\chapter{多原子电子结构}
+
+\begin{equation*}
+    -\frac{\hbar^2}{2m} \nabla_1^2 - \frac{\hbar^2}{2m} \nabla_2^2 - \frac{ze^2}{4\pi\epsilon_0r_1} - \frac{ze^2}{4\pi\epsilon_0r_2} - \frac{ze^2}{4\pi\epsilon_0r_1r_2} \psi = E\psi
+\end{equation*}
+
+\section{中心力场法}
+
+如果忽略电子之间的相互特征，将多电子体系转化为单电子体系，并引入一个以原子核为中心的中心力场。这个中心力场可以表现为\textbf{有效核电荷数} $Z^*$。
+
+\subsection{Slater法则}
+
+将电子分层，|1s| , |2s, 2p| , |3s, 3p|, |3d|。屏蔽常数：$\sigma$，同层为0.35, 1s的为0.3，$n - 1$层的为0.85,$n - 2$以上为1。
+
+有效核电荷数
+
+\begin{equation*}
+    Z^* = Z - \sum \sigma
+\end{equation*}
+
+例如 $\ce{Na}$ $3s^1$，屏蔽常数为
+
+\begin{equation*}
+    0.85 \times 8 + 1 \times 2 = 8.8
+\end{equation*}
+
+这样$3s^1$轨道的电子能量为
+
+\begin{equation*}
+    E = -13.6 \times \frac{11 - 8.8}{9}
+\end{equation*}
+
+
+\section{电子排布的规律}
+
+必须遵循规则：
+
+\begin{enumerate}
+    \item Pauli不相容原理
+    \item 能量最低原理
+    \item Hund规则
+\end{enumerate}
+
+\subsection{能级交错}
+
+多电子体系下会出现能级交错的现象。
+
+\begin{equation*}
+    ns < np < nd < nf
+\end{equation*}
+
+\subsection{钻穿效应和屏蔽效应}
+
+\subsubsection{钻穿效应}
+
+高轨道的s电子在核附近具有较大的密度，被称为\textbf{钻穿效应}。
+
+\subsubsection{屏蔽效应}
+
+低轨道电子对外层轨道电子有较大的屏蔽作用。
+
+
+\section{分子轨道理论}
+
+
+\subsection{$\ce{H2+}$氢分子离子}
+
+
+\begin{equation*}
+    \left(-\frac{\hbar^2}{2m} \nabla_1^2 - \frac{\hbar^2}{2m} \nabla_2^2 - \frac{ze^2}{4\pi\epsilon_0r_1} - \frac{ze^2}{4\pi\epsilon_0r_2} \right) \psi = E\psi
+\end{equation*}
+
+\subsection{变分法}
+
+
+选取变分函数$\psi'$ 得到近似解。
+
+
+最小能量法：
+
+\begin{equation*}
+    E = \frac{\int \psi^* \hat{H} \psi \d \tau}{\int \psi^*  \psi \d \tau} 
+\end{equation*}
+
+
+\subsection{线性变分法}
+
+\begin{equation*}
+    \psi ' = c_1 \psi_1 + c_2 \psi_2 + \dots + c_n \psi_n
+\end{equation*}
+
+
+求最小值需要列方程：
+
+
+\begin{equation*}
+    \frac{\partial E}{\partial c_1} = \frac{\partial E}{\partial c_2} = \cdots = \frac{\partial E}{\partial c_n} = 0
+\end{equation*}
+
+
+
+\subsubsection{线性变分法处理$\ce{H2+}$氢分子离子}
+
+选取变分函数：
+
+
+如果$r_a \ll r_b$， 则选取 $\psi_A$ 
+
+如果$r_a \gg r_b$，则选取$\psi_B$
+
+\begin{equation*}
+    \psi = c_A \psi_A + c_B \psi_B
+\end{equation*}
+
+\begin{align*}
+    \bar{E} &= \frac{\int \psi^* \hat{H} \psi \d \tau}{\int \psi^*  \psi \d \tau}  \\
+    &= \frac{\int (c_A\psi_A + c_B\psi_B) \hat{H} ( c_A\psi_A + c_B\psi_B) \d \tau}{\int (c_A\psi_A + c_B\psi_B)^2 \d \tau} \\ 
+    &= \frac{\int (c_A\psi_A + c_B\psi_B) \hat{H} ( c_A\psi_A + c_B\psi_B) \d \tau}{\int (c_A\psi_A + c_B\psi_B)^2 \d \tau} \\ 
+\end{align*}
+
+
+\begin{align*}
+    H_{AA} &= \int \psi_A \hat{H} \psi_A \d \tau = \int \psi_B + \hat{H} \psi_B \d \tau \\ 
+    H_{AB} &= \int \psi_A \hat{H} \psi_B \d \tau = \int \psi_B + \hat{H} \psi_A \d \tau \\ 
+    S_{AB} &= \int \psi_A \psi_B \d \tau
+\end{align*}
+
+
+
+\begin{align*}
+    \left( \bar{E} - H_{AA} \right) c_A^2 + \left( 2S_{AB} \bar{E} - 2H_{AB}   \right)c_Ac_B + \left(  \bar{E} - H_{BB} \right)c_B^2 = 0
+\end{align*}
+
+
+能量最低：
+
+分别对$c_A$，$c_B$求导
+
+
+\begin{align*}
+    2 \left(  \bar{E} - H_{AA}  \right)c_A + 2 \left( S_{AB} \bar{E} - H_{AB}  \right)c_B &= 0 \\
+    2 \left(  S_{AB}\bar{E} - H_{AB} \right)c_A + 2 \left( \bar{E} - H_{BB}  \right)c_B &= 0
+\end{align*}
+
+
+\begin{align*}
+    \left| \begin{array}{cc}
+        \bar{E} - H_{AA} & S_{AB} \bar{E} - H_{AB} \\ 
+        S_{AB} \bar{E} - H_{AB} & \bar{E} - H_{BB} 
+    \end{array} \right|
+\end{align*}
+
+
+
