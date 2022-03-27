@@ -1,0 +1,127 @@
+\documentclass[a4paper]{article}
+
+\usepackage{physics}
+\usepackage{booktabs}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+
+\renewcommand{\d}{\mathrm{d}}
+
+\begin{document}
+    \section{Linearity of quantum mechanics}
+    \subsection{Basic theory elements}
+    In Maxwells' theory:
+    \begin{equation*}
+        \left( \vec{E}, \vec{B}, \rho, \vec{J} \right)
+    \end{equation*}
+
+    Also a solution:
+    
+    \begin{equation*}
+        \left( \alpha\vec{E}, \alpha\vec{B}, \alpha\rho, \alpha\vec{J} \right)
+    \end{equation*}
+
+    the linear combination of two verified solutions is also a solution:
+    
+    \subsection{Linear operator}
+
+    \begin{equation*}
+        L u \equiv 0
+    \end{equation*}
+
+    $u$: unknown vector, $L$: linear operator, $0$: zero vector.
+
+
+    \begin{equation*}
+        L(au) = aLu
+    \end{equation*}
+
+    \begin{equation*}
+        L(u_1 + u_2) = L(u_1) + L(u_2)
+    \end{equation*}
+
+    \begin{equation*}
+        L(\alpha u_1 + \beta u_2) = \alpha L(u_1) + \beta L(u_2)
+    \end{equation*}
+
+
+    If $u_1$, $u_2$ are solutions, then $\alpha u_1 + \alpha u_2$ is a solution.
+    
+
+    \subsubsection{Example}
+
+    \begin{equation*}
+        \frac{\d u}{\d t} + \frac{1}{\tau} = 0
+    \end{equation*}
+    
+    \begin{equation*}
+        L = \left( \frac{\d }{\d t} + \frac{1}{\tau} \right)
+    \end{equation*}
+    
+    \subsection{Is classic mechanics linear?}
+
+    No. Consider 1D mechanics Assume that the potential $V(x)$, and $x(T)$, the position is our unknown variable.
+
+    \begin{equation*}
+        m \frac{\d ^ 2 x(t)}{\d t^2} = - V' \left( x(t) \right)
+    \end{equation*}
+
+    The potential function may not be linear! It may be a function of time, or of position, or both.
+    
+    \subsection{QM is linear!}
+
+    \begin{equation*}
+        \psi \qquad \text{Wave function}
+    \end{equation*}
+
+    Schrödinger's equation:
+
+    \begin{equation*}
+        i \hbar \frac{\partial \psi}{\partial t} = \hat{H} \psi
+    \end{equation*}
+    
+
+    $\hat{H}$ is the Hamiltonian, which is the potential function, and the kinetic energy, its a linear operator! This equation is a linear equation!
+    
+    Here $L$ is: 
+
+    \begin{equation*}
+        L =  i \hbar \frac{\partial}{\partial t} - \hat{H}
+    \end{equation*}
+
+    \section{Necessity of complex numbers}
+    
+    \begin{equation*}
+        i = \sqrt{i}
+    \end{equation*}
+
+    \begin{equation*}
+        \psi \in  \mathbb{C} 
+    \end{equation*}
+
+    \section{Loss of determinism}
+
+    The light was made of quanta made of photons. In some way, photons are also waves. For photons, the energy is given by:
+
+    \begin{equation*}
+        E = h \nu
+    \end{equation*}
+    
+    where $h$ is the Planck constant, and $\nu$ is the frequency. The photons can go through the polarizer and it can only predict probabilities only. 
+
+    We can use dirac's notation and imaging that this a vector. We say that this is a vector because QM is a linear theory that you can scale wave functions and add them together just like vectors.
+    
+    \begin{equation*}
+        \ket{\mbox{photon}, x}, \ket{\mbox{photon}, y} 
+    \end{equation*}
+    
+
+    \begin{equation*}
+        \ket{\mbox{photon}, \alpha} = \cos \alpha \ket{\mbox{photon}, x} + \sin \alpha \ket{\mbox{photon}, y} 
+    \end{equation*}
+   
+    
+    
+    \section{Supper position in unusual}
+    \section{Entanglement}
+\end{document}
