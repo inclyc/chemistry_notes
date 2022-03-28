@@ -9,15 +9,13 @@
 
 \subsection{硝基化合物的化学性质}
 
-
 \subsubsection{脂肪族}
 
 $\ce{CH3NO2}$ 酸性、亲核性、还原反应
 
-$\ce{O2N-CH2-}$可以作为很好的亲核试剂$\ce{Nu-}$
+$\ce{O2N-CH2-}$可以作为很好的亲核试剂$\ce{Nu-}$，包括与羟基化合物的缩合，有点类似羟醛缩合反应。
 
 硝基会减弱碱性、降低亲电取代的活性，增加亲核取代的活性（例如氯苯转变为苯酚）
-
 
 \subsubsection{芳香族硝基化合物}
 
@@ -25,6 +23,146 @@ $\ce{O2N-CH2-}$可以作为很好的亲核试剂$\ce{Nu-}$
 \begin{center}
     \small
     \schemestart
-    \chemfig{*6(-=-=-=)}
+    \chemfig{*6(-=-(-NO_2)=-=)}
     \schemestop
 \end{center}
+
+
+\section{胺}
+
+\subsection{概述}
+
+\subsubsection{分类}
+
+
+可以按照与和胺相连的烃基分类为脂肪族和芳香族的胺化合物。根据\textbf{氨基上连有的烃基的数目}，可以将胺分为伯胺，仲胺，叔胺。注意这个分类的方法和普通的按照碳原子分了的伯仲叔不同。
+
+
+\subsection{物理性质}
+
+\subsubsection{熔沸点}
+伯、仲胺都有极化的氢。N的电负性没有 $\ce{-OH}$ 那么大，他们可以形成分子间的氢键但是比羧酸形成的分子间氢键要弱得多。伯、仲胺的熔沸点通常比一般的烷烃高，比醇、羧酸低。甲胺、乙胺为气体、其他胺类为液体。
+
+\subsubsection{溶解度}
+
+低级胺可溶，高级胺难溶。
+
+
+\subsection{化学性质}
+
+\subsubsection*{成键与杂化}
+
+脂肪族 $\ce{-NH2}$ 一般采用sp3杂化。 $\ce{Ph-NH2}$ 一般采用$sp^2$杂化，然而，这里的$sp^2$ 也有一定的$sp^3$特征。
+
+
+\subsubsection*{手性氨}
+
+
+当氮原子上连接三个不同的基团时，为手性氮。然而，手性氮的两个手性对映体的势垒差很低，在常温下可以迅速相互转化，目前技术上还不能分离出手性物质。
+
+\subsubsection{碱性}
+
+\begin{center}
+    $\ce{RNH2 + H+ -> RN^+H3}$ 
+\end{center}
+
+\paragraph{电子效应} 氨基可以和一个氢离子结合形成铵盐。氮原子上连有给电子基团时碱性增强，连有吸电子基团时碱性减弱。因此，在气态中
+
+\begin{center}
+    $\ce{(CH3)3N}$ > $\ce{(CH4)_2NH}$ > $\ce{CH3NH2}$ > $\ce{NH3}$   
+\end{center}
+
+然而，胺在溶剂中需要考虑溶剂化效应、空间位阻效应等其他影响因素。表\ref{tab:effect}中列出了这些影响。
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{影响因素} & \textbf{胺的碱性影响} \\ 
+        \midrule
+        电子效应 & 叔 > 仲 > 伯 \\ 
+        溶剂化效应 & 伯 > 仲 > 叔 \\ 
+        空间位阻效应 & 伯 > 仲 > 叔 \\
+        \bottomrule
+    \end{tabular}
+    \caption{不同的影响因素对伯、仲、叔胺的碱性影响}
+    \label{tab:effect}
+\end{table}
+
+
+\subsubsection{亲核性}
+
+
+\paragraph{烃基化反应}
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{RNH_2} + $\ce{R-X}$ \arrow{->} \chemfig{R-NH(-[:90]R')}
+    \schemestop
+\end{center}
+
+
+\paragraph{酰基化反应}
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{RNH_2} + \chemfig{R-C(=[:90]O)-Cl} \arrow{->} \chemfig{R-C(=[:90]O)-NH-R'}
+    \schemestop
+\end{center}
+
+叔胺可以进一步在碱的作用下形成季铵盐。
+
+$\ce{-OH}$ 保护
+
+这里利用的是酸酐来制备酰胺，而不是直接利用酰基化反应制备。酸酐不会使得酚羟基发生酰基化反应。
+
+\begin{center}
+    \scriptsize
+    \schemestart
+    \chemfig{*6(-(-NH_2)=-=(-OH)-=)} \+ \chemfig{-[:30](=[:90]O)-[:-30]O-[:30](=[:90]O)-[:-30] } \arrow{->} \chemfig{*6(-(-NH-C(-[:-150]CH_3)=[:-30]O)=-=(-OH)-=)}
+    \schemestop
+\end{center}
+
+$\ce{-NH2}$ 保护
+
+酰胺不容易被氧化，因此如果有需要保护的氨基可以先用酸酐，将氨基氧化化成酰胺，然后再用氧化剂氧化。
+
+\paragraph{磺酰化反应(Hinsberg)反应}
+
+这个反应可以区分伯胺、仲胺、叔胺，并分离他们三者。
+
+\begin{center}
+    $\ce{RNH2 + Ph-SO2Cl -> Ph-SO2NHR}$ （苯磺酰酯，固体）$\ce{->[NaOH]} \mbox{溶解}$ 
+
+    $\ce{R2NH + Ph-SO2Cl -> Ph-SO2NR2}$  $\ce{->[NaOH]} \mbox{不溶解}$ 
+    
+    $\ce{R3N + Ph-SO2Cl ->} \mbox{不反应}$ 
+\end{center}
+
+\subsubsection{与亚硝酸反应}
+
+胺的级数不同，这个反应将会有不同的性质（表\ref{tab:hinsberg_level}）。
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lc}
+        \toprule
+        胺 & 反应 \\
+        \midrule
+        伯胺 & $\ce{RNH2 + O=N-OH ->[-H2O] R-N^+#N-OH-}$ \\
+        仲胺 & $\ce{R2NH + HO-NO ->[-H2O]R2N-N=O}$ \\ 
+        叔胺 & 不易反应 \\
+        \bottomrule
+    \end{tabular}
+    \caption{不同级数的胺的反应}
+    \label{tab:hinsberg_level}
+\end{table}
+
+
+\paragraph{伯胺} 脂肪胺的产物不稳定，可以发生进一步分解，定量产生 $\ce{N2}$ 气体，可以进一步分析。芳香胺可以产生重氮盐，产物比较稳定，不易分解。
+
+\paragraph{仲胺} 脂肪胺生成N-亚硝胺，是换色的油状物。芳香胺生成黄色的固体。
+
+\paragraph{叔胺} 脂肪胺不易反应，芳香胺中，由于 $\ce{-N(R)3}$ 的给电子作用，芳环的亲电能力增强，可以进一步发生亲电反应。
