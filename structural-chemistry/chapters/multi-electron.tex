@@ -279,3 +279,114 @@ $\psi_2 = c_A \left( \psi_A - \psi_B \right) \Rightarrow$ 体系能量比单独�
     U = \frac{1}{2} \left[ \sqrt{ \left(E_b - E_a\right)^2 + 4\beta^2} - \left(E_b - E_a\right) \right]
 \end{align*}
 
+\section{休克尔分子轨道理论(HMO)}
+
+\subsection{适用范围}
+
+只适用于共轭体系，只针对$\pi$电子。
+
+\subsection{$\pi$电子近似}
+
+将所有的化学键看作是原键+$\sigma$键，再加额外的$\pi$电子。
+
+
+\subsection{线性变分法处理}
+
+
+\begin{equation*}
+    \psi = c_1 \psi_1 + c_2 \psi_2 + c_3 \psi_3 + \cdots + c_n \psi_n
+\end{equation*}
+
+久期方程式
+
+\begin{equation*}
+    \begin{bmatrix*}
+        H_{11} - ES_{11} & H_{12} - ES_{12} & \cdots & H_{1n} - ES_{1n} \\
+        H_{21} - ES_{21} & H_{22} - ES_{22} & \cdots & H_{2n} - ES_{2n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        H_{n1} - ES_{n1} & H_{n2} - ES_{n2} & \cdots & H_{nn} - ES_{nn}
+    \end{bmatrix*} = 0
+\end{equation*}
+
+计算过程中做简化处理（表 \ref{tab:simplify}）：
+
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{cc}
+        库仑积分 & $H_{11} = H_{22} = \alpha$ \\ 
+        交换积分 & $H_{ij} = H_{ji} = \begin{cases}
+            \beta & i = j \neq 1 \\ 
+            0 & i \neq j \neq 1
+        \end{cases}$ \\
+        重叠积分 & $S_{ij} = \begin{cases}
+            1 & i = j \\ 
+            0 & i \neq j
+        \end{cases}$
+    \end{tabular}
+    \caption{简化处理方法}
+    \label{tab:simplify}
+\end{table}
+
+
+\section{丁二烯的HMO法处理}
+
+丁二烯 \begin{scriptsize}
+    \chemfig{=[:30]-[:-30]=[:30]}
+\end{scriptsize} 的分子轨道为
+
+\begin{equation*}
+    \psi = c_1 \psi_1 + c_2 \psi_2 + c_3 \psi_3 + c_4 \psi_4
+\end{equation*}
+
+$\psi_i$表示参加共轭的4个C原子的$p_z$轨道。
+
+久期行列式：
+
+\begin{equation*}
+    \begin{vmatrix}
+        \alpha - E & \beta & 0 & 0 \\
+        \beta & \alpha - E & \beta & 0 \\
+        0 & \beta  & \alpha - E & \beta \\
+        0 & 0 & \beta & \alpha - E \\ 
+    \end{vmatrix}
+\end{equation*}
+
+\begin{equation*}
+    \begin{vmatrix*}
+        x & 1 & 0 & 0 \\
+        1 & x & 1 & 0 \\
+        0 & 1 & x & 1 \\
+        0 & 0 & 1 & x \\
+    \end{vmatrix*}
+\end{equation*}
+
+
+\begin{equation*}
+    x^4 - 3x^2 + 1 = 0
+\end{equation*}
+
+解得
+
+\begin{align*}
+    x_1 &= -1.618 \\ 
+    x_2 &= -0.618 \\
+    x_3 &= 0.618 \\
+    x_4 &= 1.618 \\
+\end{align*}
+
+于是
+
+\begin{align*}
+    E_1 &= \alpha + 1.618\beta \\ 
+    E_2 &= \alpha + 0.618\beta \\
+    E_3 &= \alpha - 0.618\beta \\
+    E_4 &= \alpha - 1.618\beta \\
+\end{align*}
+
+其中$\alpha = E_{p_z} < 0$，$\beta = c_i \sim c_{i+1} (\mbox{键积分}) < 0$。
+
+
+\begin{equation*}
+    E_1 < E_2 < E_3 < E_4
+\end{equation*}
