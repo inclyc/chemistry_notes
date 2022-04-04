@@ -2,51 +2,35 @@
 \input{chapters/nitrogenous/nitro.tex}
 \input{chapters/nitrogenous/amonia.tex}
 \input{chapters/nitrogenous/quaternary_ammonium.tex}
-\section{重氮和偶氮化合物}
+\input{chapters/nitrogenous/nn.tex}
+\section{腈和异氰酸酯}
+
+\subsection{腈类}
+
+低级腈通常易溶于水，可以形成分子间氢键。
+
+\subsubsection{催化加氢}
+
+\begin{equation*}
+  \ce{RCN ->[H2][Ni] RCH2NH2} \qquad \mbox{存在副反应}
+\end{equation*}
 
 
-\begin{table}[h]
-    \centering
-    \begin{tabular}{ll}
-        偶氮化合物 & $\ce{R-N=N-R}$ \\ 
-        重氮化合物 & $\ce{R-N#N+ \quad Cl-}$ \\
-    \end{tabular}
-\end{table}
+\subsection{亲核加成反应}
 
+腈类物质可以水解变成羧酸。
 
-\subsection{偶氮化合物}
+\subsubsection{与$\ce{RMgX}$的反应}
 
-很容易发生均裂。产生自由基，是很好的链引发剂。
-
-\subsection{重氮化合物}
-
-
-\subsubsection{制备}
-
-\begin{center}
-    \small
-    \schemestart
-    \chemfig{*6(-=-=(-NH_2)-=)} + $\ce{NaNO2}$ + $\ce{HCl}$   \arrow{->[$0-5^\circ C$]} \chemfig{*6(-=-(-\chemabove{N}{\oplus}~[:0]NCl^{-})=-=)}
-    \schemestop
-\end{center}
-
-
-\subsubsection{芳香重氮盐的性质}
-
-\paragraph{被$\ce{H}$取代}
-
-意义：生成氨基，同时又把氨基去掉了。可以合成一些不满足苯环上的定位规律的物质。
+可以与格氏试剂生成酮。
 
 \begin{center}
-    \small
-    \schemestart
-    \chemfig{*6(-=-=-=)} \arrow{->} \chemfig{*6(-(-Br)=-(-Br)=-(-Br)=)}
-    \schemestop
+  \scriptsize
+  \schemestart
+  \chemfig{R-C~N} \+ \chemfig{R-MgX} \arrow{->} \chemfig{R-C(-[:-90]R)=MgX} \arrow{->} \chemfig{R-C(=O)-R}
+  \schemestop
 \end{center}
 
-\begin{center}
-    \small
-    \schemestart
-    \chemfig{*6(-=-=-=)} \arrow{->} \chemfig{*6(-=(-NO_2)-=(-CH_3)-=)}
-    \schemestop
-\end{center}
+\subsubsection{$\alpha - \ce{H}$的反应}
+
+
