@@ -1,0 +1,102 @@
+\section{腈和异氰酸酯}
+
+\subsection{腈类}
+
+低级腈通常易溶于水，可以形成分子间氢键。
+
+\subsubsection{催化加氢}
+
+\begin{equation*}
+    \ce{RCN ->[H2][Ni] RCH2NH2} \qquad \mbox{存在副反应}
+\end{equation*}
+
+
+\subsection{亲核加成反应}
+
+腈类物质可以水解变成羧酸。
+
+\subsubsection{与$\ce{RMgX}$的反应}
+
+可以与格氏试剂生成酮。
+
+\begin{center}
+    \scriptsize
+    \schemestart
+    \chemfig{R-C~N} \+ \chemfig{R-MgX} \arrow{->} \chemfig{R-C(-[:-90]R)=N-MgX} \arrow{->} \chemfig{R-C(=[:-90]O)-R}
+    \schemestop
+\end{center}
+
+\subsubsection{$\alpha - \ce{H}$的反应}
+
+和羟醛缩合相似，$\ce{CH3-CN}$可以形成碳负离子：\chemfig{\charge{90:3pt=$\ominus$}{C}H_2-CN}，这个碳负离子可以作为亲核试剂和其他物质反应。
+
+
+% 克莱森缩合，这是什么？
+
+\subsection{异腈}
+
+\subsubsection{结构$\ce{R-NC}$}
+
+\begin{equation*}
+    \ce{RNH2 + CHCl3 + 3KOH -> RNC + 3KCl + 3H2O}
+\end{equation*}
+
+% 化学性质
+% 异腈类物质在手性合成上有非常好的性质。
+
+% 异腈是很重要的原料，或者是某一有机合成步骤的前体
+
+\subsubsection{水解}
+
+\begin{equation*}
+    \ce{RN#C + H2O ->[\mbox{亲核加成}] R-NH=C-OH ->[H+] RNH2 + HCOOH}
+\end{equation*}
+
+\subsubsection{加氢}
+\begin{equation*}
+    \ce{RN#C + H2 ->[Ni] RNHCH3}
+\end{equation*}
+
+\subsubsection{异构化}
+\begin{equation*}
+    \ce{RNC ->[\Delta] RCN}
+\end{equation*}
+\subsubsection{氧化}
+
+\begin{equation*}
+    \ce{Ph-NC + HgO -> Ph-N=C=O}
+\end{equation*}
+
+\subsection{异氰酸酯}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ll}
+        氰酸   & $\ce{HO-CN}$   \\
+        异氰酸 & $\ce{H-N=C=O}$ \\
+    \end{tabular}
+\end{table}
+
+异氰酸苯酯比较稳定。苯环可以起到稳定作用
+
+\subsubsection{亲核加成反应}
+
+注意，加成加成在羰基上。
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{-N=\charge{90:3pt=$\delta+$}{C}=\charge{90:3pt=$\delta-$}{O}}
+    \schemestop
+\end{center}
+
+\begin{center}
+    \scriptsize
+    \schemestart
+    \chemfig{*6(-=-(-N=[:0]C=[:0]O)=-=)} \+ $\ce{H2O}$ \arrow{->[加成]} \chemfig{*6(-=-(-N=[:0]C(-[:90]OH)-[:0]OH)=-=)}
+    \arrow(@c1--){0}[-90, 1.5] {}
+    \arrow{->[重排]} \chemfig{*6(-=-(-NH-[:0]C(=[:90]O)-[:0]OH)=-=)}
+    \schemestop
+\end{center}
+
+
