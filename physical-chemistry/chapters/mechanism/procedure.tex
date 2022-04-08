@@ -1,0 +1,80 @@
+\section{化学反应的结构和过程}
+
+\subsection{基元反应}
+
+基元反应是一种特殊的反应，它的反应过程只在一步发生。基元反应拥有固定的速率方程性质：
+
+\begin{equation*}
+    \ce{aA + bB -> P}
+\end{equation*}
+
+\begin{equation*}
+    r = k[A]^a[B]^b
+\end{equation*}
+
+\subsection{具有简单级数的方程}
+
+\subsubsection{一级反应}
+
+凡是反应速率只与物质浓度的一次方成正比者称为一级反应。
+
+\[
+    \ce{A \rightarrow B}
+\]
+
+\[
+    \frac{ \d x} {(a - x)} = k_1 dt
+\]
+
+有
+
+\begin{equation*}
+    \ln \frac{a}{a - x} = k_1 t
+\end{equation*}
+
+\begin{equation*}
+    (a - x) = a e^{-k_1 t}
+\end{equation*}
+
+
+\paragraph{半衰期} 反应的半衰期为 $\frac{\ln 2}{k_1}$
+
+\subsubsection{二级反应}
+
+反应速率和物质浓度的二次方成正比者，称为二级反应。
+
+\begin{equation*}
+    \ce{A + B ->[k_1] C}
+\end{equation*}
+
+\begin{equation*}
+    \frac{\d x}{\d t} = k_2 (a - x) (b - x)
+\end{equation*}
+
+\begin{equation*}
+    \int \frac{\d x}{(a - x)(b - x)} = \int k_2 \d t
+\end{equation*}
+
+\begin{equation*}
+    \frac{1}{a - b} \ln \frac{a - x}{b - x} = k_2 t + C
+\end{equation*}
+
+\begin{equation*}
+    k_2 = \frac{1}{t(a - b)} \ln \left[ \frac{b(a - x)}{a(b - x)} \right]
+\end{equation*}
+
+速率常数用浓度表示或用压力表示，两者的数值不相等。假设有某$n$级反应，
+\begin{equation*}
+    k_c = k_p (RT)^{1 - n}
+\end{equation*}
+\subsubsection{零级反应}
+反应物质的浓度不影响反应速率。常见的零级反应有表面催化反应和酶催化反应。这时反应物总是过量的，反应速率取决于固体催化剂的有效表面活性或酶的浓度。
+
+\begin{equation*}
+    r = \frac{\d x}{\d t} = k_0
+\end{equation*}
+
+\subsubsection{准级反应}
+在速率方程中，若某一物质的浓度远远大于其他反应无的浓度，或是在速率方程中的催化剂浓度项，在反应过程中可以认为没有变化，可以并入速率常数项，这时反应总级数可以相应下降，称为准级反应。
+
+\subsection{测定反应的级数}
