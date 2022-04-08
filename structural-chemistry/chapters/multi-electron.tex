@@ -1,7 +1,7 @@
 \chapter{多原子电子结构}
 
 \begin{equation*}
-    -\frac{\hbar^2}{2m} \nabla_1^2 - \frac{\hbar^2}{2m} \nabla_2^2 - \frac{ze^2}{4\pi\epsilon_0r_1} - \frac{ze^2}{4\pi\epsilon_0r_2} - \frac{ze^2}{4\pi\epsilon_0r_1r_2} \psi = E\psi
+	-\frac{\hbar^2}{2m} \nabla_1^2 - \frac{\hbar^2}{2m} \nabla_2^2 - \frac{ze^2}{4\pi\epsilon_0r_1} - \frac{ze^2}{4\pi\epsilon_0r_2} - \frac{ze^2}{4\pi\epsilon_0r_1r_2} \psi = E\psi
 \end{equation*}
 
 \section{中心力场法}
@@ -15,19 +15,19 @@
 有效核电荷数
 
 \begin{equation*}
-    Z^* = Z - \sum \sigma
+	Z^* = Z - \sum \sigma
 \end{equation*}
 
 例如 $\ce{Na}$ $3s^1$，屏蔽常数为
 
 \begin{equation*}
-    0.85 \times 8 + 1 \times 2 = 8.8
+	0.85 \times 8 + 1 \times 2 = 8.8
 \end{equation*}
 
 这样$3s^1$轨道的电子能量为
 
 \begin{equation*}
-    E = -13.6 \times \frac{11 - 8.8}{9}
+	E = -13.6 \times \frac{11 - 8.8}{9}
 \end{equation*}
 
 
@@ -36,9 +36,9 @@
 必须遵循规则：
 
 \begin{enumerate}
-    \item Pauli不相容原理
-    \item 能量最低原理
-    \item Hund规则
+	\item Pauli不相容原理
+	\item 能量最低原理
+	\item Hund规则
 \end{enumerate}
 
 \subsection{能级交错}
@@ -46,7 +46,7 @@
 多电子体系下会出现能级交错的现象。
 
 \begin{equation*}
-    ns < np < nd < nf
+	ns < np < nd < nf
 \end{equation*}
 
 \subsection{钻穿效应和屏蔽效应}
@@ -67,7 +67,7 @@
 
 
 \begin{equation*}
-    \left(-\frac{\hbar^2}{2m} \nabla_1^2 - \frac{\hbar^2}{2m} \nabla_2^2 - \frac{ze^2}{4\pi\epsilon_0r_1} - \frac{ze^2}{4\pi\epsilon_0r_2} \right) \psi = E\psi
+	\left(-\frac{\hbar^2}{2m} \nabla_1^2 - \frac{\hbar^2}{2m} \nabla_2^2 - \frac{ze^2}{4\pi\epsilon_0r_1} - \frac{ze^2}{4\pi\epsilon_0r_2} \right) \psi = E\psi
 \end{equation*}
 
 \subsection{变分法}
@@ -79,14 +79,14 @@
 最小能量法：
 
 \begin{equation*}
-    E = \frac{\int \psi^* \hat{H} \psi \d \tau}{\int \psi^*  \psi \d \tau}
+	E = \frac{\int \psi^* \hat{H} \psi \d \tau}{\int \psi^*  \psi \d \tau}
 \end{equation*}
 
 
 \subsection{线性变分法}
 
 \begin{equation*}
-    \psi ' = c_1 \psi_1 + c_2 \psi_2 + \dots + c_n \psi_n
+	\psi ' = c_1 \psi_1 + c_2 \psi_2 + \dots + c_n \psi_n
 \end{equation*}
 
 
@@ -94,7 +94,7 @@
 
 
 \begin{equation*}
-    \frac{\partial E}{\partial c_1} = \frac{\partial E}{\partial c_2} = \cdots = \frac{\partial E}{\partial c_n} = 0
+	\frac{\partial E}{\partial c_1} = \frac{\partial E}{\partial c_2} = \cdots = \frac{\partial E}{\partial c_n} = 0
 \end{equation*}
 
 
@@ -109,26 +109,26 @@
 如果$r_a \gg r_b$，则选取$\psi_B$
 
 \begin{equation*}
-    \psi = c_A \psi_A + c_B \psi_B
+	\psi = c_A \psi_A + c_B \psi_B
 \end{equation*}
 
 \begin{align*}
-    \bar{E} & = \frac{\int \psi^* \hat{H} \psi \d \tau}{\int \psi^*  \psi \d \tau}                                                   \\
-            & = \frac{\int (c_A\psi_A + c_B\psi_B) \hat{H} ( c_A\psi_A + c_B\psi_B) \d \tau}{\int (c_A\psi_A + c_B\psi_B)^2 \d \tau} \\
-            & = \frac{\int (c_A\psi_A + c_B\psi_B) \hat{H} ( c_A\psi_A + c_B\psi_B) \d \tau}{\int (c_A\psi_A + c_B\psi_B)^2 \d \tau} \\
+	\bar{E} & = \frac{\int \psi^* \hat{H} \psi \d \tau}{\int \psi^*  \psi \d \tau}                                                   \\
+	        & = \frac{\int (c_A\psi_A + c_B\psi_B) \hat{H} ( c_A\psi_A + c_B\psi_B) \d \tau}{\int (c_A\psi_A + c_B\psi_B)^2 \d \tau} \\
+	        & = \frac{\int (c_A\psi_A + c_B\psi_B) \hat{H} ( c_A\psi_A + c_B\psi_B) \d \tau}{\int (c_A\psi_A + c_B\psi_B)^2 \d \tau} \\
 \end{align*}
 
 
 \begin{align*}
-    H_{AA} & = \int \psi_A \hat{H} \psi_A \d \tau = \int \psi_B + \hat{H} \psi_B \d \tau \\
-    H_{AB} & = \int \psi_A \hat{H} \psi_B \d \tau = \int \psi_B + \hat{H} \psi_A \d \tau \\
-    S_{AB} & = \int \psi_A \psi_B \d \tau
+	H_{AA} & = \int \psi_A \hat{H} \psi_A \d \tau = \int \psi_B + \hat{H} \psi_B \d \tau \\
+	H_{AB} & = \int \psi_A \hat{H} \psi_B \d \tau = \int \psi_B + \hat{H} \psi_A \d \tau \\
+	S_{AB} & = \int \psi_A \psi_B \d \tau
 \end{align*}
 
 
 
 \begin{align*}
-    \left( \bar{E} - H_{AA} \right) c_A^2 + \left( 2S_{AB} \bar{E} - 2H_{AB}   \right)c_Ac_B + \left(  \bar{E} - H_{BB} \right)c_B^2 = 0
+	\left( \bar{E} - H_{AA} \right) c_A^2 + \left( 2S_{AB} \bar{E} - 2H_{AB}   \right)c_Ac_B + \left(  \bar{E} - H_{BB} \right)c_B^2 = 0
 \end{align*}
 
 
@@ -138,34 +138,34 @@
 
 
 \begin{align*}
-    2 \left(  \bar{E} - H_{AA}  \right)c_A + 2 \left( S_{AB} \bar{E} - H_{AB}  \right)c_B & = 0 \\
-    2 \left(  S_{AB}\bar{E} - H_{AB} \right)c_A + 2 \left( \bar{E} - H_{BB}  \right)c_B   & = 0
+	2 \left(  \bar{E} - H_{AA}  \right)c_A + 2 \left( S_{AB} \bar{E} - H_{AB}  \right)c_B & = 0 \\
+	2 \left(  S_{AB}\bar{E} - H_{AB} \right)c_A + 2 \left( \bar{E} - H_{BB}  \right)c_B   & = 0
 \end{align*}
 
 
 \begin{align*}
-    \left| \begin{array}{cc}
-               \bar{E} - H_{AA}        & S_{AB} \bar{E} - H_{AB} \\
-               S_{AB} \bar{E} - H_{AB} & \bar{E} - H_{BB}
-           \end{array} \right|
+	\left| \begin{array}{cc}
+		       \bar{E} - H_{AA}        & S_{AB} \bar{E} - H_{AB} \\
+		       S_{AB} \bar{E} - H_{AB} & \bar{E} - H_{BB}
+	       \end{array} \right|
 \end{align*}
 
 \begin{align*}
-    \bar{E_1} & = \frac{H_{AA} + H_{AB}}{1 + S_{AB}} \\
-    \bar{E_2} & = \frac{H_{AA} - H_{AB}}{1 - S_{AB}} \\
+	\bar{E_1} & = \frac{H_{AA} + H_{AB}}{1 + S_{AB}} \\
+	\bar{E_2} & = \frac{H_{AA} - H_{AB}}{1 - S_{AB}} \\
 \end{align*}
 
 注意，从上式可得：
 
 \begin{equation*}
-    c_A = \pm c_B
+	c_A = \pm c_B
 \end{equation*}
 
 \begin{align*}
-    \psi = c_A \psi_A + c_B \psi_B = \begin{cases}
-                                         \psi_1 = c_A(\psi_A + \psi_B) \\
-                                         \psi_2 = c_A(\psi_A - \psi_B)
-                                     \end{cases}
+	\psi = c_A \psi_A + c_B \psi_B = \begin{cases}
+		                                 \psi_1 = c_A(\psi_A + \psi_B) \\
+		                                 \psi_2 = c_A(\psi_A - \psi_B)
+	                                 \end{cases}
 \end{align*}
 
 
@@ -173,26 +173,26 @@
 \subsubsection{重叠积分$S_{AB}$}
 
 \begin{equation*}
-    S_{AB} = \int \psi_A \psi_B \d \tau
+	S_{AB} = \int \psi_A \psi_B \d \tau
 \end{equation*}
 
 这个积分被称为重叠积分。
 \begin{equation*}
-    \begin{cases}
-        \psi_A = \psi_B \quad S_{AB} = 1 & \mbox{原子核核间距} R \to 0      \\
-        S_{AB} = 0                       & \mbox{原子核核间距} R \to \infty \\
-        0 < S_{AB} < 1                   & \mbox{成键}                      \\
-    \end{cases}
+	\begin{cases}
+		\psi_A = \psi_B \quad S_{AB} = 1 & \mbox{原子核核间距} R \to 0      \\
+		S_{AB} = 0                       & \mbox{原子核核间距} R \to \infty \\
+		0 < S_{AB} < 1                   & \mbox{成键}                      \\
+	\end{cases}
 \end{equation*}
 
 \subsubsection{库仑积分$H_{AA}$}
 
 \begin{align*}
-    H_{AA} & = \int \psi_A \hat{H} \psi_A \d \tau                                                                                                                                                                                           \\
-           & = \int \psi_A \left( -\frac{\hbar}{2m} \nabla^2 - \frac{ze^2}{4\pi\epsilon_0r_A} - \frac{ze^2}{4\pi\epsilon_0r_B} -  \frac{e^2}{4\pi\epsilon_0R}  \right) \psi_A \d \tau                                                       \\
-           & = \int \psi_A \left( -\frac{\hbar}{2m} \nabla^2 - \frac{ze^2}{4\pi\epsilon_0r_A} \right) \psi_A \d \tau  - \int \psi_A \frac{ze^2}{4\pi\epsilon_0r_B} \psi_A \d \tau + \int \psi_A  \frac{e^2}{4\pi\epsilon_0R} \psi_A \d \tau \\
-           & = E_A - \int \psi_A \frac{ze^2}{4\pi\epsilon_0r_B} \psi_A \d \tau + \int \psi_A  \frac{e^2}{4\pi\epsilon_0R} \psi_A \d \tau                                                                                                    \\
-           & = E_A - J
+	H_{AA} & = \int \psi_A \hat{H} \psi_A \d \tau                                                                                                                                                                                           \\
+	       & = \int \psi_A \left( -\frac{\hbar}{2m} \nabla^2 - \frac{ze^2}{4\pi\epsilon_0r_A} - \frac{ze^2}{4\pi\epsilon_0r_B} -  \frac{e^2}{4\pi\epsilon_0R}  \right) \psi_A \d \tau                                                       \\
+	       & = \int \psi_A \left( -\frac{\hbar}{2m} \nabla^2 - \frac{ze^2}{4\pi\epsilon_0r_A} \right) \psi_A \d \tau  - \int \psi_A \frac{ze^2}{4\pi\epsilon_0r_B} \psi_A \d \tau + \int \psi_A  \frac{e^2}{4\pi\epsilon_0R} \psi_A \d \tau \\
+	       & = E_A - \int \psi_A \frac{ze^2}{4\pi\epsilon_0r_B} \psi_A \d \tau + \int \psi_A  \frac{e^2}{4\pi\epsilon_0R} \psi_A \d \tau                                                                                                    \\
+	       & = E_A - J
 \end{align*}
 
 其中$E_A$是原子基态的能量，$J$几乎可以抵消。$E_A = E_B \approx H_{AA}$
@@ -200,36 +200,36 @@
 \subsubsection{交换积分$H_{AB}$}
 
 \begin{align*}
-    H_{AB} & = \int \psi_A \hat{H} \psi_B \d \tau                                                                                                                                     \\
-           & = \int \psi_A \left( -\frac{\hbar}{2m} \nabla^2 - \frac{ze^2}{4\pi\epsilon_0r_A} - \frac{ze^2}{4\pi\epsilon_0r_B} -  \frac{e^2}{4\pi\epsilon_0R}  \right) \psi_B \d \tau \\
-           & = \int \psi_A E_B \psi_B \d \tau - \int \psi_A \left(\frac{ze^2}{4\pi\epsilon_0r_B} - \frac{e^2}{4\pi\epsilon_0R} \right) \psi_B \d \tau                                 \\
-           & = E_BS_{AB} +  \left(\frac{ze^2}{4\pi\epsilon_0r_B} - \frac{e^2}{4\pi\epsilon_0R} \right) \int \psi_A \cdot \psi_B \d \tau                                               \\
-           & = E_BS_{AB} + K \left( K < 0 \right)                                                                                                                                     \\
+	H_{AB} & = \int \psi_A \hat{H} \psi_B \d \tau                                                                                                                                     \\
+	       & = \int \psi_A \left( -\frac{\hbar}{2m} \nabla^2 - \frac{ze^2}{4\pi\epsilon_0r_A} - \frac{ze^2}{4\pi\epsilon_0r_B} -  \frac{e^2}{4\pi\epsilon_0R}  \right) \psi_B \d \tau \\
+	       & = \int \psi_A E_B \psi_B \d \tau - \int \psi_A \left(\frac{ze^2}{4\pi\epsilon_0r_B} - \frac{e^2}{4\pi\epsilon_0R} \right) \psi_B \d \tau                                 \\
+	       & = E_BS_{AB} +  \left(\frac{ze^2}{4\pi\epsilon_0r_B} - \frac{e^2}{4\pi\epsilon_0R} \right) \int \psi_A \cdot \psi_B \d \tau                                               \\
+	       & = E_BS_{AB} + K \left( K < 0 \right)                                                                                                                                     \\
 \end{align*}
 注意，这里
 \begin{equation*}
-    H_{AB} - E_BS_{AB} = K
+	H_{AB} - E_BS_{AB} = K
 \end{equation*}
 
 $E_BS_{AB}$为负值，同时，$\left(\frac{ze^2}{4\pi\epsilon_0r_B} - \frac{e^2}{4\pi\epsilon_0R} \right)$也为负值，总体来看，$H_{AB}$为负值。这个负值有利于体系总体能量的降低，利于成键。这个积分也被称为键积分。在讨论时为了简化，通常也被称为$\beta$积分。
 
 
 \begin{align*}
-    E_1 & = \frac{H_{AA} + H_{BB}}{1 + S_{AB}}                                               \\
-        & = \frac{H_{AA} + H_{BB}S_{AB}}{1 + S_{AB}} + \frac{H_{BB} - S_{AB}E_B}{1 + S_{AB}} \\
-        & = E_H + \frac{K}{1 + S_{AB}}                                                       \\
-        & = E_H + \mbox{负数}
+	E_1 & = \frac{H_{AA} + H_{BB}}{1 + S_{AB}}                                               \\
+	    & = \frac{H_{AA} + H_{BB}S_{AB}}{1 + S_{AB}} + \frac{H_{BB} - S_{AB}E_B}{1 + S_{AB}} \\
+	    & = E_H + \frac{K}{1 + S_{AB}}                                                       \\
+	    & = E_H + \mbox{负数}
 \end{align*}
 
 $\psi_1 = c_A \left( \psi_A + \psi_B \right) \Rightarrow$ 体系能量比单独的氢原子低，表现为成键轨道。
 
 \begin{align*}
-    E_2 & = \frac{H_{AA} - H_{BB}}{1 - S_{AB}}                               \\
-        & = \frac{H_{AA} - H_{AA}S_{AB} + H_{AA}S_{AB} - H_{AB}}{1 - S_{AB}} \\
-        & = H_{AA} + \frac{H_{AA}S_{AB} - H_{AB}}{1 - S_{AB}}                \\
-        & = H_{AA} + \frac{E_AS_{AB} - H_{AB}}{1 - S_{AB}}                   \\
-        & = H_{AA} + \frac{-K}{1 - S_{AB}}                                   \\
-        & = E_H + \mbox{正数}
+	E_2 & = \frac{H_{AA} - H_{BB}}{1 - S_{AB}}                               \\
+	    & = \frac{H_{AA} - H_{AA}S_{AB} + H_{AA}S_{AB} - H_{AB}}{1 - S_{AB}} \\
+	    & = H_{AA} + \frac{H_{AA}S_{AB} - H_{AB}}{1 - S_{AB}}                \\
+	    & = H_{AA} + \frac{E_AS_{AB} - H_{AB}}{1 - S_{AB}}                   \\
+	    & = H_{AA} + \frac{-K}{1 - S_{AB}}                                   \\
+	    & = E_H + \mbox{正数}
 \end{align*}
 
 $\psi_2 = c_A \left( \psi_A - \psi_B \right) \Rightarrow$ 体系能量比单独的氢原子高，表现为反键轨道。
@@ -250,9 +250,9 @@ $\psi_2 = c_A \left( \psi_A - \psi_B \right) \Rightarrow$ 体系能量比单独�
 两个分子轨道的形成必须满足以下条件：
 
 \begin{itemize}
-    \item 能量相近
-    \item 轨道最大重叠
-    \item 对称性匹配
+	\item 能量相近
+	\item 轨道最大重叠
+	\item 对称性匹配
 \end{itemize}
 
 
@@ -261,22 +261,22 @@ $\psi_2 = c_A \left( \psi_A - \psi_B \right) \Rightarrow$ 体系能量比单独�
 设$\phi_a, \phi_b$分别表示两个原子的原子轨道。其中$E_a < E_b$，他们组合成分子轨道。设$H_{aa} = E_a$，$H_{bb} = E_b$，$H_{ab} = \beta$，$S_{ab} = 0$。带入久期行列式，可得：
 
 \begin{equation*}
-    (E_a - E)(E_b - E) = \beta^2
+	(E_a - E)(E_b - E) = \beta^2
 \end{equation*}
 
 \begin{align*}
-    E_1 & = \frac{1}{2} \left[ (E_a + E_b) - \sqrt{\left(  E_b - E_a \right)^2 + 4\beta^2}  \right] \\
-        & = E_a - U
+	E_1 & = \frac{1}{2} \left[ (E_a + E_b) - \sqrt{\left(  E_b - E_a \right)^2 + 4\beta^2}  \right] \\
+	    & = E_a - U
 \end{align*}
 \begin{align*}
-    E_2 & = \frac{1}{2} \left[ (E_a + E_b) + \sqrt{\left(  E_b - E_a \right)^2 + 4\beta^2}  \right] \\
-        & = E_b + U
+	E_2 & = \frac{1}{2} \left[ (E_a + E_b) + \sqrt{\left(  E_b - E_a \right)^2 + 4\beta^2}  \right] \\
+	    & = E_b + U
 \end{align*}
 
 其中
 
 \begin{align*}
-    U = \frac{1}{2} \left[ \sqrt{ \left(E_b - E_a\right)^2 + 4\beta^2} - \left(E_b - E_a\right) \right]
+	U = \frac{1}{2} \left[ \sqrt{ \left(E_b - E_a\right)^2 + 4\beta^2} - \left(E_b - E_a\right) \right]
 \end{align*}
 
 \section{休克尔分子轨道理论(HMO)}
@@ -294,38 +294,38 @@ $\psi_2 = c_A \left( \psi_A - \psi_B \right) \Rightarrow$ 体系能量比单独�
 
 
 \begin{equation*}
-    \psi = c_1 \psi_1 + c_2 \psi_2 + c_3 \psi_3 + \cdots + c_n \psi_n
+	\psi = c_1 \psi_1 + c_2 \psi_2 + c_3 \psi_3 + \cdots + c_n \psi_n
 \end{equation*}
 
 久期方程式
 
 \begin{equation*}
-    \begin{bmatrix*}
-        H_{11} - ES_{11} & H_{12} - ES_{12} & \cdots & H_{1n} - ES_{1n} \\
-        H_{21} - ES_{21} & H_{22} - ES_{22} & \cdots & H_{2n} - ES_{2n} \\
-        \vdots & \vdots & \ddots & \vdots \\
-        H_{n1} - ES_{n1} & H_{n2} - ES_{n2} & \cdots & H_{nn} - ES_{nn}
-    \end{bmatrix*} = 0
+	\begin{bmatrix*}
+		H_{11} - ES_{11} & H_{12} - ES_{12} & \cdots & H_{1n} - ES_{1n} \\
+		H_{21} - ES_{21} & H_{22} - ES_{22} & \cdots & H_{2n} - ES_{2n} \\
+		\vdots & \vdots & \ddots & \vdots \\
+		H_{n1} - ES_{n1} & H_{n2} - ES_{n2} & \cdots & H_{nn} - ES_{nn}
+	\end{bmatrix*} = 0
 \end{equation*}
 
 计算过程中做简化处理（表 \ref{tab:simplify}）：
 
 
 \begin{table}[h]
-    \centering
-    \begin{tabular}{cc}
-        库仑积分 & $H_{11} = H_{22} = \alpha$                 \\
-        交换积分 & $H_{ij} = H_{ji} = \begin{cases}
-                                              \beta & i = j \neq 1    \\
-                                              0     & i \neq j \neq 1
-                                          \end{cases}$ \\
-        重叠积分 & $S_{ij} = \begin{cases}
-                                     1 & i = j    \\
-                                     0 & i \neq j
-                                 \end{cases}$
-    \end{tabular}
-    \caption{简化处理方法}
-    \label{tab:simplify}
+	\centering
+	\begin{tabular}{cc}
+		库仑积分 & $H_{11} = H_{22} = \alpha$                 \\
+		交换积分 & $H_{ij} = H_{ji} = \begin{cases}
+				                              \beta & i = j \neq 1    \\
+				                              0     & i \neq j \neq 1
+			                              \end{cases}$ \\
+		重叠积分 & $S_{ij} = \begin{cases}
+				                     1 & i = j    \\
+				                     0 & i \neq j
+			                     \end{cases}$
+	\end{tabular}
+	\caption{简化处理方法}
+	\label{tab:simplify}
 \end{table}
 
 
@@ -338,7 +338,7 @@ $\psi_2 = c_A \left( \psi_A - \psi_B \right) \Rightarrow$ 体系能量比单独�
 电荷密度$\rho_i$第$i$个原子上出现的$\pi$电子数
 
 \begin{equation*}
-    \rho_i = \sum_{k} n_k c^2_{ki}
+	\rho_i = \sum_{k} n_k c^2_{ki}
 \end{equation*}
 
 \subsubsection{键级}
@@ -346,7 +346,7 @@ $\psi_2 = c_A \left( \psi_A - \psi_B \right) \Rightarrow$ 体系能量比单独�
 键级$P_{ij}$表示原子$i$和原子$j$之间成键的强度。
 
 \begin{equation*}
-    P_{ij} = \sum_k n_k c_{ki} c_{kj}
+	P_{ij} = \sum_k n_k c_{ki} c_{kj}
 \end{equation*}
 
 \subsubsection{自由价}
@@ -354,7 +354,7 @@ $\psi_2 = c_A \left( \psi_A - \psi_B \right) \Rightarrow$ 体系能量比单独�
 自由价$F_i$，第$i$个原子剩余成键能力的相对大小。
 
 \begin{equation*}
-    F_i = F_{\mathrm{max}} - \sum_i P_{ij}
+	F_i = F_{\mathrm{max}} - \sum_i P_{ij}
 \end{equation*}
 
 
@@ -363,23 +363,23 @@ $F_{\mathrm{max}}$的值为$\sqrt{3}$，采用了理论上存在的三次甲基�
 若要计算三次甲基甲烷的键级，计算久期行列式：
 
 \begin{equation*}
-    \begin{vmatrix}
-        x & 1 & 1 & 1 \\
-        1 & x & 0 & 0 \\
-        1 & 0 & x & 0 \\
-        1 & 0 & 0 & x \\
-    \end{vmatrix}
+	\begin{vmatrix}
+		x & 1 & 1 & 1 \\
+		1 & x & 0 & 0 \\
+		1 & 0 & x & 0 \\
+		1 & 0 & 0 & x \\
+	\end{vmatrix}
 \end{equation*}
 
 
 \section{丁二烯的HMO法处理}
 
 丁二烯 \begin{scriptsize}
-    \chemfig{=[:30]-[:-30]=[:30]}
+	\chemfig{=[:30]-[:-30]=[:30]}
 \end{scriptsize} 的分子轨道为
 
 \begin{equation*}
-    \psi = c_1 \psi_1 + c_2 \psi_2 + c_3 \psi_3 + c_4 \psi_4
+	\psi = c_1 \psi_1 + c_2 \psi_2 + c_3 \psi_3 + c_4 \psi_4
 \end{equation*}
 
 $\psi_i$表示参加共轭的4个C原子的$p_z$轨道。
@@ -387,65 +387,76 @@ $\psi_i$表示参加共轭的4个C原子的$p_z$轨道。
 久期行列式：
 
 \begin{equation*}
-    \begin{vmatrix}
-        \alpha - E & \beta      & 0          & 0          \\
-        \beta      & \alpha - E & \beta      & 0          \\
-        0          & \beta      & \alpha - E & \beta      \\
-        0          & 0          & \beta      & \alpha - E \\
-    \end{vmatrix}
+	\begin{vmatrix}
+		\alpha - E & \beta      & 0          & 0          \\
+		\beta      & \alpha - E & \beta      & 0          \\
+		0          & \beta      & \alpha - E & \beta      \\
+		0          & 0          & \beta      & \alpha - E \\
+	\end{vmatrix}
 \end{equation*}
 
 \begin{equation*}
-    \begin{vmatrix*}
-        x & 1 & 0 & 0 \\
-        1 & x & 1 & 0 \\
-        0 & 1 & x & 1 \\
-        0 & 0 & 1 & x \\
-    \end{vmatrix*}
+	\begin{vmatrix*}
+		x & 1 & 0 & 0 \\
+		1 & x & 1 & 0 \\
+		0 & 1 & x & 1 \\
+		0 & 0 & 1 & x \\
+	\end{vmatrix*}
 \end{equation*}
 
 
 \begin{equation*}
-    x^4 - 3x^2 + 1 = 0
+	x^4 - 3x^2 + 1 = 0
 \end{equation*}
 
 解得
 
 \begin{align*}
-    x_1 & = -1.618 \\
-    x_2 & = -0.618 \\
-    x_3 & = 0.618  \\
-    x_4 & = 1.618  \\
+	x_1 & = -1.618 \\
+	x_2 & = -0.618 \\
+	x_3 & = 0.618  \\
+	x_4 & = 1.618  \\
 \end{align*}
 
 于是
 
 \begin{align*}
-    E_1 & = \alpha + 1.618\beta \\
-    E_2 & = \alpha + 0.618\beta \\
-    E_3 & = \alpha - 0.618\beta \\
-    E_4 & = \alpha - 1.618\beta \\
+	E_1 & = \alpha + 1.618\beta \\
+	E_2 & = \alpha + 0.618\beta \\
+	E_3 & = \alpha - 0.618\beta \\
+	E_4 & = \alpha - 1.618\beta \\
 \end{align*}
 
 其中$\alpha = E_{p_z} < 0$，$\beta = c_i \sim c_{i+1} (\mbox{键积分}) < 0$。
 
 
 \begin{equation*}
-    E_1 < E_2 < E_3 < E_4
+	E_1 < E_2 < E_3 < E_4
 \end{equation*}
 
 \section{价键理论 杂化轨道理论}
 
 假设$s,p,d$轨道所占的比例分别为$\alpha, \beta, \gamma$，则两个等性杂化轨道间的最大值之间的夹角$\theta$满足
 
+% 杂化轨道
+
+% 正交的
+
+% 归一的
+
+% 杂化是比较解释性的东西（
+
+% 实际去测得话
 \begin{equation*}
-    \alpha + \beta \cos \theta + \gamma \left(\frac{3}{2}\cos ^2 \theta - \frac{1}{2}\right) = 0
+	\alpha + \beta \cos \theta + \gamma \left(\frac{3}{2}\cos ^2 \theta - \frac{1}{2}\right) = 0
 \end{equation*}
 
 对于不等性杂化轨道：
 
 \begin{equation*}
-    \sqrt{\alpha_i} \sqrt{\alpha_j} + \sqrt{\beta_i}{\sqrt{\beta_j}} \cos \theta_{ij} + \sqrt{\gamma_i}\sqrt{\gamma_j} \left( \frac{3}{2} \cos ^2 \theta_{ij} - \frac{1}{2}  \right)= 0
+	\sqrt{\alpha_i} \sqrt{\alpha_j} + \sqrt{\beta_i}{\sqrt{\beta_j}} \cos \theta_{ij} + \sqrt{\gamma_i}\sqrt{\gamma_j} \left( \frac{3}{2} \cos ^2 \theta_{ij} - \frac{1}{2}  \right)= 0
 \end{equation*}
 
 \section{分子轨道理论}
+
+
