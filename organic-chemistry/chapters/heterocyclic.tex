@@ -1,61 +1,56 @@
 \chapter{杂环化合物}
-\section{概述}
-\subsection{分类}
-\subsubsection{单环}
-五元杂环、六元杂环
-\subsubsection{稠杂环}
-\section{含有一个杂原子的五元杂环化合物}
+\input{chapters/heterocyclic/intro.tex}
+\input{chapters/heterocyclic/one_hetero.tex}
+
+\section{唑}
+
+含有两个杂原子的五元杂环称为唑。\chemfig{[:-17]*5(N=-NH-=-)}
+
+
+\section{六元杂环化合物}
+
+\subsection{结构和性质}
 
 \begin{center}
-    \chemname{\chemfig{[:-17]*5(-O-=-=-)}}{呋喃}
-    \chemname[2.3ex]{\chemfig{[:-17]*5(-\chembelow{N}{H}-=-=-)}}{吡咯}
-    \chemname{\chemfig{[:-17]*5(-S-=-=-)}}{噻吩}
+    \chemfig{*6(-N=-=-=)}
 \end{center}
 
-\subsection{亲电反应活性}
+$\ce{N}$ 碱性、亲和性、氧化反应
 
-\begin{center}
-    \chemfig{[:-17]*5(-\chembelow{N}{H}-=-=-)} >  \chemfig{[:-17]*5(-O-=-=-)} > \chemfig{[:-17]*5(-S-=-=-)} > \chemfig{*6(-=-=-=)}
-\end{center}
-
-\subsection{环的稳定性}
-
-离域能越大，越稳定。所有的这些五元杂环化合物都可以用硝化反应开环，同时，也不能用硝酸直接硝化，因为环不稳定。
-
+$\beta$ 位可以发生亲电取代，$\alpha$位可发生亲核取代。
 
 \subsection{物理性质}
 
-% 思考题：为什么呋喃难溶，而四氢呋喃可溶。
-无色液体，通常不溶于水。而四氢呋喃可溶解。
+\subsubsection{沸点}
+
+\begin{center}
+    \chemfig{*6(-=-=-=)} < \chemfig{*6(-N=-=-=)}
+\end{center}
+
+N的存在一定程度上破坏了对称结构，会导致分子产生极性。
+
+\subsubsection{溶解性}
+
+吡啶有一定的极性，可以溶解大部分有机物质，是良好的溶剂。
 
 \subsection{化学性质}
 
-\subsubsection{亲电取代反应}
+\subsubsection{碱性}
 
-\paragraph{与$\ce{Cl2}$反应（亲电特性）}
+脂肪胺 > 吡啶 > 苯胺 > 吡咯
+
+\begin{center}
+    \chemfig{*6(-N(-H)-----)} > \chemfig{*6(-N=-=-=)} > \chemfig{*6(-=-=(-NH_2)-=)} > \chemfig{[:-17]*5(-N(-H)-=-=)}
+\end{center}
 
 \begin{center}
     \small
     \schemestart
-    \chemfig{[:-17]*5(-\chembelow{N}{H}-=-=-)} \+ $\ce{Cl2}$ \arrow{->[反应难控制]}[,1.4]
-    \arrow(@c1--){0}[-90,1.2] {}
-    \chemfig{[:-17]*5(-O-=-=-)} \+ $\ce{Cl2}$ \arrow{->}[,1.4] \chemfig{[:-17]*5(-O-(-Cl)=-=-)}
+    \chemfig{*6(-N=-=-=)} \+ $\ce{HCl}$ \arrow{->} \chemfig{*6(-\chemabove{N}{\oplus}(-Cl)=-=-=)} % TODO 写完
     \schemestop
 \end{center}
 
-\paragraph{与$\ce{Br}$反应}
+\subsubsection{亲核性}
 
-\begin{center}
-    \small
-    \schemestart
-    \chemfig{[:-17]*5(-O-=-=-)} + $\ce{Br2}$ \arrow{->} \chemfig{[:-17]*5((-Br)-O-(-Br)=(-Br)-(-Br)=-)}
-    \schemestop
-\end{center}
+可以作为亲核试剂和 $\ce{CH3I}$ 反应。
 
-\paragraph{硝化反应}
-
-用温和的硝化试剂乙酰基硝酸酯$\ce{CH3COONO2}$硝化，且控制在低温条件（为了保持硝化试剂的稳定性）。
-
-\paragraph{磺化}
-
-用 \chemname[2.7ex]{\chemfig{*6(-\chemabove{N}{\oplus}(-\chembelow{S}{\ominus}O_3)=-=-=)}}{三氧化硫吡啶} 或 95\%的硫酸磺化

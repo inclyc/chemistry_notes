@@ -1,0 +1,101 @@
+\section{含有一个杂原子的五元杂环化合物}
+
+\begin{center}
+    \chemname{\chemfig{[:-17]*5(-O-=-=-)}}{呋喃}
+    \chemname[2.3ex]{\chemfig{[:-17]*5(-\chembelow{N}{H}-=-=-)}}{吡咯}
+    \chemname{\chemfig{[:-17]*5(-S-=-=-)}}{噻吩}
+\end{center}
+
+\subsection{亲电反应活性}
+
+\begin{center}
+    \chemfig{[:-17]*5(-\chembelow{N}{H}-=-=-)} >  \chemfig{[:-17]*5(-O-=-=-)} > \chemfig{[:-17]*5(-S-=-=-)} > \chemfig{*6(-=-=-=)}
+\end{center}
+
+\subsection{环的稳定性}
+
+离域能越大，越稳定。所有的这些五元杂环化合物都可以用硝化反应开环，同时，也不能用硝酸直接硝化，因为环不稳定。
+
+
+\subsection{物理性质}
+
+% 思考题：为什么呋喃难溶，而四氢呋喃可溶。
+无色液体，通常不溶于水。而四氢呋喃可溶解。
+
+\subsection{化学性质}
+
+\subsubsection{亲电取代反应}
+
+\paragraph{与$\ce{Cl2}$反应（亲电特性）}
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{[:-17]*5(-\chembelow{N}{H}-=-=-)} \+ $\ce{Cl2}$ \arrow{->[反应难控制]}[,1.4]
+    \arrow(@c1--){0}[-90,1.2] {}
+    \chemfig{[:-17]*5(-O-=-=-)} \+ $\ce{Cl2}$ \arrow{->}[,1.4] \chemfig{[:-17]*5(-O-(-Cl)=-=-)}
+    \schemestop
+\end{center}
+
+\paragraph{与$\ce{Br}$反应}
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{[:-17]*5(-O-=-=-)} + $\ce{Br2}$ \arrow{->} \chemfig{[:-17]*5((-Br)-O-(-Br)=(-Br)-(-Br)=-)}
+    \schemestop
+\end{center}
+
+\paragraph{硝化反应}
+
+用温和的硝化试剂乙酰基硝酸酯$\ce{CH3COONO2}$硝化，且控制在低温条件（为了保持硝化试剂的稳定性）。
+
+\paragraph{磺化}
+
+用 \chemname[2.7ex]{\chemfig{*6(-\chemabove{N}{\oplus}(-\chembelow{S}{\ominus}O_3)=-=-=)}}{三氧化硫吡啶} 或 95\%的硫酸磺化
+
+\paragraph{傅氏反应}
+
+\subparagraph{烷基化} 引入的烷基$-R$是一个供电基，活化杂环。反应不易控制。
+
+\subparagraph{酰基化} 酸酐或酰氯。注意不能使用 $\ce{AlCl3}$ ，这是因为 $\ce{Al}$ 原子和 $\ce{O}$ $\ce{S}$ 作用，使得苯环钝化。
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{[:-17]*5(-O-=-=-)} \arrow{->[$\ce{BF2}$][$\ce{(CH3CO)2O}$ ]}[,1.7] \chemfig{[:-17]*5(-O-(-COCH_3)=-=-)}
+    \arrow(@c1--){0}[-90,1.0] {}
+    \chemfig{[:-17]*5(-S-=-=-)} \arrow{->[$\ce{H3PO4}$][或$\ce{SnCl4}$ ]}[,1.7] \chemfig{[:-17]*5(-S-(-COCH_3)=-=-)}
+    \arrow(@c3--){0}[-90,1.0] {}
+    \chemfig{[:-17]*5(-\chembelow{H}{N}-=-=-)} \arrow{->[$150^\circ \sim 200^\circ$]}[,1.7] \chemfig{[:-17]*5(-S-(-COCH_3)=-=-)}
+    \schemestop
+\end{center}
+\paragraph{催化加氢}
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{[:-17]*5(-O-=-=-)} \arrow{0}[,0] \+ $\ce{H2}$ \arrow{->[$\ce{Ni}$][$100^\circ$]}\chemfig{[:-17]*5(-O-----)}
+    \arrow(@c1--){0}[-90,1.0] {}
+    \chemfig{[:-17]*5(-S-=-=-)} \arrow{0}[,0] \+ $\ce{H2}$ \arrow{->[$\ce{Ni}$][$200^\circ$]}\chemfig{[:-17]*5(-S-----)}
+    \arrow(@c4--){0}[-90,1.0] {}
+    \chemfig{[:-17]*5(-\chembelow{H}{N}-=-=-)} \arrow{0}[,0] \+ $\ce{H2}$ \arrow{->[$\ce{MoS2}$][$200^\circ$]}\chemfig{[:-17]*5(-S-----)}
+    \schemestop
+\end{center}
+
+
+\subsubsection{个性反应}
+
+\paragraph{呋喃环} \chemfig{[:-17]*5(-O-=-=-)}最不稳定，具有一定的共轭二烯烃的性质。这个物质可以发生DA双烯合成反应。
+
+\paragraph{吡咯环} \chemfig{[:-17]*5(-\chembelow{N}{H}-=-=-)} 几乎不体现碱性，$\ce{N-H}$体现一定的酸性。
+
+
+\paragraph{糠醛} \chemfig{[:-17]*5(-O-(-CHO)=-=-)} 这个物质最开始是由米糠来的，但现在一般不用这个制法，而是用戊聚糖水解变成一般的戊糖，单戊糖再脱水水解。糠醛是一种无色的液体，可以溶解在水中。在有机合成上是一种比较常见的有机溶剂。
+\begin{itemize}
+    \item 氧化反应 -- 选择碱性的高锰酸钾氧化，可以把醛基氧化。
+    \item 还原反应 -- 可以被雷尼镍还原。生成四氢糠醇。
+          如果只想还原醛基，可以$\ce{->[CuO][Cr2O3]}$，可以保留呋喃环，同时还原醛基
+    \item 歧化反应 -- 类似于醛。不含有$\alpha - \ce{H}$的醛在强碱中的反应。\
+    \item Perkin反应 -- 无$\alpha - \ce{H}$的醛和酸酐反应。
+\end{itemize}
