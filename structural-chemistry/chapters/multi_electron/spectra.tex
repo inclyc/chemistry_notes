@@ -96,6 +96,84 @@ $m_S$的取值：$-S, -S + 1, \cdots , S$
 
 \subsection{原子光谱项}
 
+光谱项的表示方法：
+\begin{equation*}
+	{^{2S + 1}} \framebox{S P D F}
+\end{equation*}
+
+其中，$J$值也会影响能量的大小，但影响程度较小。$J$值的不同使得原子光谱项在外磁场下的分裂不同。这使得每个光谱项可以分裂为个光谱支项，个数与$J$的取值个数相同。每一个$J$值分为$2J + 1$个精细能级。
 \begin{equation*}
 	^{2S + 1} \framebox{S P D F}_{J}
 \end{equation*}
+
+光谱项的意义在表\ref{tab:spectrum}中列出。
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{cc}
+		\toprule
+		项  & 含义                                            \\
+		\midrule
+		$L$ & 单电子体系轨道亚层的能级                        \\
+		$S$ & $\begin{cases}
+				       L > S & \mbox{光谱支项为} $(2S + 1)$ \mbox{个} \\
+				       L < S & \mbox{光谱支项为} $(2L + 1)$ \mbox{个} \\
+			       \end{cases}$ \\
+		$J$ & 赛曼分裂为$2J + 1$个                            \\
+		\bottomrule
+	\end{tabular}
+	\caption{原子光谱项}
+	\label{tab:spectrum}
+\end{table}
+
+
+
+\subsubsection{例题}
+
+
+\paragraph{组态$\ce{B}: 1s^22s^22p^1$}
+
+$2p \rightarrow {^2P_{\frac{3}{2}}} {^2P_{\frac{1}{2}}}$
+
+\paragraph{组态$1s^22p^1$}
+
+$L = 1, S = 1, 0$，所以有光谱项：${^3P}, {^1P}$。代入$J$的计算公式可以得出光谱支项：${^3P_2}, {^3P_1}, {^3P_0}, {^1P_1}$
+
+\paragraph{组态$2p^13p^1$}
+
+$L = 0, 1, 2$，$S = 0, 1$，光谱项：${^1S}, {^1P}, {^1D}$，${^3S}, {^3P}, {^3D}$。考虑$J$值则可列出表\ref{tab:spectrum2p13p1}。
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{cccc}
+		\toprule
+		L & S & J                           & 赛曼分裂数 \\
+		\midrule
+		2 & 1 & ${^3D_3}, {^3D_2}, {^3D_1}$ & 15         \\
+		2 & 0 & ${^1D_2}$                   & 5          \\
+		1 & 1 & ${^3P_2}, {^3P_1}, {^3P_0}$ & 9          \\
+		1 & 0 & ${^1P_1}$                   & 3          \\
+		0 & 1 & ${^3S_1}$                   & 3          \\
+		0 & 0 & ${^1S_0}$                   & 1          \\
+		\bottomrule
+	\end{tabular}
+	\caption{$2p^13p^1$的光谱项}
+	\label{tab:spectrum2p13p1}
+\end{table}
+
+\paragraph{$2p^2$等价电子}
+
+在考虑泡利不相容原理下，设电子数为$k$，总共的状态数为：
+\begin{equation*}
+	C_{2(2l + 1)}^k
+\end{equation*}
+例如，$2p^2$电子组态，$l=1, k=2$，电子状态数为$C_6^2 = 15$
+
+\subsubsection{能级}
+
+$S$大的，能级最低。如果$S$相同，$L$大的能级低。
+
+\subsubsection{正光谱与反光谱}
+
+半满为分界线。半满前为正光谱，半满后为负光谱。
+
