@@ -1,0 +1,53 @@
+\section{稠杂环}
+
+\begin{center}
+    \chemname{\chemfig{*6(-=*5(-N(-[,0.5]H)-=-)-=-=)}}{吲哚}
+\end{center}
+
+\subsection{结构}
+
+整个分子成平面结构，具有$\Pi_9^{10}$型大$\Pi$键。吲哚环的芳香性使得它容易发生亲电取代。
+
+\subsection{物理性质}
+
+吲哚难溶于水，常温下是固体（晶体）。
+
+\subsection{化学性质}
+
+
+\paragraph{亲电取代}
+
+一般在比吡咯环的$\beta$位发生取代反应。亲电取代的难易程度：
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{[:-17]*5(-N(-H)-=-=)} \subscheme{\arrow{0}[,0.5]}  > \subscheme{\arrow{0}[,0.5]} \chemfig{*6(-=*5(-N(-[,0.5]H)-@{b}=@{a}-)-=-=)} \subscheme{\arrow{0}[,0.5] }> \subscheme{\arrow{0}[,0.5] }\chemfig{*6(-=-=-=)}
+    \schemestop
+    \chemmove{
+        \draw (a)+(0.5,0.5) -- (a);
+        \node[above = 3pt of a, red] (dummy1) {$\beta$};
+        \node[right = 2pt of b, red] (b) {$\alpha$};
+    }
+\end{center}
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{*6(-=*5(-N(-[,0.5]H)-=-)-=-=)} \subscheme{\arrow{0}[,0.1]} \+ $\ce{Br2}$ \arrow{->[\scriptsize\chemfig{[:30]*6(--O---O-)}]}[,1.5]\chemfig{*6(-=*5(-N(-[,0.5]H)-=(-Br)-)-=-=)}
+    \schemestop
+\end{center}
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{*6(-=*5(-N(-[,0.5]H)-=-)-=-=)} \subscheme{\arrow{0}[,0.1]} \arrow{->[$0^\circ \mathrm{C}$][$\ce{CH3COONO2}$]}[,1.9]\chemfig{*6(-=*5(-N(-[,0.5]H)-=(-NO_2)-)-=-=)}
+    \schemestop
+\end{center}
+
+\begin{center}
+    \small
+    \schemestart
+    \chemfig{*6(-=*5(-N(-[,0.5]H)-=-)-=-=)} \subscheme{\arrow{0}[,0.1]} \arrow{->[\scriptsize\chemname[-7.7ex]{\chemfig{[:90]*6(-\chemabove{N}{\oplus}(-\chembelow{S}{\ominus}O_3)=-=-=)}}{三氧化硫吡啶}]}[,1.9]\chemfig{*6(-=*5(-N(-[,0.5]H)-=(-NO_2)-)-=-=)}
+    \schemestop
+\end{center}
