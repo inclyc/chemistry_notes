@@ -1,0 +1,188 @@
+\chapter{表面物理化学}
+
+界面是指两相接触的约几个分子厚度的过渡区，若其中一相为气体，这种界面通常称为表面。
+
+严格讲表面应是液体和固体与其饱和蒸气之间的界面。
+
+\section{表面张力和Gibbs自由能}
+
+\subsection{表面分子的特殊性}
+
+\subsubsection{受力情况特殊}
+
+内部分子，分子受到的合力为0，热运动也不需要外界对体系做功。表面分子，受到的合力朝向溶液内部，表面存在不均匀的力场。
+
+\subsubsection{能量特殊}
+将一个内部分子移动到表面上，环境要客服不对称力场而做功。
+\subsection{表面张力}
+\subsubsection{本质}
+表面的不对称力场$\ce{->}$表面分子企图``钻入''内部
+\subsubsection{宏观现象}
+宏观收缩，表面存在收缩力。
+\subsection{表面热力学的基本公式}
+\subsubsection{表面热力学的基本关系式和$\gamma$的定义}
+\begin{equation*}
+    \d U = T \d S- p \d V+ \gamma\d A_s + \sum_B \mu_B \d n_B
+\end{equation*}
+\subsubsection{表面自由能}
+
+\begin{align*}
+    \d U & = T \d S- p \d V+ \gamma\d A_s + \sum_B \mu_B \d n_B    \\
+    \d H & =T \d S+ V \d p + \gamma\d A_s + \sum_B \mu_B \d n_B    \\
+    \d A & = -S \d T- p \d V+ \gamma\d A_s + \sum_B \mu_B \d n_B   \\
+    \d G & = -S \d T - V \d p + \gamma\d A_s + \sum_B \mu_B \d n_B
+\end{align*}
+
+
+\subsubsection{界面张力与温度的关系}
+
+这里$A_s$是总表面积。运用全微分的性质，有
+
+\begin{align*}
+    \frac{\partial S}{\partial A_s}   & =  -\frac{\partial \gamma}{\partial T}                  \\
+    T \frac{\partial S}{\partial A_s} & = T \left(  -\frac{\partial \gamma}{\partial T} \right) \\
+\end{align*}
+
+左侧为温度不变时，改变单位表面积的热量，这是个正值，右侧必然是一个正值。从而，$\frac{\partial \gamma}{\partial T} < 0$。温度升高，表面张力将降低。
+
+有经验公式：
+\begin{equation*}
+    \gamma V_m^{2/3} = k \left(T_c - T - 6.0 \ \mathrm{K}\right)
+\end{equation*}
+
+温度超过临界状态时，气-液界面已不清晰，此时的体系可以被称为超临界流体。
+
+\subsubsection{界面张力与浓度的关系}
+
+主要是三种物质，表面活性剂，普通非极性溶质，极性溶质。
+
+
+\section{弯曲表面上的附加压力和蒸气压}
+\subsection{弯曲表面上的附加压力}
+
+\subsubsection{弯曲表面上的附加压力的定义}
+
+考虑表面张力的影响，弯曲表面上的液体或气体在与平面情况下不同，前者受到附加压力。
+
+静止液体的表面一般是一个平面，但在某些特殊情况下，例如在毛细管中，液体的表面是一个曲面。在表面张力的作用下，弯曲表面的内外受到的压力与平面不同，它受到一种附加的压力$p_s$，方向指向曲率圆心。
+
+考虑一个球形液滴。
+
+\begin{equation*}
+    p_s \d V = \gamma \d A_s
+\end{equation*}
+
+\begin{align*}
+    A_s & = 4 \pi r^2           \Rightarrow \d A_s = 8 \pi r \d r \\
+    V   & = \frac{4 \pi r^3}{3} \Rightarrow \d V = 4 \pi r^2 \d r \\
+\end{align*}
+
+\begin{equation*}
+    \Rightarrow p_s = \frac{2\gamma}{r}
+\end{equation*}
+
+\subsubsection{结论}
+
+\begin{itemize}
+    \item 曲率半径$r$越小，所受到的附加压力越大
+    \item 液滴呈凸形时，受到的压力为$p_0 + p_s$
+    \item 液滴呈凹形时，受到的压力为$p_0 - p_s$
+    \item 自由分散的液体在表面张力的作用下自发呈球形
+\end{itemize}
+
+
+\subsubsection{毛细管现象}
+
+\begin{equation*}
+    \Delta p = p_s = \frac{2\gamma}{r} = \Delta \rho g h
+\end{equation*}
+
+$\Delta \rho  = \rho_1 - \rho_g$，液相的密度和气相的密度差。通常 $\rho_1 \gg \rho_g$，可以近似写作
+
+\begin{equation*}
+    h = \frac{2 \gamma}{R \rho_1 g}
+\end{equation*}
+
+
+更一般的证明是液体与管壁之间的接触角是某一$\theta$值。
+
+\begin{equation*}
+    \frac{2 \gamma \cos \theta}{r} = \Delta \rho g h \Rightarrow h = \frac{2 \gamma \cos \theta}{R \Delta\rho g}
+\end{equation*}
+
+\subsection{Young-Laplace公式}
+
+三维曲面需要两个曲率$\kappa_1$，$\kappa_2$来描述。被称为曲面的\textbf{主曲率}。分别代表曲面与$x$、$y$平面相交线的弯曲程度。
+
+Young-Laplace公式：
+
+\begin{equation*}
+    p_s = \gamma \left( \frac{1}{\kappa_1} + \frac{1}{\kappa_2}\right)
+\end{equation*}
+
+\subsection{弯曲表面上的蒸气压 - Kelvin公式}
+
+Kelvin公式主要研究曲面液体的蒸气压。
+
+过程：
+
+\begin{center}
+    \small
+    \schemestart
+    平面液体 \arrow{<=>[(1)]} 蒸汽（正常蒸气压$p_0$）
+    \arrow(@c1--){->[(2)]}[-90] 小液滴
+    \arrow(@c3--){<=>[(3)]}[0] 蒸汽（小液滴蒸气压$p_r$）
+    \arrow(--@c2){->[(4)]}[90]
+    \schemestop
+\end{center}
+
+
+\begin{align*}
+    \Delta_{\mathrm{vap}} G_1 & = 0                                                                 \\
+    \Delta G_2                & = \int_{p_0}^{p_0 + \frac{2\gamma}{r}} V_m \d p + \gamma(A_s - A_0) \\
+                              & \approx \frac{2\gamma M}{r\rho} + \gamma A_s                        \\
+    \Delta_{\mathrm{vap}} G_3 & = - \gamma A_s                                                      \\
+    \Delta G_4                & = RT \ln \frac{p_0}{p_r}                                            \\
+\end{align*}
+
+\begin{align*}
+    \Delta G_1                         & = \Delta G_2 + \Delta G_3 + \Delta G_4 \\
+    \Rightarrow RT \ln \frac{p_r}{p_0} & = \frac{2 \gamma M}{r \rho}
+\end{align*}
+
+\subsubsection{Kelvin公式的若干结论}
+
+\paragraph{小液滴易蒸发} $r \downarrow$，$p_r \uparrow$。
+
+\paragraph{亚稳相平衡} 可以形成过沸溶液，过冷气体
+
+\section{溶液的表面吸附}
+
+溶液看起来非常均匀，实际上并非如此。无论用什么方法使溶液混匀，但表面上一薄层的浓度总是与内部不同。通常把物质在表面上富集的现象称为吸附(adsorption)。溶液表面的吸附作用导致表面浓度与内部（即体相）浓度的差别，这种差别则称为表面过剩(surface excess)。
+
+可以用简单的实验证明表面过剩的存在。向含有某种物质的溶液中加入表面活性剂，通入大量空气使其发生泡沫，然后分析泡沫中的溶质浓度，发现泡沫的浓度远远高于原溶液的浓度\footnote{这一现象后来发展为提取稀有元素的泡沫浮选法(float flotation)}。
+
+\subsection{Gibbs吸附公式}
+
+对于溶液来说，降低系统Gibbs自由能的唯一途径是尽可能地缩小液体的表面积。对于溶液来说，溶液的表面张力和表面层的组成有着密切的关系，因此还可以由溶液自动调节不同组分在表面层中的数量来促进系统的Gibbs自由能的降低。
+
+
+\begin{equation*}
+    \Gamma_r = - \frac{a_2}{RT} \frac{\d \gamma}{\d a_2}
+\end{equation*}
+
+这里$a_2$为溶液中溶质的活度，$\gamma$为溶液的表面张力，$\Gamma_2$为溶质的表面过剩（表面超量）。
+
+\subsubsection{吸附公式的推论}
+
+\paragraph{$\frac{\d \gamma}{\d a_2} < 0$} 增加溶质活度能使溶液的表面张力降低，$\Gamma_2$为正值，表面层溶质所含有的比例则比本体溶液增大。表面活性物质就属于这种情况。
+
+\paragraph{$\frac{\d \gamma}{\d a_2} < 0$} 增加溶质的活度使溶液的表面张力升高，$\Gamma_2$为负值，表面层溶质所含有的比例则比本体溶液减小。
+
+\section{液-液界面的性质}
+
+\subsection{液-液界面的铺展}
+
+\subsection{单分子表面膜--不溶性的表面膜}
+
+\subsection{表面压}
