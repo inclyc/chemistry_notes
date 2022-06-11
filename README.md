@@ -8,7 +8,7 @@
 
 | 学科       | 文件名          | 状态   |
 | ------------ | ------------------ | -------- |
-| 有机化学（B) | organic-chemistry  | 正在编写 |
+| 有机化学（B) | organic-chemistry  | 已结课  |
 | 结构化学预习 | pre-course         | 停止更新 |
 | 物理化学（B) | physical-chemistry | 已结课 |
 | 结构化学（B) | structural-chemistry | 已结课 |
