@@ -12,7 +12,7 @@
 | 结构化学预习 | pre-course         | 停止更新 |
 | 物理化学（B) | physical-chemistry | 已结课 |
 | 结构化学（B) | structural-chemistry | 已结课 |
-
+| 表面化学 | surface-chemistry | 已结课 |
 ## 找到可浏览的版本
 
 
