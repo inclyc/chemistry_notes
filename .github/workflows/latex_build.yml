@@ -17,6 +17,7 @@ jobs:
             organic-chemistry/organic-chemistry.tex
             quantum-mechanics/8.04/8.04.tex
             surface-chemistry/surface-chemistry.tex
+            solid-chemistry/solid-chemistry.tex
           latexmk_use_xelatex: true
           latexmk_shell_escape: true
           work_in_root_file_dir: true
@@ -31,3 +32,4 @@ jobs:
             structural-chemistry/structural-chemistry.pdf
             quantum-mechanics/8.04/8.04.pdf
             surface-chemistry/surface-chemistry.pdf
+            solid-chemistry/solid-chemistry.pdf
