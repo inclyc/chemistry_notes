@@ -1,0 +1,70 @@
+% set formatoptions+=mB
+% set tw=80
+\chapter{表面热力学基础}
+\section{表面能和表面张力}
+\subsection{净吸力}
+
+对于每个液体中的分子而言，液体中的分子都受到一个向液体中心的力。这个力始终指向液
+体的内部。
+
+\subsection{表面能}
+
+由于净吸力的存在，在宏观上，整个表面的能量性质趋近于缩小，表面越大，能量越高。
+
+\begin{equation}
+    \gamma = \left(\frac{\partial G}{\partial A}\right)_{T, P, n_B}
+\end{equation}
+
+系统在温度、压力和组成不变的条件下，可逆地增加表面积时对系统作的非体积功称为表面
+功，\textbf{表面功} 与系统增加的面积成正比，即
+
+\begin{equation}
+    \d G = \gamma \cdot \d A
+\end{equation}
+
+
+\subsection{表面张力}
+
+将一金属框浇上肥皂液后，再可逆地用力 $F$ 拉动金属框上可移动的边，使之移动 $\d x$
+的距离，肥皂膜的表面积扩大$\d A$，因为肥皂膜有两个表面，所以
+
+\begin{equation}
+    \d A = 2 l \d x
+\end{equation}
+
+
+\begin{equation}
+    F \d x = \gamma \d A
+\end{equation}
+
+表面张力是垂直与界面边缘，沿着液面的切线方向单位长度上的收缩力。表面张力的单位是
+$\mathrm{N \cdot m^{-1}}$。
+
+
+\subsection{表面张力大小的影响因素}
+
+
+表（界）面张力是一种强度性质，纯液体的表面张力通常是指液体与饱和了本身蒸气的空气
+而言。影响表（界）面张力的因素主要有
+
+\begin{enumerate}
+    \item 物质的本性 \par
+          金属键 > 离子键 > 极性共价键 > 非极性共价键
+    \item 第二相 ($\beta$ 相)的影响 \par
+          温度、压力增加，$\gamma$ 降低
+    \item 第三种物质影响（溶质）\par
+          无机盐类，例如 $\ce{NaCl}$ \par
+          表面活性物质 \par
+          表面活性剂：$\ce{C8} \sim \ce{C_{20}}$
+    \item 温度的影响
+\end{enumerate}
+
+
+\subsection{Laplace 方程}
+
+
+\begin{equation}
+    \Delta P = \gamma \left(\frac{1}{R_1} + \frac{1}{R_2}\right)
+\end{equation}
+
+公式推导：体积功和表面功相等 $\Delta P \d V = \gamma \d A$。
