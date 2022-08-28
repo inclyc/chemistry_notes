@@ -63,8 +63,17 @@ $\mathrm{N \cdot m^{-1}}$。
 \subsection{Laplace 方程}
 
 
-\begin{equation}
-    \Delta P = \gamma \left(\frac{1}{R_1} + \frac{1}{R_2}\right)
-\end{equation}
+\begin{align}
+    \Delta P (xy \d z) & = \gamma \left(x \d y + y \d x\right)                           \\
+    \Delta P           & = \gamma \left(\frac{\d y}{y \d z} + \frac{\d x}{x \d z}\right) \\
+    \Delta P           & = \gamma \left(\frac{1}{R_1} + \frac{1}{R_2}\right)
+\end{align}
+
+事实上
+
+\begin{align}
+    \frac{x + \d x}{R_1 + \d z} & = \frac{x}{R_1} \\
+    \frac{\d x}{\d z}           & = \frac{x}{R_1}
+\end{align}
 
 公式推导：体积功和表面功相等 $\Delta P \d V = \gamma \d A$。
