@@ -77,3 +77,29 @@ $\mathrm{N \cdot m^{-1}}$。
 \end{align}
 
 公式推导：体积功和表面功相等 $\Delta P \d V = \gamma \d A$。
+
+
+\subsection{Kelvin 方程}
+
+Kelvin 方程描述液体饱和蒸气压随液滴大小的变化。考虑一平面液体，把液体可逆变为球
+形状态，可以考虑其被可逆加压。
+
+\begin{equation}
+    \Delta G_1 = V_m \gamma \left(\frac{1}{R_1} + \frac{1}{R_2}\right)
+\end{equation}
+
+气体部分，气体可逆加油的 Gibbs 自由能变化：
+
+\begin{align}
+    \Delta G_2 & = \int_{p_r}^p V_m \d p          \\
+               & = \int_{p_r}^p \frac{RT}{p} \d p \\
+               & = RT \ln \frac{p}{p_r}
+\end{align}
+
+对于球形液滴：
+
+\begin{align}
+    \Delta G_1           & = \Delta G_2              \\
+    RT \ln \frac{p}{p_r} & = \frac{2V_m \gamma}{r}   \\
+                         & = \frac{2M\gamma}{r \rho}
+\end{align}
