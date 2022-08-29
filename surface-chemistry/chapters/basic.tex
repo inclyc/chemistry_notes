@@ -103,3 +103,16 @@ Kelvin 方程描述液体饱和蒸气压随液滴大小的变化。考虑一平�
     RT \ln \frac{p}{p_r} & = \frac{2V_m \gamma}{r}   \\
                          & = \frac{2M\gamma}{r \rho}
 \end{align}
+
+% 这部分不是很明白，可以问问老师
+
+Kelvin 公式的原始形式实际上为
+
+\begin{equation}
+    \label{eq:kelvin}
+    p(r_1, r_2) = P - \frac{\gamma \rho_{\mathrm{vapor}}}
+    {\rho_{\mathrm{liquid}} - \rho_{\mathrm{vapor}}}
+    \left(\frac{1}{r_1} + \frac{1}{r_2}\right)
+\end{equation}
+
+现在教授的形式实际为 Ostwald - Freundlich 方程，可以由式 \refeq{eq:kelvin} 得到。
