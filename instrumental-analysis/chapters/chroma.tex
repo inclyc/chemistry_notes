@@ -93,3 +93,149 @@
 
 相对保留值只与柱温和固定相性质有关，与其他色谱操作条件无关，它表示了固定相对这
 两种组分的选择性。
+
+
+\section{色谱柱分离的效能}
+
+\subsection{塔板理论 - 色谱柱分离效能指标}
+
+色谱柱长：$L$, 虚拟的塔板间的距离：理论塔板高度 $H$，组分在色谱柱中分配平衡次数：
+理论塔板数 $n$
+
+则三者的关系为：
+
+\begin{equation}
+    n = \frac{L}{H}
+\end{equation}
+
+理论塔板数与色谱参数之间的关系为：
+
+\begin{equation}
+    n = 5.54 \left( \frac{t_R}{Y_{1/2}} \right)^2 = 16 \left(\frac{t_R}{W_b}\right)^2
+\end{equation}
+
+\subsection{速率理论 -- 影响柱效的因素}
+
+速率方程为：
+
+\begin{equation}
+    H = A + \frac{B}{u} + C u
+\end{equation}
+
+\begin{table}[H]
+    \caption{速率方程 (a.k.a Van Deemter's equation) 中各项的意义}
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
+        符号  & 意义     & 备注          \\
+        \midrule
+        $H$ & 理论塔板高度 & $H$ 越小，柱效越高 \\
+        $u$ & 载气的线速度 & 存在最佳流速      \\
+        $A$ & 涡流扩散项  & 常量          \\
+        $B$ & 分子扩散项  & 常量          \\
+        $C$ & 传质阻力项  & 常量          \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+想办法减小 $A$、$B$、$C$三项可以提高柱效。
+
+\subsubsection{$A$ - 涡流扩散项}
+
+\begin{equation}
+    A = 2 \lambda d p
+\end{equation}
+
+$d p$ : 固定相的平均颗粒直径
+
+$\lambda$：固定相的填充不均匀因子
+
+固定相颗粒越小，$d p \downarrow$，填充的越均匀，$A \downarrow$, $H \downarrow$，
+柱效 $n \uparrow$。表现在涡流扩散所引起的色谱峰变宽的现象减轻，色谱峰较窄。
+
+\subsubsection{$B/u$ 分子扩散项}
+
+\begin{equation}
+    B = 2 v D_g
+\end{equation}
+
+$v$: 弯曲因子，填充柱 $v < 1$，空心毛细管柱$v = 1$
+
+$D_g$: 试样组分分子在气相中的扩散系数 $(\mathrm{cm}^2 \cdot \mathrm{s}^{-1})$
+
+\begin{enumerate}
+    \item 存在浓度差，产生纵向扩散
+    \item 扩散导致色谱峰变宽，$H \uparrow (n\downarrow)$，分离变差
+    \item 分子扩散项与流速有关，流速 $\downarrow$，滞留时间 $\uparrow$，扩散 $\uparrow$
+    \item 扩散系数 $D_g \propto \left(M_{g}\right)^{-\frac{1}{2}}$
+\end{enumerate}
+
+\subsection{传质阻力项}
+
+传质阻力包括气相传质阻力 $C_g$ 和液相传质阻力 $C_L$
+
+\begin{align}
+    C   & = C_g + C_l                                                     \\
+    C_g & = \frac{0.01k}{(1 + k)^2} \cdot \frac{d_p^2}{D_g}               \\
+    C_L & = \frac{2}{3} \cdot \frac{k}{(1 + k)^2} \cdot \frac{d_f^2}{D_L}
+\end{align}
+
+$k$ 为容量因子，$D_L$ 为液相扩散系数，$d_f^2$ 为液膜厚度。减少担体粒度 $d p$，
+减小液膜厚度 $d f$，选择小分子量的气体作载气，可以降低传质阻力。
+
+\subsubsection{分离度 $R$}
+
+\begin{equation}
+    R = \frac{2\left(t_{R(2)} - t_{R(1)}\right)}{W_{b(2)} + W_{b(1)}}
+\end{equation}
+
+当 $W_{b(2)} = W_{b(1) = W_b}$，可以引入相对保留值和塔板数，可以导出：
+
+\begin{equation}
+    R = \frac{(r_{21} - 1)}{r_{21}} \sqrt{\frac{n}{16}}
+\end{equation}
+
+\paragraph{分离度与柱效} 分离度与柱效 $n$ 的平分根成正比，$r_{21}$ 一定时，增加
+柱效，可提高分离度，但组分保留时间增加且峰扩展，分析时间加长。
+
+\paragraph{分离度与 $r_{21}$}
+
+\begin{enumerate}
+    \item 增大 $r_{21}$ 是提高分离度的最有效方法
+    \item 增大 $r_{21}$ 的最有效方法是选择合适的固定相
+\end{enumerate}
+
+\subsection{分离条件的选择}
+
+\subsubsection{载气流速的选择}
+
+\begin{align}
+    H                               & = A + \frac{B}{u} + C \cdot u \\
+    \frac{\mathrm d H}{\mathrm d u} & = - \frac{B}{u^2} + C
+\end{align}
+
+可见，当 $ u_0 = \frac{B}{C} $ 时，取最大值。
+
+\subsubsection{柱温的选择}
+
+\begin{enumerate}
+    \item 首先应使柱温控制在固定液的最高使用温度和最低使用温度范围之内
+    \item 柱温 $\uparrow$，分离度 $\downarrow$，色谱峰变窄变高。柱温 $\uparrow$，
+          被测组分的挥发度 $\uparrow$，被测组分在气相中的浓度 $\uparrow$，低沸点
+          峰易产生重叠
+    \item 柱温 $\downarrow$，分离度 $\uparrow$，分析时间 $\uparrow$。对于难分离
+          的物质对，降低柱温虽然可在一定程度上使分离得到改善，但是不可能使之完全
+          分离，这是由于两组分的相对保留值增大的同时，两组分的峰宽也在增加，当后
+          者的增加速度大于前者时，两峰的交叠更严重
+    \item 柱温一般选择在接近或低于组分平均沸点时的温度。组分复杂，沸程宽的试样，
+          应该采用\textbf{程序升温}
+\end{enumerate}
+
+\subsubsection{柱长和内径的选择}
+
+增加柱长对提高分离度有利（分离度 $R^2$ 正比与柱长 $L$）但组分的保留时间 $t_R
+    \uparrow$ 且阻力 $\uparrow$ ，不便操作。
+
+柱长的选用原则是在能满足分离目的的前提下，尽量可能选用较短的柱，有利于缩短分析
+时间。填充色谱柱的柱长通常为 $1 - 3 \mathrm{m}$
