@@ -1,0 +1,146 @@
+\chapter{电化学分析法}
+
+\section{离子选择性电极与膜电极}
+
+\subsubsection{离子选择性电极的原理和结构}
+
+\paragraph{特点} 仅对溶液中特定离子有选择性的响应。关键器件为选择膜的敏感元件：
+单晶、混晶、液膜、功能膜及生物膜构成。
+
+\paragraph{膜电位} 膜内外被测离子活度的不同而产生电位差
+
+\begin{equation}
+    E = E' \pm \frac{RT}{nF} \ln a_i
+\end{equation}
+
+
+\subsubsection{玻璃膜（非晶体膜）电极}
+
+非晶体膜电极，玻璃膜的组成不同可制成对不同阳离子响应的玻璃电极。
+
+$\ce{H+}$ 响应的玻璃膜电极：敏感膜厚度约为 $0.05 \mathrm{mm}$
+
+$\ce{SiO2}$ 基质中加入 $\ce{Na2O}$、$\ce{Li2O}$ 和 $\ce{CaO}$ 烧结而成的特殊玻
+璃膜。水浸泡后，表面的 $\ce{Na+}$ 与水中的 $\ce{H+}$ 交换，表面形成水合硅胶层。
+玻璃电极使用前，必须在水溶液中浸泡。生成三层结构，中间的干玻璃层和两边的水化硅胶层。
+
+水化硅胶层厚度：$0.01 - 10 \mu \mathrm m$。在水化层，玻璃上的 $\ce{Na+}$ 与溶液
+中的 $\ce{H+}$ 发生离子交换而产生相界电位。
+
+水化层的表面可视作阳离子交换剂。溶液中的 $\ce{H+}$ 经水化层扩散至干玻璃层，干玻
+璃层的阳离子向外扩散以补偿溶出的离子，离子的相对移动产生扩散电位，两者之和构成
+膜电位。
+
+
+\subsubsection{氟电极}
+
+
+\begin{equation}
+    E = K \pm \frac{RT}{nF} \ln \left[ a_i + K_{ij} (a_j)^{\frac{n_i}{n_j}}
+        \right]
+\end{equation}
+
+
+对阳离子响应的电极，$K$ 后取正号，对负离子响应的电极，$K$ 后取负号。其中，
+$K_{ij}$ 被称为\textbf{电极的选择性系数}。其意义为：在向相同的测定条件下，待测
+离子和干扰离子产生相同的膜电位时待测离子的活度 $a_i$ 与干扰离子活度 $a_j$ 的比
+值。
+
+\begin{equation}
+    K_{ij} = \frac{a_i}{a_j^{(n_i/n_j)}}
+\end{equation}
+
+
+$K_{ij}$ 的值越小，电极的选择性越高。$K_{ij} = 0.001$ 时，意味着干扰离子 $j$ 的
+活度比待测离子 $i$ 的活度大 1000 倍时，两者产生相同的电位。
+
+\subsection{电位分析法的应用}
+
+\subsubsection{pH 测定原理和方法}
+
+\begin{itemize}
+    \item 指示电极：pH玻璃膜电极，负极
+    \item 参比电极：饱和甘汞电极，正极
+\end{itemize}
+
+电池电动势为：
+
+\begin{equation}
+    E = E_{SCE} - E_{g}
+\end{equation}
+
+\begin{equation}
+    E = K' + \frac{ln 10}{F}\mathrm{pH}
+\end{equation}
+
+实际电位法测定 pH 的依据
+
+\begin{align}
+    E_x & = K_x + 0.059 \mathrm{pH}_x \\
+    E_s & = K_S + 0.059 \mathrm{pH}_x
+\end{align}
+
+若测量条件相同，则有 $K_x = K_S$
+
+\subsubsection{定量测定离子活度的方法}
+
+将离子指示性电极和参比电极插入试液，可以组成测定各种离子活度的电池，此电池的电
+动势为：
+
+\begin{equation}
+    \Delta E_{M} = K \pm \frac{RT}{nF} \ln a_i
+\end{equation}
+
+\begin{itemize}
+    \item 该式是测量离子活度的通式
+    \item 对阳离子响应的电极取正号，对阴离子响应的电极取负号
+    \item 实际测量时，通常采取标准曲线法和标准加入法
+\end{itemize}
+
+
+\paragraph{标准曲线法} $a = \gamma c$
+
+\begin{equation}
+    E = K \pm \frac{RT}{nF} \ln a
+\end{equation}
+
+纯待测离子配制一系列不同浓度的标准溶液，用 TISAB (总离子强度调节缓冲溶液，Total
+Ionic Strength Adjustment Buffer)，分别测定。
+
+要使 $K$ 保持恒定，必须保证：
+
+\begin{enumerate}
+    \item 实验条件恒定
+    \item 电极条件恒定
+    \item TISAB 条件恒定
+\end{enumerate}
+
+\paragraph{标准加入法} 如果试样的组成比较复杂，用标准曲线法有困难，此时可以采用
+标准加入法
+
+方法：将小体积的标准溶液加入到已知体积的未知试液中，根据加标样前后电池电动势的
+变化计算试液中被测离子的浓度。
+
+标准加入法的步骤：
+
+\begin{enumerate}
+    \item 测定工作电池的电动势 $E_1$：设某一试液的体积为 $V_0$，其待测离子的浓
+          度为 $c_\chi$，则此工作电池的电动势为：
+
+          \begin{equation}
+              E_1 = K \pm \frac{RT}{nF} \ln c_\chi
+          \end{equation}
+    \item 向试液中准确加入浓度为 $c_s$ (约为 $c_\chi$ 的 100 倍)，体积为 $V_s$
+          (大约为 $V_0$ 的 1/100) 的用待测离子的纯物质配置的标准溶液。由于 $V_0 >>
+              V_s$，可以认为溶液体积基本不变，浓度增量为 $\Delta c = c_s \frac{V_s}
+              {V_0} $，此时再次测量供电电池的电动势：
+
+          \begin{equation}
+              E_2 - E_1 = K \pm \frac{RT}{nF} \ln \left( 1 + \frac{m_s}{m_x}
+              \right)
+          \end{equation}
+          \begin{equation}
+              \Rightarrow E_2 - E_1 = \frac{RT}{nF} \ln (1 + \frac{\Delta c}
+              {c_\chi})
+          \end{equation}
+\end{enumerate}
