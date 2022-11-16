@@ -1,0 +1,173 @@
+\chapter{气相色谱分析法}
+
+\section{气相色谱固定相}
+
+\subsection{气固色谱固定相}
+
+具有一定活性的吸附剂，种类有限。分离对象主要是永久性气体和气态烃类物质。
+
+气固色谱固定相的特点
+
+\begin{enumerate}
+    \item 性能与制备和活化条件有很大关系
+    \item 同一种固定相，不同厂家或不同的活化条件，分离效果差异较大
+    \item 种类有限，能分离的对象不多
+    \item 使用方便
+\end{enumerate}
+
+\subsection{气液色谱固定相}
+
+气液色谱固定相：担体（支持体） + 固定液
+
+\subsubsection{担体}
+
+一种化学惰性、多孔型的固定颗粒，提供一个大的惰性表面，用以承担固定液。
+
+担体的要求：
+
+\begin{itemize}
+    \item 多孔性，孔径分布均匀
+    \item 化学惰性，有较好的浸润性
+    \item 热稳定性好
+    \item 一定的机械强度
+\end{itemize}
+
+担体（硅藻土）主要分为红色担体和白色担体。
+
+\paragraph{红色担体} 孔径较小，表孔密集，比表面积大，机械强度好。缺点是表面存有
+活性吸附中心点。适宜分离非极性或弱极性组分的试样。
+
+\paragraph{白色担体} 煅烧前原料加入了少量助熔剂（碳酸钠）。颗粒疏松，孔径较大。
+比表面积小，机械强度较差。但吸附性显著减小，适宜分离极性组分的试样。
+
+
+\subsubsection{固定液}
+
+高沸点难挥发的有机物或聚合物。
+
+固定液的要求：
+
+\begin{enumerate}
+    \item 挥发小，具有较低的蒸气压
+    \item 热稳定性好
+    \item 熔点不能太高
+    \item 化学稳定性好
+    \item 对样品中的各组分有适当的溶解度
+\end{enumerate}
+
+固定液的选择，主要根据极性来选。
+
+\paragraph{非极性组分分离} 选用非极性固定液，组分出峰的顺序由蒸气压决定，沸点高
+保留时间长
+
+\paragraph{中等极性组分分离} 中等极性固定相，沸点与分子间作用力同时起作用
+
+\paragraph{强极性组分分离} 强极性固定相，分子间作用力起作用，按极性大小出峰
+
+\paragraph{极性 + 非极性组分分离} 极性固定相
+
+\section{气相色谱检测器}
+
+\section{气相色谱法的定性分析}
+
+\subsection{利用纯物质定性的方法}
+
+\subsection{利用文献保留值定性}
+
+\subsection{利用保留指数}
+
+\subsection{与其他分析一起联用的定性方法}
+
+
+\section{气相色谱法的定量分析}
+
+
+\subsection{基本依据}
+
+在一定条件下，色谱峰的峰高 $h_i$ 或峰面积 $A_i$ 与所测组分的浓度 $c_i$ 或质量
+$m_i$ 成正比。
+
+\begin{align}
+    m_i & = f_i \cdot A_i \\
+    c_i & = f_i \cdot h_i
+\end{align}
+
+一般来说，对浓度敏感性检测器，常用于峰高定量。对质量敏感性的检测器，常用于峰面
+积定量。
+
+$f_i$ 是\textbf{定量矫正因子}。
+
+\subsection{峰面积的测量}
+
+\subsubsection{半定量}
+
+\begin{align}
+    A & = 1.064 h \cdot Y_{1/2}             \\
+    A & = h \cdot (Y_{0.15} + Y_{0.85}) / 2 \\
+    A & = h b t_R
+\end{align}
+
+\subsubsection{定量}
+
+自动积分 / 计算机积分
+
+\subsection{定量方法}
+
+\subsubsection{归一化法}
+
+以样品中被测组分经校正过的峰面积（或峰高）占样品中各组分经矫正过的峰面积（或峰
+高）的总和的比例，来表示样品中各组分含量的定量方法。
+
+\begin{equation}
+    w_i = \frac{m_i}{\sum m_i}
+\end{equation}
+
+特点和要求：
+
+\begin{enumerate}
+    \item 归一化法简便、准确
+    \item 进样量的准确性和操作条件的变动对测定结果影响不大
+    \item 仅适用于\textbf{试样中所有组分全出峰的情况}
+\end{enumerate}
+
+\subsubsection{外标法（标准曲线法）}
+
+\begin{enumerate}
+    \item 外标法不使用校正因子，准确性较高
+    \item 操作条件变化对结果准确性影响较大
+    \item 对进样量的准确性控制要求较高，适用与大批量试样的快速分析
+\end{enumerate}
+
+\subsubsection{内标法}
+
+将一定量的标准物作为内标物，加入到准确称取的试样当中，根据被测物和内标物的重量
+及其在色谱图上相应的峰面积比，求出某组分的含量
+
+\begin{equation}
+    \frac{m_i}{m_s} = \frac{f_i' A_i}{f_s A_S} \quad
+    m_i = m_s \frac{f_i' A_i}{f_s' A_s}
+\end{equation}
+
+
+特点和要求：
+
+\begin{enumerate}
+    \item 试样中所有组分不能全都出峰，或者只需要测定试样中某几个组分。
+    \item 准确性较高，操作条件和进样量的稍许变动对定量结果影响不大。
+    \item 每个试样的分析，都要进行两次称量，不适合大批量试样的快速分析。
+\end{enumerate}
+
+
+内标物要满足的要求：
+
+\begin{enumerate}
+    \item 试样中不存在纯物质
+    \item 与被测组分性质比较接近
+    \item 不与试样发生化学反应
+    \item 出峰位置应位于被测物质附近
+\end{enumerate}
+
+\subsubsection{标准加入法}
+
+特殊的内标法。将\textbf{欲测定组分的纯物质}作为内标物，加入到待测样品中，测定加
+入欲测定组分的纯物质前后的峰面积，求出组分的含量。
